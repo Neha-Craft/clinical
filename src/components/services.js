@@ -29,6 +29,7 @@ function Services() {
 
     return (
         <section id="services" className="services section" style={{
+            paddingTop:"2rem",
             paddingBottom:"1rem"
             
         }}>

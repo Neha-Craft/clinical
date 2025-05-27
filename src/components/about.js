@@ -15,7 +15,7 @@ const handleCloseModal = () => {
 }
 
   return (
-    <div style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
+    <div style={{ paddingTop: "2rem", paddingBottom: "1rem" }}>
       <section id="about" className="about section">
         <div className="container section-title" data-aos="fade-up">
           <h2>About Us</h2>
@@ -34,7 +34,7 @@ const handleCloseModal = () => {
             <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
               <div className="position-relative">
                 <img
-                  src="/about.jpg"
+                  src="/village5.jpg"
                   alt="About us"
                   style={{
                     maxWidth: "100%",

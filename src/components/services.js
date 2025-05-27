@@ -28,7 +28,10 @@ function Services() {
     };
 
     return (
-        <section id="services" className="services section">
+        <section id="services" className="services section" style={{
+            paddingBottom:"1rem"
+            
+        }}>
             <div className="container section-title" data-aos="fade-up">
                 <h2>Our Services</h2>
                 <p>We deliver expert, comprehensive care to meet our patients' diverse needs</p>

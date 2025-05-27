@@ -21,7 +21,9 @@ function ServicePage() {
     ];
 
     return (
-        <section id="services" className="services section">
+        <section id="services" className="services section" style={{
+            paddingTop:"5rem"
+        }}>
             <div className="container section-title" data-aos="fade-up">
                 <h2>All Services</h2>
                 <p>Explore the full range of services we offer to meet your healthcare needs</p>

@@ -57,36 +57,15 @@ export default function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/about">About</Link>
+                <Link href="/about">The Village Medical Centre</Link>
               </li>
               <li>
-                <Link href="/services">Services</Link>
+                <Link href="/KilmoneyClinic">Kilmoney Clinic</Link>
               </li>
               <li>
-                <Link href="/departments">Departments</Link>
+                <Link href="/GreenwoodSurgery">Greenwood Surgery</Link>
               </li>
-              <li className="dropdown">
-                <Link href="#">
-                  <span>More</span> <i className="bi bi-chevron-down toggle-dropdown"></i>
-                </Link>
-                <ul>
-                  <li>
-                    <Link href="/blog">Blog</Link>
-                  </li>
-                  <li>
-                    <Link href="/resources">Resources</Link>
-                  </li>
-                  <li>
-                    <Link href="/careers">Careers</Link>
-                  </li>
-                  <li>
-                    <Link href="/privacy-policy">Privacy Policy</Link>
-                  </li>
-                  <li>
-                    <Link href="/terms">Terms of Service</Link>
-                  </li>
-                </ul>
-              </li>
+          
             </ul>
             <i
               className={`mobile-nav-toggle d-xl-none ${isMobileNavActive ? "bi-x" : "bi-list"}`}

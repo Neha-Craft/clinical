@@ -21,7 +21,7 @@ export default function Home() {
        
 
       
-        <About/>
+         <About/>
       
 
 
@@ -30,7 +30,7 @@ export default function Home() {
       <Faqsection/>
 
     
-         <Contactus/> 
+         <Contactus/>   
      
        {/* </main>  */}
 

@@ -7,12 +7,20 @@ export default function Page() {
         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
             <h2>Greenwood Surgery</h2>
-          <p style={{fontSize:"18px"}}>
+          <p 
+          style={{fontSize:"18px",
+            paddingTop:"1rem !important",
+            paddingBottom:"1rem",
+            marginBottom:"1rem"
+          }}
+          >
               A contemporary medical practice committed to your family's health journey.
             </p>
           </div>
 
-          <div className="container">
+          <div className="container" style={{
+            paddingTop:"1rem"
+          }}>
             <div className="row gy-4 align-items-center">
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="position-relative h-100">

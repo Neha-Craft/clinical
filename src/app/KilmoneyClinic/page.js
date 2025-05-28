@@ -7,7 +7,13 @@ export default function Page() {
         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
             <h2>Kilmoney Clinic</h2>
-            <p style={{fontSize:"18px"}}>
+            <p 
+          style={{fontSize:"18px",
+            paddingTop:"1rem !important",
+            paddingBottom:"1rem",
+        
+          }}
+            >
                A patient-focused practice delivering comprehensive care with a personal touch
             </p>
           </div>

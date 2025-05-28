@@ -1,4 +1,3 @@
-
 "use client";
 
 import React, { useState, useEffect } from "react";
@@ -52,7 +51,12 @@ export default function Home() {
   return (
     <div>
       <section>
-        <div>
+        <div
+          style={{
+            position: "relative",
+            maxWidth: "100%",
+          }}
+        >
           <div
             className="mainHometext"
             style={{
@@ -60,11 +64,8 @@ export default function Home() {
               backgroundImage: `url('${slides[currentSlide].src}')`,
               backgroundPosition: "center",
               backgroundSize: "cover",
-              maxWidth: "100%",
+              width: "100%",
               height: "500px",
-              top: 0,
-              left: 0,
-              zIndex: 1,
             }}
           >
             {/* Dark overlay */}
@@ -75,8 +76,8 @@ export default function Home() {
                 left: 0,
                 width: "100%",
                 height: "100%",
-                backgroundColor: "rgba(0, 0, 0, 0.4)", // Adjust darkness here
-                zIndex: 2,
+                backgroundColor: "rgba(0, 0, 0, 0.4)",
+                zIndex: 1,
               }}
             ></div>
 
@@ -84,7 +85,7 @@ export default function Home() {
               className="container texthome"
               style={{
                 position: "relative",
-                zIndex: 3,
+                zIndex: 2,
                 color: "#fff",
                 padding: "20px",
               }}
@@ -101,9 +102,8 @@ export default function Home() {
                 style={{
                   fontSize: "20px",
                   fontWeight: 500,
-                  color: "#fff",
-                  marginBottom:"2rem",
-                  maxWidth:"523px"
+                  marginBottom: "2rem",
+                  maxWidth: "523px",
                 }}
               >
                 {slides[currentSlide].text}
@@ -124,53 +124,58 @@ export default function Home() {
                 {slides[currentSlide].buttonText}
               </a>
             </div>
+
+            {/* Indicators inside the image */}
+            <ol className="carousel-indicators">
+              {slides.map((_, index) => (
+                <li
+                  key={index}
+                  className={index === currentSlide ? "active" : ""}
+                  onClick={() => setCurrentSlide(index)}
+                ></li>
+              ))}
+            </ol>
+
+            {/* Previous control */}
+            <a
+              className="carousel-control-prev"
+              role="button"
+              onClick={handlePreviousSlide}
+              style={{
+                cursor: "pointer",
+                position: "absolute",
+                top: "50%",
+                left: "10px",
+                transform: "translateY(-50%)",
+                zIndex: 2,
+              }}
+            >
+              <span
+                className="carousel-control-prev-icon bi bi-chevron-left"
+                aria-hidden="true"
+              ></span>
+            </a>
+
+            {/* Next control */}
+            <a
+              className="carousel-control-next"
+              role="button"
+              onClick={handleNextSlide}
+              style={{
+                cursor: "pointer",
+                position: "absolute",
+                top: "50%",
+                right: "10px",
+                transform: "translateY(-50%)",
+                zIndex: 2,
+              }}
+            >
+              <span
+                className="carousel-control-next-icon bi bi-chevron-right"
+                aria-hidden="true"
+              ></span>
+            </a>
           </div>
-
-          {/* Previous control */}
-          <a
-            className="carousel-control-prev"
-            role="button"
-            onClick={handlePreviousSlide}
-            style={{ cursor: "pointer", marginRight: "10px" }}
-          >
-            <span
-              className="carousel-control-prev-icon bi bi-chevron-left"
-              aria-hidden="true"
-            ></span>
-          </a>
-
-          {/* Next control */}
-          <a
-            className="carousel-control-next"
-            role="button"
-            onClick={handleNextSlide}
-            style={{ cursor: "pointer", marginLeft: "10px" }}
-          >
-            <span
-              className="carousel-control-next-icon bi bi-chevron-right"
-              aria-hidden="true"
-            ></span>
-          </a>
-
-          {/* Indicators */}
-          <ol className="carousel-indicators" style={{ marginTop: "10px" }}>
-            {slides.map((_, index) => (
-              <li
-                key={index}
-                className={index === currentSlide ? "active" : ""}
-                onClick={() => setCurrentSlide(index)}
-                style={{
-                  cursor: "pointer",
-                  display: "inline-block",
-                  width: "10px",
-                  height: "10px",
-                  margin: "0 5px",
-                  backgroundColor: index === currentSlide ? "#007bff" : "#ccc",
-                  borderRadius: "50%",
-                }}
-              ></li>
-            ))}
-          </ol>
         </div>
       </section>
     </div>

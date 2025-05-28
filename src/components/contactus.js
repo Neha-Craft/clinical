@@ -5,9 +5,12 @@ export default function Contactus() {
     <div>
       <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>Contact</h2>
+          <h2 style={{
+            paddingTop:"2rem"
+          }}>Contact</h2>
           <p style={{
-            paddingBottom:"1rem"
+            paddingBottom:"1rem",
+            paddingTop:"1rem"
           }}>
             We are here to assist you across our three clinic locations in Cork.
             Whether you need an appointment, have a medical query, or simply

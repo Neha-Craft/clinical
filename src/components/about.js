@@ -18,8 +18,11 @@ function About() {
     <div style={{ paddingTop: "2rem", paddingBottom: "1rem" }}>
       <section id="about" className="about section">
         <div className="container section-title" data-aos="fade-up">
-          <h2>About Us</h2>
-          <p>Dedicated experts offering attentive care and trusted health advice.</p>
+          <h2 >About Us</h2>
+          <p style={{paddingTop:"1rem",
+          paddingBottom:"1rem"
+
+          }}>Dedicated experts offering attentive care and trusted health advice.</p>
         </div>
 
         <div className="container">

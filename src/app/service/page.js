@@ -5,7 +5,7 @@ import React from "react";
 function ServicePage() {
     const servicesList = [
         { icon: "fas fa-stethoscope", head: "General Medicine", text: "Comprehensive diagnosis and treatment for a wide range of general health concerns and common illnesses." },
-        { icon: "fas fa-scalpel", head: "Minor Procedures", text: "In-office treatments for minor surgical needs, such as wound care, lesion removal, and skin tag treatments." },
+        // { icon: "fas fa-scalpel", head: "Minor Procedures", text: "In-office treatments for minor surgical needs, such as wound care, lesion removal, and skin tag treatments." },
         { icon: "fas fa-snowflake", head: "Cryotherapy", text: "Effective freezing treatments for warts, skin lesions, and other dermatological conditions using liquid nitrogen." },
         { icon: "fas fa-vials", head: "Venesection", text: "Safe blood withdrawal procedures for patients needing treatment for conditions such as hemochromatosis or polycythemia." },
         { icon: "fas fa-syringe", head: "Vaccines", text: "Routine immunizations for adults and children, travel vaccines, and seasonal flu shots to protect your health." },

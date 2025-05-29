@@ -8,6 +8,7 @@ import Contactus from "@/components/contactus"
 import HomePage from "@/components/home"
 import Faqsection from "@/components/faqsection"
 import DoctorList from "@/components/doctorList"
+import Servicesection from "@/components/servicesection"
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
        {/* <main className="main">  */}
      
         <HomePage/>
+        <Servicesection/>
        
 
       

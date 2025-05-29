@@ -37,7 +37,7 @@ const faqData = [
   return (
     <section id="faq" className="faq section light-background">
       <div className="container section-title">
-        <h2>Frequently Asked Questions</h2>
+        <h2   style={{paddingBottom:"1rem"}}>Frequently Asked Questions</h2>
         <p>Find answers to common questions about appointments, Covid-19 safety, and visiting our clinic.</p>
       </div>
 

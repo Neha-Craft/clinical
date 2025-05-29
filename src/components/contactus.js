@@ -6,12 +6,15 @@ export default function Contactus() {
       <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
           <h2 style={{
-            paddingTop:"2rem"
+            paddingTop:"2rem",
+            paddingBottom:"1rem"
           }}>Contact</h2>
-          <p style={{
-            paddingBottom:"1rem",
-            paddingTop:"1rem"
-          }}>
+          <p 
+        style={{paddingTop:"1rem",
+          paddingBottom:"2rem"
+
+          }}
+          >
             We are here to assist you across our three clinic locations in Cork.
             Whether you need an appointment, have a medical query, or simply
             want to reach out, please use the contact details below or send us a

@@ -27,11 +27,12 @@ export default function DoctorList() {
   return (
     <section id="doctors" className="doctors section light-background">
       <div className="container section-title" data-aos="fade-up">
-        <h2>Our Medical Team</h2>
-        <p style={{
-          paddingTop:"1rem",
-          paddingBottom:"1rem"
-        }}
+        <h2   style={{paddingBottom:"1rem"}}>Our Medical Team</h2>
+        <p 
+           style={{paddingTop:"1rem",
+          paddingBottom:"2rem"
+
+          }}
         >Compassionate healthcare professionals dedicated to your wellbeing from beginning to end</p>
       </div>
 

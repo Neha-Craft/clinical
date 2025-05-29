@@ -7,8 +7,8 @@ export default function Footer() {
         <div className=" footer-top">
           <div className="row gy-4">
             <div className="col-lg-4 col-md-6 footer-about">
-              <Link href="/" className="logo d-flex align-items-center">
-                <span className="sitename">The Village Medical Centre</span>
+              <Link href="/" className="logo d-flex align-items-center" >
+                <span className="sitename" >The Village Medical Centre</span>
               </Link>
               <div className="footer-contact pt-3">
                 <p>TulligMore, Ballinhassig, Cork, T12 D521</p>

@@ -6,7 +6,7 @@ export default function Page() {
       <div style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
-            <h2>Greenwood Surgery</h2>
+            <h2   style={{paddingBottom:"1rem"}}>Greenwood Surgery</h2>
           <p 
           style={{fontSize:"18px",
             paddingTop:"1rem !important",
@@ -51,7 +51,8 @@ export default function Page() {
             <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
           <h2 style={{
-            paddingTop:"2rem"
+            paddingTop:"2rem",
+            paddingBottom:"1rem"
           }}
           >Contact</h2>
   
@@ -75,7 +76,7 @@ export default function Page() {
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
             <i className="bi bi-telephone"></i>
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Call Us</p>
-            <p>021-432 1790</p>
+            <p >021-432 1790</p>
           </div>
         </div>
 

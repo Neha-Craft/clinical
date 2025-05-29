@@ -6,7 +6,7 @@ export default function Page() {
       <div style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
-            <h2>Kilmoney Clinic</h2>
+            <h2   style={{paddingBottom:"1rem"}}>Kilmoney Clinic</h2>
             <p 
           style={{fontSize:"18px",
             paddingTop:"1rem !important",
@@ -49,7 +49,8 @@ export default function Page() {
           <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
           <h2 style={{
-            paddingTop:"2rem"
+            paddingTop:"2rem",
+            paddingBottom:"1rem"
           }}
           >Contact</h2>
   

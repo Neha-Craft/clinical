@@ -35,11 +35,13 @@ function Services() {
             
         }}>
             <div className="container section-title" data-aos="fade-up">
-                <h2>Our Services</h2>
-                <p style={{
-                    paddingTop:"1rem",
-                    paddingBottom:"1rem"
-                }}>We deliver expert, comprehensive care to meet our patients' diverse needs</p>
+                <h2   style={{paddingBottom:"1rem"}}>Our Services</h2>
+                <p 
+                 style={{paddingTop:"1rem",
+          paddingBottom:"2rem"
+
+          }}
+                >We deliver expert, comprehensive care to meet our patients' diverse needs</p>
             </div>
 
             <div className="container">

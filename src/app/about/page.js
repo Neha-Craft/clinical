@@ -6,7 +6,7 @@ export default function Page() {
       <div style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
-            <h2>The Village Medical Centre</h2>
+            <h2   style={{paddingBottom:"1rem"}}>The Village Medical Centre</h2>
             <p style={{fontSize:"18px", paddingTop:"1rem",paddingBottom:"1rem"
 
             }}>
@@ -45,8 +45,9 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
 
           <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
-          <h2 style={{
-            paddingTop:"2rem"
+          <h2  style={{paddingTop:"1rem",paddingBottom:"1rem"
+         
+
           }}
           >Contact</h2>
   
@@ -54,7 +55,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
 
     
 
-    <div className="container" data-aos="fade-up" data-aos-delay="100" style={{ paddingTop: "1rem" }}>
+    <div className="container" data-aos="fade-up" data-aos-delay="100" style={{ paddingTop: "2rem" }}>
   <div className="row gy-4">
     <div className="col-lg-6">
       <div className="row gy-4">
@@ -62,7 +63,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200">
             <i className="bi bi-geo-alt"></i>
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Address</p>
-            <p>The Village Medical Centre, TulligMore, Ballinhassig, Cork, T12 D521</p>
+            <p >The Village Medical Centre, TulligMore, Ballinhassig, Cork, T12 D521</p>
           </div>
         </div>
 

@@ -201,7 +201,7 @@ export default function IllnessForm() {
                       borderRadius: "4px",
                     }}
                   >
-                    submit
+                    Submit Form
                   </button>
                 </div>
               </div>

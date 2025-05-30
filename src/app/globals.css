@@ -847,6 +847,10 @@ ul {
   color: #fff;
   text-decoration: none;
 }
+.form-check-input:checked {
+    background-color: #65c9cd !important;
+    border-color:  #65c9cd !important;
+}
 .services-head{
   text-align: center;
   cursor: pointer;

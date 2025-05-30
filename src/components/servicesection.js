@@ -12,7 +12,9 @@ export default function Servicesection() {
       
 
              <div className="container section-title" data-aos="fade-up">
-          <h2 style={{paddingBottom:"1rem"}}>Our Services</h2>
+          <h2 
+          style={{paddingBottom:"1rem"}}
+          >Our Services</h2>
           <p 
           style={{paddingTop:"1rem",
           paddingBottom:"2rem"

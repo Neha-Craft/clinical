@@ -11,6 +11,8 @@ import DoctorList from "@/components/doctorList"
 import Servicesection from "@/components/servicesection"
 import FeeListing from "@/components/fees"
 import IllnessForm from "@/components/illnessForm"
+import DoctorLetterForm from "@/components/doctorLetterForm"
+import TestResultsForm from "@/components/testResultsForm"
 
 export default function Home() {
   return (
@@ -32,6 +34,8 @@ export default function Home() {
 
       <Services/>
       <IllnessForm/>
+      <DoctorLetterForm/>
+      <TestResultsForm/>
       <DoctorList/>
       <Faqsection/>
 

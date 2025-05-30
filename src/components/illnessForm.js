@@ -132,7 +132,8 @@ export default function IllnessForm() {
                   <label      style={{
                     fontSize:"16px",
                     paddingBottom:"10px"
-                  }}>Street Address</label>
+                  }}
+                  >Street Address</label>
                   <input
                     type="text"
                     className="form-control"

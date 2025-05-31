@@ -5,7 +5,7 @@ export default function Footer() {
     <footer id="footer" className="footer ">
       <div className="container">
         <div className=" footer-top">
-          <div className="row gy-4">
+          <div className="row gy-4 footer-menu">
             <div className="col-lg-4 col-md-6 footer-about">
               <Link href="/" className="logo d-flex align-items-center" >
                 <span className="sitename" >The Village Medical Centre</span>
@@ -48,7 +48,7 @@ export default function Footer() {
                 <li>
                   <a href="#">Test Results</a>
                 </li>
-                <li>
+                <li style={{ whiteSpace: "nowrap" }}>
                   <a href="#">Appointment Scheduling</a>
                 </li>
                 <li>
@@ -63,12 +63,37 @@ export default function Footer() {
             <div className="col-lg-3 col-md-3 footer-links">
               <h4>Our Services</h4>
               <ul>
-                <li>General Medicine</li>
-                <li style={{ whiteSpace: "nowrap" }}>Minor Procedures & Cryotherapy</li>
-                <li>Vaccines & Venesection</li>
-                <li style={{ whiteSpace: "nowrap" }}>Men's, Women's & Children's Health</li>
-                <li style={{ whiteSpace: "nowrap" }}>Chronic Disease Management</li>
-                <li style={{ whiteSpace: "nowrap" }}>Medical Reports & Certificates</li>
+                <li>
+                  <a href="#">  General Medicine</a>
+                
+                  </li>
+                <li style={{ whiteSpace: "nowrap" }}>
+                   <a href="#">  
+                  Minor Procedures & Cryotherapy
+                  </a>
+                  </li>
+                <li style={{ whiteSpace: "nowrap" }}>
+                     <a href="#">  
+                  Vaccines & Venesection
+                  </a>
+                  
+                  </li>
+                <li style={{ whiteSpace: "nowrap" }}>
+                     <a href="#">  Men's, Women's & Children's Health
+                      </a>
+                     </li>
+                <li style={{ whiteSpace: "nowrap" }}>
+                   <a href="#">
+Chronic Disease Management
+                   </a>
+                  
+                  </li>
+                <li style={{ whiteSpace: "nowrap" }}>
+                       <a href="#">
+Medical Reports & Certificates
+                       </a>
+                  
+                  </li>
               </ul>
             </div>
 

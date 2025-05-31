@@ -92,7 +92,7 @@ export default function Page() {
       <div className="mb-5 container" data-aos="fade-up" data-aos-delay="200">
         <iframe
           style={{ border: 0, width: "100%", height: "370px" }}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.70482367416!2d-8.40019191870765!3d51.811553926310104!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x484485505ca573bd%3A0x7b0ee42ab71f6dd1!2sKilmoney%20Clinic!5e0!3m2!1sen!2sin!4v1748669070689!5m2!1sen!2sin" 
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

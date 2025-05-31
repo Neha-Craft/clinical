@@ -89,7 +89,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
       <div className="mb-5 container" data-aos="fade-up" data-aos-delay="200">
         <iframe
           style={{ border: 0, width: "100%", height: "370px" }}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2466.6928229595965!2d-8.53240192412344!3d51.8117731884234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48448ea25de539df%3A0x76f662c0a1c4bc8c!2sThe%20Village%20Medical%20Centre!5e0!3m2!1sen!2sin!4v1748668787056!5m2!1sen!2sin"
           allowFullScreen
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"

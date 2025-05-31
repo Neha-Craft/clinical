@@ -1466,3 +1466,29 @@ ul {
     transform: rotate(360deg);
   }
 }
+
+@media (min-width: 1024px) and (max-width: 1439px) {
+  .footer-menu{
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .service-section{
+        padding-left: 2rem;
+    padding-right: 2rem;
+    max-width: 1035px;
+  }
+
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+  .footer-menu{
+    padding-right: 5rem;
+    padding-left: 1rem;
+  }
+    .service-section{
+        padding-left: 2rem;
+    padding-right: 2rem;
+  
+  }
+
+}
+

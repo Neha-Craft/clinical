@@ -23,7 +23,7 @@ export default function Servicesection() {
           >Comprehensive healthcare solutions tailored to your needs</p>
         </div>
 
-          <div className="row gy-4 justify-content-center" >
+          <div className="row gy-4 justify-content-center service-section" >
             {/* Online Services */}
             <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
               <div

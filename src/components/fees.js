@@ -1,3 +1,114 @@
+// "use client"
+
+
+// import React from 'react';
+//  import { Container, Row, Col, Card } from 'react-bootstrap';
+// import { FaStethoscope, FaSyringe, FaBaby, FaFileAlt } from 'react-icons/fa';
+
+// const FeeListing = () => {
+//   return (
+//     <Container className="my-5">
+//       <h2 className="text-center mb-3">Our Fee Listing</h2>
+//       <p className="text-center text-muted">(Editable chart example below)</p>
+//       <Row className="g-4">
+//         <Col md={6}>
+//           <Card className="h-100 shadow-sm">
+//             <Card.Body>
+//               <div className="d-flex align-items-center mb-3">
+//                 <FaStethoscope size={30} className="me-2 text-info" />
+//                 <h5 className="mb-0">Consultation</h5>
+//               </div>
+//               <p>GP Consultation</p>
+//               <div className="d-flex justify-content-between">
+//                 <div>
+//                   <small className="text-muted">PRIVATE</small>
+//                   <div className="text-danger">€60.00</div>
+//                 </div>
+//                 <div>
+//                   <small className="text-muted">GMS/GP</small>
+//                   <div className="text-success">Included</div>
+//                 </div>
+//               </div>
+//             </Card.Body>
+//           </Card>
+//         </Col>
+
+//         <Col md={6}>
+//           <Card className="h-100 shadow-sm">
+//             <Card.Body>
+//               <div className="d-flex align-items-center mb-3">
+//                 <FaSyringe size={30} className="me-2 text-info" />
+//                 <h5 className="mb-0">Vaccinations</h5>
+//               </div>
+//               <p>GP Consultation</p>
+//               <div className="d-flex justify-content-between">
+//                 <div>
+//                   <small className="text-muted">PRIVATE</small>
+//                   <div className="text-danger">€60.00</div>
+//                 </div>
+//                 <div>
+//                   <small className="text-muted">GMS/GP</small>
+//                   <div className="text-success">Included</div>
+//                 </div>
+//               </div>
+//             </Card.Body>
+//           </Card>
+//         </Col>
+
+//         <Col md={6}>
+//           <Card className="h-100 shadow-sm">
+//             <Card.Body>
+//               <div className="d-flex align-items-center mb-3">
+//                 <FaBaby size={30} className="me-2 text-info" />
+//                 <h5 className="mb-0">Pregnancy</h5>
+//               </div>
+//               <p>Ante Natal</p>
+//               <div className="d-flex justify-content-between">
+//                 <div>
+//                   <small className="text-muted">PRIVATE</small>
+//                   <div className="text-danger">Contact us</div>
+//                 </div>
+//                 <div>
+//                   <small className="text-muted">GMS/GP</small>
+//                   <div className="text-success">Included</div>
+//                 </div>
+//               </div>
+//             </Card.Body>
+//           </Card>
+//         </Col>
+
+//         <Col md={6}>
+//           <Card className="h-100 shadow-sm">
+//             <Card.Body>
+//               <div className="d-flex align-items-center mb-3">
+//                 <FaFileAlt size={30} className="me-2 text-info" />
+//                 <h5 className="mb-0">Administration</h5>
+//               </div>
+//               <p>Letters/Certs</p>
+//               <div className="d-flex justify-content-between">
+//                 <div>
+//                   <small className="text-muted">PRIVATE</small>
+//                   <div className="text-danger">Contact us</div>
+//                 </div>
+//                 <div>
+//                   <small className="text-muted">GMS/GP</small>
+//                   <div className="text-success">Included</div>
+//                 </div>
+//               </div>
+//             </Card.Body>
+//           </Card>
+//         </Col>
+//       </Row>
+//     </Container>
+//   );
+// };
+
+// export default FeeListing;
+
+
+
+
+
 "use client"
 
 export default function FeeListing() {

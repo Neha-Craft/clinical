@@ -1477,6 +1477,35 @@ ul {
     padding-right: 2rem;
     max-width: 1035px;
   }
+  .header-item{
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .header .logo h1 {
+    font-size: 24px !important;
+  }
+  .header-doc{
+     padding-right: 1rem;
+    padding-left: 1rem;
+
+  }
+  .navmenu a, .navmenu a:focus {
+  
+    font-size: 13px !important;
+ 
+}
+.header .cta-btn, .header .cta-btn:focus {
+    white-space: nowrap !important;
+    color: #fff;
+    font-size: 14px;
+    background: #3fbbc0;
+    padding: 8px 20px;
+    margin: 0 5px 0 30px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+
+ 
 
 }
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -1489,6 +1518,116 @@ ul {
     padding-right: 2rem;
   
   }
+  .head-phone{
+    margin: auto;
+    justify-content: center;
+  }
+.bi-list::before {
+    padding-top: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    text-align: center;
+    content: "\f479";
+    margin: auto;
+}
+}
+
+@media (min-width: 425px) and (max-width: 765px) {
+  .header .cta-btn, .header .cta-btn:focus {
+    white-space: nowrap !important;
+    color: #fff;
+    font-size: 14px;
+    background: #3fbbc0;
+    padding: 8px 20px;
+    margin: 0 5px 0 30px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+.bi-list::before {
+    padding-top: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    text-align: center;
+    content: "\f479";
+    margin: auto;
+}
+ .header .logo h1 {
+    font-size: 20px !important;
+  }
+  .bi-list::before {
+    padding-top: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    text-align: center;
+    content: "\f479";
+    margin: auto;
+}
+
+}
+
+@media (min-width: 375px) and (max-width: 420px) {
+    .bi-list::before {
+    padding-top: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    text-align: center;
+    content: "\f479";
+    margin: auto;
+}
+  .header .cta-btn, .header .cta-btn:focus {
+    white-space: nowrap !important;
+    color: #fff;
+    font-size: 14px;
+    background: #3fbbc0;
+    padding: 8px 20px;
+    margin: 0 5px 0 30px;
+    border-radius: 4px;
+    transition: all .3s;
+}
+ .header .logo h1 {
+    font-size: 15px !important;
+  }
+    .header-doc{
+     padding-right: 5px;
+    padding-left: 5px
+
+  }
+
+
+}
+
+@media (min-width: 320px) and (max-width: 370px) {
+     .bi-list::before {
+    padding-top: 8px !important;
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+    text-align: center;
+    content: "\f479";
+    margin: auto;
+}
+ .header .logo h1 {
+    font-size: 15px !important;
+  }
+.header .cta-btn, .header .cta-btn:focus {
+    color: #fff;
+    font-size: 9px;
+    background: #3fbbc0;
+    padding: 8px 8px;
+    margin: 0 5px 0 5px;
+    border-radius: 4px;
+    transition: all .3s;
+   white-space: nowrap !important;
+}
 
 }
 

@@ -22,7 +22,7 @@ export default function Home() {
 
        {/* <main className="main">  */}
      
-          {/* <HomePage/> 
+           <HomePage/> 
           <Servicesection/> 
        
 
@@ -40,7 +40,7 @@ export default function Home() {
       <Faqsection/>
 
     
-         <Contactus/>     */}
+         <Contactus/>     
      
        {/* </main>  */}
 

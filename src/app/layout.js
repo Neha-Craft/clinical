@@ -37,7 +37,7 @@ export default function RootLayout({ children }) {
            <Header/>    
 
         {children}
-            {/* <Footer/>   */}
+           <Footer/>   
 
         {/* Scroll Top */}
         <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center">

@@ -25,9 +25,9 @@ export default function Footer() {
                 </p>
               </div>
               <div className="social-links d-flex mt-4">
-                <a href="#">
+                {/* <a href="#">
                   <i className="bi bi-twitter-x"></i>
-                </a>
+                </a> */}
                 <a href="#">
                   <i className="bi bi-facebook"></i>
                 </a>

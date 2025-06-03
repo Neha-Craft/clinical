@@ -42,12 +42,13 @@ const Header = () => {
             <div className="d-none d-md-flex align-items-center">
               <i className="bi bi-clock me-1"></i> Monday - Saturday, 8AM to 10PM
             </div>
-            <div className="d-flex align-items-center head-phone">
-              <i className="bi bi-phone me-1"></i>{" "}
-              <a href="tel:+155895548855" style={{ color: "#fff" }}>
-                021-488 5706
-              </a>
-            </div>
+          <div className="d-flex align-items-center head-phone">
+  <i className="bi bi-telephone-fill me-1"></i>{" "}
+  <a href="tel:+021-4885706" style={{ color: "#fff" }}>
+    021-488 5706
+  </a>
+</div>
+
           </div>
         </div>
 
@@ -66,17 +67,17 @@ const Header = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="/about" className={pathname === "/about" ? "active" : ""}>
+                  <Link href="/village-medical-center" className={pathname === "/about" ? "active" : ""}>
                     The Village Medical Centre
                   </Link>
                 </li>
                 <li>
-                  <Link href="/KilmoneyClinic" className={pathname === "/KilmoneyClinic" ? "active" : ""}>
+                  <Link href="/kilmoney-clinic" className={pathname === "/KilmoneyClinic" ? "active" : ""}>
                     Kilmoney Clinic
                   </Link>
                 </li>
                 <li>
-                  <Link href="/GreenwoodSurgery" className={pathname === "/GreenwoodSurgery" ? "active" : ""}>
+                  <Link href="/greenwood-surgery" className={pathname === "/GreenwoodSurgery" ? "active" : ""}>
                     Greenwood Surgery
                   </Link>
                 </li>

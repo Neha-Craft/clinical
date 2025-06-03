@@ -69,7 +69,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
 
         <div className="col-md-6">
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
-            <i className="bi bi-telephone"></i>
+           <a href="tel:+0214885706"><i className="bi bi-telephone"></i></a> 
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Call Us</p>
             <p>021-488 5706</p>
           </div>

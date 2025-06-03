@@ -74,7 +74,11 @@ export default function Page() {
 
         <div className="col-md-6">
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="300">
-            <i className="bi bi-telephone"></i>
+             <a href="tel:+0214371974">
+                <i className="bi bi-telephone"></i>
+
+             </a>
+          
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Call Us</p>
             <p >021-432 1790</p>
           </div>
@@ -82,7 +86,11 @@ export default function Page() {
 
         <div className="col-md-6">
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
-            <i className="bi bi-envelope"></i>
+               <a href="mailto:kilmoney.clinic@tvmc.ie">
+                    <i className="bi bi-envelope"></i>
+
+               </a>
+        
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Email Us</p>
             <p>
               greenwood.surgery@tvmc.ie

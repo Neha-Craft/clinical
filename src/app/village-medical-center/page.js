@@ -77,7 +77,9 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
 
         <div className="col-md-6">
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="400">
+           <a href="mailto:ballinhassig.clinic@tvmc.ie">
             <i className="bi bi-envelope"></i>
+            </a> 
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Email Us</p>
             <p>ballinhassig.clinic@tvmc.ie</p>
           </div>

@@ -18,11 +18,13 @@ export default function Footer() {
                   <strong>Phone:</strong> <span>021-488 5706 / 021-437 1974 / 021-432 1790</span>
                 </p>
                 <p>
-                  <strong>Email:</strong>{" "}
-                  <span>
-                    <a href="mailto:info@tvmc.ie">info@tvmc.ie</a>
-                  </span>
-                </p>
+  <strong>Email:</strong>{" "}
+  <span>
+    <a href="mailto:ballinhassig.clinic@tvmc.ie">Ballinhassig</a> / 
+    <a href="mailto:kilmoney.clinic@tvmc.ie">Kilmoney</a> / 
+    <a href="mailto:greenwood.surgery@tvmc.ie">Greenwood</a>
+  </span>
+</p>
               </div>
               <div className="social-links d-flex mt-4">
                 {/* <a href="#">

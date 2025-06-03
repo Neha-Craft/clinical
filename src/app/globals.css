@@ -1478,8 +1478,12 @@ ul {
     max-width: 1035px;
   }
   .header-item{
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .time-head{
+    /* padding-left: 1rem !important; */
+
   }
   .header .logo h1 {
     font-size: 24px !important;
@@ -1508,6 +1512,10 @@ ul {
   padding-left: 1rem !important;
     padding-right: 1rem !important;
 }
+.form-illeness{
+  width: 96% !important;
+  margin: auto !important;
+}
 
  
 
@@ -1526,6 +1534,24 @@ ul {
   padding-left: 1rem !important;
     padding-right: 1rem !important;
 }
+.form-illeness{
+  width: 96% !important;
+  margin: auto !important;
+}
+  .header-item{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+.header {
+ 
+    padding: 0px 0px !important;
+}
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
 
   .head-phone{
     margin: auto;
@@ -1541,6 +1567,11 @@ ul {
     content: "\f479";
     margin: auto;
 }
+    .mobile-nav-toggle.jsx-d569bae970c7b164 {
+      
+        top: 0px !important;
+       
+    }
 }
 
 @media (min-width: 425px) and (max-width: 765px) {
@@ -1554,6 +1585,26 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+.form-illeness{
+  width: 96% !important;
+  margin: auto !important;
+}
+.header {
+ 
+    padding: 0px 0px !important;
+}
+.time-head{
+  /* display: start !important; */
+}
+.head-phone{
+   display: unset !important;
+
+}
+   .mobile-nav-toggle.jsx-d569bae970c7b164 {
+      
+        top: 0px !important;
+       
+    }
 .bi-list::before {
     padding-top: 8px !important;
     align-items: center;
@@ -1605,7 +1656,9 @@ ul {
   .service-health{
     font-size: 14px !important;
   }
-
+  .logo{
+    padding-left: 3px !important;
+  }
 
 
 }
@@ -1620,6 +1673,20 @@ ul {
     text-align: center;
     content: "\f479";
     margin: auto;
+}
+.header .logo img {
+    margin-right: 0px !important;
+}
+
+
+.section-title h2 {
+    font-size: 28px !important;
+    font-weight: bold;
+    position: relative;
+}
+.form-illeness{
+  width: 96% !important;
+  margin: auto !important;
 }
   .header .cta-btn, .header .cta-btn:focus {
     white-space: nowrap !important;
@@ -1719,6 +1786,11 @@ ul {
  .header .logo h1 {
     font-size: 15px !important;
   }
+  .header {
+  
+    padding: 0px 0 !important;
+  
+}
 .header .cta-btn, .header .cta-btn:focus {
     color: #fff;
     font-size: 9px;
@@ -1728,6 +1800,15 @@ ul {
     border-radius: 4px;
     transition: all .3s;
    white-space: nowrap !important;
+}
+.section-title h2 {
+    font-size: 24px !important;
+    font-weight: bold;
+    position: relative;
+}
+.form-illeness{
+  width: 96% !important;
+  margin: auto !important;
 }
  .list-doctor{
   padding-left: 1rem !important;
@@ -1788,5 +1869,10 @@ ul {
   .p-hero{
   font-size: 35px !important;
 }
+ .mobile-nav-toggle.jsx-d569bae970c7b164 {
+      
+        top: 0px !important;
+       
+    }
 }
 

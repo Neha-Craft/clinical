@@ -18,7 +18,7 @@ export default function IllnessForm() {
         </p> */}
       </div>
       <div className='container'>
-        <div className="col-lg-12">
+        <div className="col-lg-12 form-illeness">
           <div 
           style={{
             backgroundColor: '#fff',

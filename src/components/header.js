@@ -38,8 +38,8 @@ const Header = () => {
     <>
       <header id="header" className={`header sticky-top ${hasMounted && isScrolled ? "scrolled" : ""}`}>
         <div className="topbar d-flex align-items-center">
-          <div className="container d-flex justify-content-center justify-content-md-between header-item">
-            <div className="d-none d-md-flex align-items-center">
+          <div className="container d-flex ps-3 justify-content-md-between header-item">
+            <div className="d-none d-md-flex align-items-center time-head">
               <i className="bi bi-clock me-1"></i> Monday - Saturday, 8AM to 10PM
             </div>
             <div className="d-flex align-items-center head-phone gap-2">

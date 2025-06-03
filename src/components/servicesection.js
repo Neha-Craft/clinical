@@ -20,6 +20,7 @@ export default function Servicesection() {
           paddingBottom:"2rem"
 
           }}
+          className="service-health"
           >Comprehensive healthcare solutions tailored to your needs</p>
         </div>
 

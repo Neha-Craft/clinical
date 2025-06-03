@@ -1504,6 +1504,10 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+.list-doctor{
+  padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
 
  
 
@@ -1518,6 +1522,11 @@ ul {
     padding-right: 2rem;
   
   }
+  .list-doctor{
+  padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+
   .head-phone{
     margin: auto;
     justify-content: center;
@@ -1568,6 +1577,36 @@ ul {
     content: "\f479";
     margin: auto;
 }
+  .list-doctor{
+  padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.doctor-p{
+  font-size: 14 !important;
+}
+.p-hero{
+  font-size: 42px !important;
+}
+.p-tag{
+  
+
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 291px !important;
+
+
+}
+  .service-section{
+        padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 444px;
+  }
+  .service-health{
+    font-size: 14px !important;
+  }
+
+
 
 }
 
@@ -1592,6 +1631,13 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+  .list-doctor{
+  padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.doctor-p{
+  font-size: 11px !important;
+}
  .header .logo h1 {
     font-size: 15px !important;
   }
@@ -1600,6 +1646,61 @@ ul {
     padding-left: 5px
 
   }
+  .p-hero{
+  font-size: 35px !important;
+}
+
+.p-tag{
+  
+
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 291px !important;
+
+
+}
+  .service-section{
+        padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 444px;
+  }
+  .service-health{
+    font-size: 12px !important;
+  }
+
+
+  /* .carousel-control-prev{
+    cursor: pointer;
+    position
+
+: absolute;
+    top: 61% !important;
+    left: 3px !important;
+    transform: translateY(-50%);
+    z-index: 2;
+  } */
+  /* .carousel-control-next{
+    
+
+    cursor: pointer;
+    position: absolute;
+    top: 61% !important;
+    right: 3px !important;
+    transform: translateY(-50%);
+    z-index: 2;
+
+
+  } */
+  .p-tag{
+      font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 209px !important;
+
+  }
+
+
 
 
 }
@@ -1628,6 +1729,64 @@ ul {
     transition: all .3s;
    white-space: nowrap !important;
 }
+ .list-doctor{
+  padding-left: 1rem !important;
+    padding-right: 1rem !important;
+}
+.doctor-p{
+  font-size: 14px !important;
+}
+ .p-tag{
+      font-size: 14px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 209px !important;
 
+  }
+  .p-tag{
+  
+
+    font-size: 18px !important;
+    font-weight: 500;
+    margin-bottom: 2rem;
+    max-width: 291px !important;
+
+
+}
+  .service-section{
+        padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 444px;
+  }
+  .service-health{
+    font-size: 12px !important;
+  }
+
+
+  /* .carousel-control-prev{
+    cursor: pointer;
+    position
+
+: absolute;
+    top: 61% !important;
+    left: 3px !important;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  .carousel-control-next{
+    
+
+    cursor: pointer;
+    position: absolute;
+    top: 61% !important;
+    right: 3px !important;
+    transform: translateY(-50%);
+    z-index: 2;
+
+
+  } */
+  .p-hero{
+  font-size: 35px !important;
+}
 }
 

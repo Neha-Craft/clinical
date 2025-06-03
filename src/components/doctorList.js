@@ -33,11 +33,12 @@ export default function DoctorList() {
           paddingBottom:"2rem"
 
           }}
+          className='doctor-p'
         >Compassionate healthcare professionals dedicated to your wellbeing from beginning to end</p>
       </div>
 
       <div className="container">
-        <div className="row gy-4">
+        <div className="row gy-4 list-doctor">
           {doctors.map((doctor, index) => (
             <div
               className="col-lg-3 col-md-6 d-flex align-items-stretch"

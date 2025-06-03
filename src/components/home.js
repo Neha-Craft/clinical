@@ -95,6 +95,7 @@ export default function Home() {
                   fontSize: "50px",
                   fontWeight: 700,
                 }}
+                className="p-hero"
               >
                 {slides[currentSlide].heading}
               </p>
@@ -105,6 +106,7 @@ export default function Home() {
                   marginBottom: "2rem",
                   maxWidth: "523px",
                 }}
+                 className="p-tag"
               >
                 {slides[currentSlide].text}
               </p>

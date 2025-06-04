@@ -23,12 +23,12 @@ export default function Home() {
        {/* <main className="main">  */}
      
                  <HomePage/>   
-              <Servicesection/>  
+              <Servicesection/>    
        
 
       
              {/* <About/>   */}
-              <FeeListing/>        
+                <FeeListing/>        
       
 
 
@@ -41,7 +41,7 @@ export default function Home() {
            <Faqsection/>     
 
     
-           <Contactus/>                
+           <Contactus/>                  
       
        {/* </main>  */}
 

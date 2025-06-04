@@ -5,7 +5,7 @@ export default function Footer() {
     <footer id="footer" className="footer ">
       <div className="container">
         <div className=" footer-top">
-          <div className="row gy-4 footer-menu">
+          <div className="row gy-4 footer-maintext">
             <div className="col-lg-4 col-md-6 footer-about">
               <Link href="/" className="logo d-flex align-items-center" >
                 <span className="sitename" >The Village Medical Centre</span>

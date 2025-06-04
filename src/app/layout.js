@@ -35,11 +35,11 @@ export default function RootLayout({ children }) {
         {/* Preloader */}
         {/* <div id="preloader"></div> */}
         <link rel="icon" href="/logo.png" />
-                <Header/>        
+                {/* <Header/>         */}
 
         {children}
 
-                {/* <Footer/>          */}
+                 <Footer/>          
 
         {/* Scroll Top */}
         <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center">

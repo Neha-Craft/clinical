@@ -1553,6 +1553,10 @@ ul {
     padding-right: 2rem;
   
   }
+  .footer-maintext{
+        padding-left: 10px !important;
+    max-width: 700px !important;
+  }
    .village-contact{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -1731,6 +1735,10 @@ ul {
   .logo{
     padding-left: 3px !important;
   }
+    .footer-maintext{
+        padding-left: 10px !important;
+    max-width: 700px !important;
+  }
 
 
 }
@@ -1758,6 +1766,10 @@ ul {
     .contact-content{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
+  }
+    .footer-maintext{
+        padding-left: 10px !important;
+    max-width: 700px !important;
   }
 .header .logo img {
     margin-right: 0px !important;
@@ -1885,6 +1897,10 @@ ul {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
+    .footer-maintext{
+        padding-left: 10px !important;
+    max-width: 700px !important;
+  }
   .p-contact-paragrapgh{
   text-align: center;
   padding-left: 10px !important;
@@ -2000,3 +2016,38 @@ ul {
     }
 }
 
+.footer {
+  width: 100%;
+}
+
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.footer-links ul {
+  padding-left: 0;
+}
+
+.footer-links li {
+  word-wrap: break-word;
+  white-space: normal;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 767px) {
+  .footer-contact p {
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+  }
+
+  .d-inline-block {
+    display: inline-block;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+  }
+}

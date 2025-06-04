@@ -35,7 +35,7 @@ export default function RootLayout({ children }) {
         {/* Preloader */}
         {/* <div id="preloader"></div> */}
         <link rel="icon" href="/logo.png" />
-                {/* <Header/>         */}
+                 <Header/>         
 
         {children}
 

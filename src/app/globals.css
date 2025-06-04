@@ -1485,6 +1485,11 @@ ul {
     /* padding-left: 1rem !important; */
 
   }
+  .contact-map{
+    width: 95% !important;
+    display: flex !important;
+    margin: auto;
+  }
   .header .logo h1 {
     font-size: 24px !important;
   }
@@ -1516,7 +1521,14 @@ ul {
   width: 96% !important;
   margin: auto !important;
 }
-
+  .contact-ptag{
+    max-width: 754px !important;
+    margin: auto;
+  }
+  .contact-content{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
  
 
 }
@@ -1529,6 +1541,18 @@ ul {
         padding-left: 2rem;
     padding-right: 2rem;
   
+  }
+    .contact-content{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+    .contact-map{
+    width: 95% !important;
+    display: flex !important;
+    margin: auto;
+  }
+  .contact-ptag{
+    max-width: 754px !important;
   }
   .list-doctor{
   padding-left: 1rem !important;
@@ -1585,10 +1609,24 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+    .contact-content{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+   .contact-map{
+    width: 95% !important;
+    display: flex !important;
+    margin: auto;
+    border-radius: 4px !important;
+  }
 .form-illeness{
   width: 96% !important;
   margin: auto !important;
 }
+  .contact-ptag{
+    max-width: 394px !important;
+    margin: auto;
+  }
 .header {
  
     padding: 0px 0px !important;
@@ -1677,12 +1715,26 @@ ul {
     content: "\f479";
     margin: auto;
 }
+    .contact-content{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
 .header .logo img {
     margin-right: 0px !important;
 }
 .footer-top{
   margin-left: 10px !important;
 }
+  .contact-ptag{
+    max-width: 345px !important;
+    margin: auto;
+  }
+     .contact-map{
+    width: 95% !important;
+    display: flex !important;
+    margin: auto;
+    border-radius: 4px !important;
+  }
 
 
 .section-title h2 {
@@ -1789,6 +1841,20 @@ ul {
     content: "\f479";
     margin: auto;
 }
+    .contact-content{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .contact-ptag{
+    max-width: 260px !important;
+    margin: auto;
+  }
+       .contact-map{
+    width: 95% !important;
+    display: flex !important;
+    margin: auto;
+    border-radius: 4px !important;
+  }
 .footer-top{
   margin-left: 10px !important;
 }

@@ -1593,6 +1593,9 @@ ul {
  
     padding: 0px 0px !important;
 }
+.footer-top{
+  margin-left: 10px !important;
+}
 .time-head{
   /* display: start !important; */
 }
@@ -1676,6 +1679,9 @@ ul {
 }
 .header .logo img {
     margin-right: 0px !important;
+}
+.footer-top{
+  margin-left: 10px !important;
 }
 
 
@@ -1782,6 +1788,9 @@ ul {
     text-align: center;
     content: "\f479";
     margin: auto;
+}
+.footer-top{
+  margin-left: 10px !important;
 }
  .header .logo h1 {
     font-size: 15px !important;

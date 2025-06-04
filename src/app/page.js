@@ -22,25 +22,26 @@ export default function Home() {
 
        {/* <main className="main">  */}
      
-            <HomePage/>  
-             <Servicesection/> 
+               <HomePage/>   
+              <Servicesection/> 
        
 
       
-            {/* <About/> 
-          <FeeListing/>      
+             <About/>  
+             <FeeListing/>        
       
 
 
-       <Services/> 
-        <IllnessForm/>  */}
-      {/* <DoctorLetterForm/>
-      <TestResultsForm/>  */}
-        {/* <DoctorList/> 
-        <Faqsection/> 
+          <Services/>    
+  
+         <IllnessForm/>    
+       <DoctorLetterForm/>
+      <TestResultsForm/>  
+            <DoctorList/>   
+           <Faqsection/>    
 
     
-          <Contactus/>           */}
+           <Contactus/>             
       
        {/* </main>  */}
 

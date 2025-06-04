@@ -1485,6 +1485,10 @@ ul {
     /* padding-left: 1rem !important; */
 
   }
+  .village-contact{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
   .contact-map{
     width: 95% !important;
     display: flex !important;
@@ -1529,6 +1533,10 @@ ul {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
+  .contact-village-map{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
  
 
 }
@@ -1542,6 +1550,10 @@ ul {
     padding-right: 2rem;
   
   }
+   .village-contact{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
     .contact-content{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -1551,6 +1563,11 @@ ul {
     display: flex !important;
     margin: auto;
   }
+    .contact-village-map{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+ 
   .contact-ptag{
     max-width: 754px !important;
   }
@@ -1609,6 +1626,17 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+.p-contact-paragrapgh{
+  text-align: center;
+}
+    .contact-village-map{
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+ .village-contact{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
     .contact-content{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -1715,6 +1743,15 @@ ul {
     content: "\f479";
     margin: auto;
 }
+.p-contact-paragrapgh{
+  text-align: center;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+}
+ .village-contact{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
     .contact-content{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -1840,6 +1877,15 @@ ul {
     text-align: center;
     content: "\f479";
     margin: auto;
+}
+ .village-contact{
+    padding-right: 1rem !important;
+    padding-left: 1rem !important;
+  }
+  .p-contact-paragrapgh{
+  text-align: center;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
 }
     .contact-content{
     padding-right: 1rem !important;

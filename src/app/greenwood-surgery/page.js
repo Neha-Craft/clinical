@@ -21,7 +21,7 @@ export default function Page() {
           <div className="container" style={{
             paddingTop:"1rem"
           }}>
-            <div className="row gy-4 align-items-center">
+            <div className="row gy-4 align-items-center village-contact">
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="position-relative h-100">
                   <img 

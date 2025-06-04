@@ -4,7 +4,7 @@ export default function Page() {
   return (
     <div>
       <div style={{ paddingTop: "1rem", paddingBottom: "1rem" }}>
-        <section id="about" className="about section">
+         <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
             <h2   style={{paddingBottom:"1rem"}}>The Village Medical Centre</h2>
             <p style={{fontSize:"18px", paddingTop:"1rem",paddingBottom:"1rem"
@@ -15,7 +15,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
           </div>
 
           <div className="container">
-            <div className="row gy-4 align-items-center">
+            <div className="row gy-4 align-items-center village-contact">
               <div className="col-lg-6" data-aos="fade-up" data-aos-delay="100">
                 <div className="position-relative h-100">
                   <img 
@@ -40,10 +40,10 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
               </div>
             </div>
           </div>
-        </section>
+        </section> 
       </div>
 
-          <section id="contact" className="contact section">
+         <section id="contact" className="contact section">
         <div className="container section-title" data-aos="fade-up">
           <h2  style={{paddingTop:"1rem",paddingBottom:"1rem"
          
@@ -58,12 +58,12 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
     <div className="container" data-aos="fade-up" data-aos-delay="100" style={{ paddingTop: "2rem" }}>
   <div className="row gy-4">
     <div className="col-lg-6">
-      <div className="row gy-4">
+      <div className="row gy-4 contact-village-map">
         <div className="col-lg-12">
           <div className="info-item d-flex flex-column align-items-center" data-aos="fade-up" data-aos-delay="200">
             <i className="bi bi-geo-alt"></i>
             <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Address</p>
-            <p >The Village Medical Centre, TulligMore, Ballinhassig, Cork, T12 D521</p>
+            <p className='p-contact-paragrapgh'>The Village Medical Centre, TulligMore, Ballinhassig, Cork, T12 D521</p>
           </div>
         </div>
 
@@ -100,7 +100,7 @@ The Village Medical Centre: Where Modern Medicine Meets Personalized Care
     </div>
   </div>
 </div>
-      </section>
+      </section> 
     </div>
   );
 }

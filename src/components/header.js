@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
               </ul>
               <i
-                className={`mobile-nav-toggle d-lg-none ${isMobileNavActive ? "bi-x" : "bi-list"}`}
+                className={`mobile-nav-toggle header-bar  d-lg-none ${isMobileNavActive ? "bi-x" : "bi-list"}`}
                 onClick={toggleMobileNav}
               ></i>
             </nav>

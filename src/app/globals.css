@@ -1557,6 +1557,9 @@ ul {
     padding-right: 2rem;
   
   }
+  .header-bar {
+    top: 0px !important;
+  }
   .footer-maintext{
         padding-left: 10px !important;
     max-width: 700px !important;
@@ -1643,6 +1646,9 @@ ul {
 .p-contact-paragrapgh{
   text-align: center;
 }
+  .header-bar {
+    top: 0px !important;
+  }
     .contact-village-map{
     padding-left: 1rem !important;
     padding-right: 1rem !important;
@@ -1769,6 +1775,9 @@ ul {
     content: "\f479";
     margin: auto;
 }
+  .header-bar {
+    top: 0px !important;
+  }
   .header {
     
     padding: 0px 0 !important;
@@ -1925,6 +1934,9 @@ ul {
     content: "\f479";
     margin: auto;
 }
+  .header-bar {
+    top: 0px !important;
+  }
  .village-contact{
     padding-right: 1rem !important;
     padding-left: 1rem !important;

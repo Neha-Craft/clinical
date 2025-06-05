@@ -13,6 +13,7 @@ import FeeListing from "@/components/fees"
 import IllnessForm from "@/components/illnessForm"
 import DoctorLetterForm from "@/components/doctorLetterForm"
 import TestResultsForm from "@/components/testResultsForm"
+import VaccinesPage from "@/components/vaccinesPage"
 
 export default function Home() {
   return (
@@ -28,7 +29,8 @@ export default function Home() {
 
       
              {/* <About/>   */}
-               <FeeListing/>        
+               <FeeListing/>    
+               {/* <VaccinesPage/>     */}
       
 
 

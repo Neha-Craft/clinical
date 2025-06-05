@@ -51,7 +51,7 @@ const Header = () => {
           </div>
         </div>
 
-        <div className="branding d-flex align-items-center" style={{ paddingTop: "10px" }}>
+        <div className="branding d-flex align-items-center hamburger-bar" style={{ paddingTop: "10px" }}>
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
               <Image src="/logo.png" alt="HealthCare+" width={60} height={60} style={{ objectFit: "contain" }} />

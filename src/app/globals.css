@@ -1624,6 +1624,9 @@ ul {
         top: 0px !important;
        
     }
+    .hamburger-bar{
+          top: 0px !important;
+    }
 }
 
 @media (min-width: 425px) and (max-width: 765px) {
@@ -1689,6 +1692,9 @@ ul {
       
          top: 0px !important; 
        
+    }
+       .hamburger-bar{
+          top: 0px !important;
     }
 .bi-list::before {
     padding-top: 8px !important;
@@ -1776,6 +1782,9 @@ ul {
         position: fixed;
        top: 0px !important; 
         right: 20px;
+    }
+       .hamburger-bar{
+          top: 0px !important;
     }
 .p-contact-paragrapgh{
   text-align: center;
@@ -2015,6 +2024,9 @@ ul {
       
        top: 0px !important; 
        
+    }
+       .hamburger-bar{
+          top: 0px !important;
     }
 }
 

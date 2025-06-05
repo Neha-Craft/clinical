@@ -25,13 +25,7 @@ export default function Contactus() {
         </div>
 
         <div className="mb-5 container" data-aos="fade-up" data-aos-delay="200">
-          {/* <iframe
-            style={{ border: 0, width: "100%", height: "370px" }}
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48389.78314118045!2d-74.006138!3d40.710059!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a22a3bda30d%3A0xb89d1fe6bc499443!2sDowntown%20Conference%20Center!5e0!3m2!1sen!2sus!4v1676961268712!5m2!1sen!2sus"
-            allowFullScreen
-            loading="lazy"
-            referrerPolicy="no-referrer-when-downgrade"
-          ></iframe> */}
+        
           <iframe 
            style={{ border: 0, width: "100%", height: "370px" }}
            className="contact-map"
@@ -82,16 +76,24 @@ export default function Contactus() {
                         fontWeight: 700,
                       }}>Call Us</p>
                     <div style={{ textAlign: "left" }}>
-                      <p style={{ textAlign: "center" }}>
-                        {" "}
-                        Medical Centre: 021-488 5706
-                      </p>
-                      <p style={{ textAlign: "center" }}>
-                        Kilmoney Clinic: 021-437 1974
-                      </p>
-                      <p style={{ textAlign: "center" }}>
-                        Greenwood Surgery: (021) 432 1790
-                      </p>
+                     <p style={{ textAlign: "center" }}>
+  <a href="tel:+0214885706" className="callus-contact">
+    Medical Centre: 021-488 5706
+  </a>
+</p>
+          <p style={{ textAlign: "center" }}>
+  <a href="tel:+0214371974" className="callus-contact">
+      Kilmoney Clinic: 021-437 1974
+  </a>
+</p>
+  <p style={{ textAlign: "center" }}>
+  <a href="tel:+0214321790" className="callus-contact">
+      Greenwood Surgery: (021) 432 1790
+  </a>
+</p>
+
+               
+                    
                     </div>
                   </div>
                 </div>
@@ -113,15 +115,26 @@ export default function Contactus() {
                       Email Us
                     </p>
                     <div style={{ textAlign: "left" }}>
-                      <p style={{ textAlign: "center" }}>
-                        Ballinhassig.clinic@tvmc.ie
-                      </p>
-                      <p style={{ textAlign: "center" }}>
-                        kilmoney.clinic@tvmc.ie
-                      </p>
-                      <p style={{ textAlign: "center" }}>
-                        greenwood.surgery@tvmc.ie
-                      </p>
+               <p>
+  <a href="mailto:ballinhassig.clinic@tvmc.ie" className="callus-contact">
+    ballinhassig.clinic@tvmc.ie
+  </a>
+</p>
+      <p>
+  <a href="mailto:kilmoney.clinic@tvmc.ie" className="callus-contact">
+   kilmoney.clinic@tvmc.ie
+  </a>
+</p>
+  <p>
+  <a href="mailto:greenwood.surgery@tvmc.ie" className="callus-contact">
+  greenwood.surgery@tvmc.ie
+  </a>
+</p>
+
+
+                  
+                    
+                
                     </div>
                   </div>
                 </div>

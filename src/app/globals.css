@@ -391,6 +391,10 @@ ul {
   color: #3fbbc0;
 }
 
+.callus-contact{
+  color:#444444 !important
+}
+
 .faq .faq-container .faq-item .faq-content {
   display: grid;
   grid-template-rows: 0fr;
@@ -1644,6 +1648,11 @@ ul {
     padding-right: 1rem !important;
     padding-left: 1rem !important;
   }
+  .header {
+    
+    padding: 0px 0 !important;
+   
+}
     .contact-content{
     padding-right: 1rem !important;
     padding-left: 1rem !important;
@@ -1754,6 +1763,20 @@ ul {
     content: "\f479";
     margin: auto;
 }
+  .header {
+    
+    padding: 0px 0 !important;
+   
+}
+    .mobile-nav-toggle.jsx-d569bae970c7b164 {
+        z-index: 10000;
+        cursor: pointer;
+        color: #333;
+        font-size: 24px;
+        position: fixed;
+        top: 0px !important;
+        right: 20px;
+    }
 .p-contact-paragrapgh{
   text-align: center;
   padding-left: 10px !important;
@@ -1984,28 +2007,7 @@ ul {
   }
 
 
-  /* .carousel-control-prev{
-    cursor: pointer;
-    position
-
-: absolute;
-    top: 61% !important;
-    left: 3px !important;
-    transform: translateY(-50%);
-    z-index: 2;
-  }
-  .carousel-control-next{
-    
-
-    cursor: pointer;
-    position: absolute;
-    top: 61% !important;
-    right: 3px !important;
-    transform: translateY(-50%);
-    z-index: 2;
-
-
-  } */
+ 
   .p-hero{
   font-size: 35px !important;
 }

@@ -54,7 +54,7 @@ function Services() {
                                 </div>
                                 <p className="services-head">{service.head}</p>
                                 <hr style={{ width: "40px", border: "1px solid #3fbbc0", margin: "0 auto 15px auto" }} />
-                                <p style={{ display: "flex", textAlign: "center", justifyContent: "center", margin: "auto" }}>
+                                <p style={{ display: "flex", textAlign: "center", justifyContent: "center", margin: "auto",maxWidth:"323px" }}>
                                     {service.text}
                                 </p>
                             </div>

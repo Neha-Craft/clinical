@@ -82,7 +82,7 @@ const Header = () => {
                 </li>
                   <li>
                   <Link href="/fees" className={pathname === "/fees" ? "active" : ""}>
-                    fees
+                    Fees
                   </Link>
                 </li>
                    <li>

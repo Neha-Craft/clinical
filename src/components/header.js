@@ -87,7 +87,7 @@ const Header = () => {
                 </li>
                    <li>
                   <Link href="/appointment" className={pathname === "/appointment" ? "active" : ""}>
-                    Illness Certificate Form
+                   Online Service
                   </Link>
                 </li>
               </ul>

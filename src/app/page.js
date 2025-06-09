@@ -35,9 +35,8 @@ export default function Home() {
 
            <Services/>     
   
-           <IllnessForm/>     
-         <DoctorLetterForm/> 
-       <TestResultsForm/>    
+     
+        
               <DoctorList/>   
            <Faqsection/>     
 

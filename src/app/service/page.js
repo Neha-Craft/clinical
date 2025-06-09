@@ -25,7 +25,7 @@ function ServicePage() {
             paddingTop:"5rem"
         }}>
             <div className="container section-title" data-aos="fade-up">
-                <h2>All Services</h2>
+                <h2>Expert Care Areas</h2>
                 <p>Explore the full range of services we offer to meet your healthcare needs</p>
             </div>
 

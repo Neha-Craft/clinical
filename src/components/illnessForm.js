@@ -8,14 +8,7 @@ export default function IllnessForm() {
           paddingTop:"2rem",
           paddingBottom:"1rem"
         }}>Illness Certificate Form</h2>
-        {/* <p 
-          style={{
-            paddingTop:"1rem",
-            paddingBottom:"2rem"
-          }}
-        >
-          Form
-        </p> */}
+      
       </div>
       <div className='container'>
         <div className="col-lg-12 form-illeness">

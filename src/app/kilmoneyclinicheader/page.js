@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
 
-const Header = () => {
+const Kilmoneyheader = () => {
   const pathname = usePathname();
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
@@ -13,26 +13,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
 
-  const clinicLocations = [
-    {
-      id: 1,
-      name: "The Village Medical Centre",
-      image: "/village.jpg?height=80&width=120",
-      link: "/village-medical-center/villagehome",
-    },
-    {
-      id: 2,
-      name: "Greenwood Surgery",
-      image: "/Greenwood.png?height=80&width=120",
-      link: "/greenwood-surgery",
-    },
-    {
-      id: 3,
-      name: "Kilmoney Clinic",
-      image: "/kelo.jpeg?height=80&width=120",
-      link: "/kilmoney-clinic/kilomoneyhome",
-    },
-  ];
+ 
 
   useEffect(() => {
     setHasMounted(true);
@@ -97,7 +78,7 @@ const Header = () => {
                 height={60}
                 style={{ objectFit: "contain" }}
               />
-              <h1 className="sitename ms-2">Tus Go Deireadh</h1>
+              <h1 className="sitename ms-2">kilmoney Clinic</h1>
             </Link>
 
             <nav
@@ -112,101 +93,39 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="dropdown">
-                  <a
-                    href="#"
-                    className={`dropdown-toggle ${
-                      pathname === "/village-medical-center" ||
-                      pathname === "/kilmoney-clinic" ||
-                      pathname === "/greenwood-surgery"
-                        ? "active"
-                        : ""
-                    }`}
-                    onClick={(e) => {
-                      e.preventDefault();
-                      toggleClinicDropdown();
-                    }}
+                   <li>
+               <Link
+                    href="kilmoney-clinic/our-team"
+                    className={pathname === "/kilmoney-clinic/our-team" ? "active" : ""}
                   >
-                    Find a Clinic
-                  </a>
-                  <div
-                    className={`clinic-dropdown-menu ${
-                      isClinicDropdownOpen ? "show" : ""
-                    }`}
-                  >
-                    <div className="dropdown-header">
-                      <p className="p-drop">
-                        Find the best practices for your treatment
-                      </p>
-                    </div>
-                    <div className="clinic-grid">
-                      {clinicLocations.map((location) => (
-                        <Link
-                          href={location.link}
-                          key={location.id}
-                          passHref
-                          legacyBehavior
-                        >
-                          <a
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="header-one"
-                          >
-                            <div
-                              className="card clinic-card"
-                              style={{
-                                display: "flex",
-                                width: "100%",
-                                flexWrap: "wrap",
-                              }}
-                            >
-                              <div style={{ display: "flex" }}>
-                                <div className="clinic-image">
-                                  <img
-                                    src={location.image || "/placeholder.svg"}
-                                    alt={location.name}
-                                    onError={(e) => {
-                                      console.log(
-                                        `Failed to load image: ${location.image}`
-                                      );
-                                      e.currentTarget.src = "/placeholder.svg";
-                                    }}
-                                  />
-                                </div>
-                                <div className="clinic-info">
-                                  <h4>{location.name}</h4>
-                                </div>
-                              </div>
-                            </div>
-                          </a>
-                        </Link>
-                      ))}
-
-                   
-                    </div>
-                  </div>
+                   Our Team
+                  </Link>
                 </li>
+          
                 <li>
                <Link
-                    href="/Find-a-service"
-                    className={pathname === "/Find-a-service" ? "active" : ""}
+                    href="/services"
+                    className={pathname === "/services" ? "active" : ""}
                   >
-                    Find a service
+                    Services
+                  
                   </Link>
                 </li>
-                        <li>
+                   <li>
                <Link
-                    href="/residential"
-                    className={pathname === "/residential" ? "active" : ""}
+                    href="/onlineServices"
+                    className={pathname === "/services" ? "active" : ""}
                   >
-                    Residential
+                    OnlineServices
+                  
                   </Link>
                 </li>
+                
            
                 <li>
                   <Link
-                    href="/contactus"
-                    className={pathname === "/contactus" ? "active" : ""}
+                    href="/kilmoney-clinic/contact-us"
+                    className={pathname === "/kilmoney-clinic/contact-us" ? "active" : ""}
                   >
                     Contact Us
                   </Link>
@@ -657,4 +576,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default Kilmoneyheader;

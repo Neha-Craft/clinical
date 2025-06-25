@@ -212,10 +212,10 @@ export default function Servicesection() {
                   >
                     <i className="fas fa-book-medical" style={{ fontSize: "2rem", color: "white" }}></i>
                   </div>
-                  <h4 className="fw-bold text-primary mb-3">
-                    <a href="#patient-resources" className="stretched-link text-decoration-none">
+                  <h4 className="fw-bold text-primary mb-3" style={{whiteSpace:"nowrap"}}>
+                     <a href="#patient-resources" className="stretched-link text-decoration-none"> 
                       Patient Resources
-                    </a>
+                     </a> 
                   </h4>
                 </div>
                 <ul className="service-list list-unstyled" style={{ fontSize: "0.9rem", lineHeight: "1.8" }}>

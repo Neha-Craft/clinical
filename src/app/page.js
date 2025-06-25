@@ -1,27 +1,20 @@
 import Header from "@/components/header"
 import Footer from "@/components/footer"
 
-import ClientOnlyWrapper from "@/components/clientOnlyWrapper"
-import About from "@/components/about"
+
 import Services from "@/components/services"
 import Contactus from "@/components/contactus"
 import HomePage from "@/components/home"
 import Faqsection from "@/components/faqsection"
 import DoctorList from "@/components/doctorList"
 import Servicesection from "@/components/servicesection"
-import FeeListing from "@/components/fees"
-import IllnessForm from "@/components/illnessForm"
-import DoctorLetterForm from "@/components/doctorLetterForm"
-import TestResultsForm from "@/components/testResultsForm"
-import VaccinesPage from "@/components/vaccinesPage"
+
 
 export default function Home() {
   return (
     <div>
-   {/* <ClientOnlyWrapper> */}
-       
 
-       {/* <main className="main">  */}
+              <Header/>
      
                    <HomePage/>    
                <Servicesection/>      
@@ -43,7 +36,7 @@ export default function Home() {
     
            <Contactus/>                     
       
-       {/* </main>  */}
+
 
    
 

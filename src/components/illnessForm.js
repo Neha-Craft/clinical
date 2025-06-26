@@ -187,7 +187,7 @@ export default function IllnessForm() {
                     type="submit"
                     style={{
                       color: "#fff",
-                      background: "#3fbbc0",
+                      background: "#1fb572",
                       borderWidth: "0px",
                       padding: "10px 30px",
                       transition: "0.4s",

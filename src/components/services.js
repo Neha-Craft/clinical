@@ -1,15 +1,13 @@
-"use client"
 
-import React from "react";
-import { useRouter } from 'next/navigation';
+"use client";
+
+import React, { useState } from "react";
 
 function Services() {
-    const router = useRouter();
+    const [showAll, setShowAll] = useState(false); // state to control See More
 
     const servicesList = [
         { icon: "fas fa-stethoscope", head: "General Medicine", text: "Comprehensive diagnosis and treatment for a wide range of general health concerns and common illnesses." },
-
-
         { icon: "fas fa-snowflake", head: "Cryotherapy", text: "Effective freezing treatments for warts, skin lesions, and other dermatological conditions using liquid nitrogen." },
         { icon: "fas fa-vials", head: "Venesection", text: "Safe blood withdrawal procedures for patients needing treatment for conditions such as hemochromatosis or polycythemia." },
         { icon: "fas fa-syringe", head: "Vaccines", text: "Routine immunizations for adults and children, travel vaccines, and seasonal flu shots to protect your health." },
@@ -24,37 +22,45 @@ function Services() {
         { icon: "fas fa-file-medical", head: "Medical Reports & Certificates", text: "Preparation of official medical documentation, including fitness certificates, sick notes, and insurance reports." },
     ];
 
-    const handleMore = () => {
-        router.push('/service');
-    };
+    const displayedServices = showAll ? servicesList : servicesList.slice(0, 6); // show 6 or all
 
     return (
-        <section id="services" className="services section" style={{
-            paddingTop:"2rem",
-            paddingBottom:"1rem"
-            
-        }}>
+        <section
+            id="services"
+            className="services section"
+            style={{ paddingTop: "2rem", paddingBottom: "1rem" }}
+        >
             <div className="container section-title" data-aos="fade-up">
-                <h2   style={{paddingBottom:"1rem"}}>Expert Care Areas</h2>
-                <p 
-                 style={{paddingTop:"1rem",
-          paddingBottom:"2rem"
-
-          }}
-                >We deliver expert, comprehensive care to meet our patients' diverse needs</p>
+                <h2 style={{ paddingBottom: "1rem" }}>Expert Care Areas</h2>
+                <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }}>
+                    We deliver expert, comprehensive care to meet our patients' diverse needs
+                </p>
             </div>
 
             <div className="container">
                 <div className="row gy-4">
-                    {servicesList.slice(0, 6).map((service, index) => (
-                        <div key={index} className="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay={`${100 * (index + 1)}`}>
+                    {displayedServices.map((service, index) => (
+                        <div
+                            key={index}
+                            className="col-lg-4 col-md-6"
+                            data-aos="fade-up"
+                            data-aos-delay={`${100 * (index + 1)}`}
+                        >
                             <div className="service-item position-relative">
                                 <div className="icon">
                                     <i className={service.icon}></i>
                                 </div>
                                 <p className="services-head">{service.head}</p>
                                 <hr style={{ width: "40px", border: "1px solid #3fbbc0", margin: "0 auto 15px auto" }} />
-                                <p style={{ display: "flex", textAlign: "center", justifyContent: "center", margin: "auto",maxWidth:"323px" }}>
+                                <p
+                                    style={{
+                                        display: "flex",
+                                        textAlign: "center",
+                                        justifyContent: "center",
+                                        margin: "auto",
+                                        maxWidth: "323px",
+                                    }}
+                                >
                                     {service.text}
                                 </p>
                             </div>
@@ -62,15 +68,19 @@ function Services() {
                     ))}
                 </div>
 
-                <p
-                    style={{ textAlign: "center", marginTop: "20px", color: "#65c9cd", cursor: "pointer" }}
-                    onClick={handleMore}
-                >
-                    See More <i className="fas fa-chevron-down"></i>
-                </p>
+
+                {!showAll && (
+                    <p
+                        style={{ textAlign: "center", marginTop: "20px", color: "#1fb572", cursor: "pointer" }}
+                        onClick={() => setShowAll(true)}
+                    >
+                        See More <i className="fas fa-chevron-down"></i>
+                    </p>
+                )}
             </div>
         </section>
     );
 }
 
 export default Services;
+

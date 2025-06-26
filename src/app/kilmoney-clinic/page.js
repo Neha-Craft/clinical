@@ -1,4 +1,4 @@
-import KilomoneyHome from '@/components/kilmoneyclinic/kilomoneyhero';
+import KilomoneyHome from '@/app/kilmoney-clinic/kilomoneyhome/page';
 import React from 'react';
 
 export default function Page() {

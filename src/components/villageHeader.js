@@ -59,7 +59,7 @@ const VillageHeader = () => {
             <div className="d-flex align-items-center head-phone gap-2">
               <i className="bi bi-telephone-fill me-1"></i>
               <a href="tel:+0214885706" style={{ color: "#fff" }}>
-                021-488 5706
+               021-437 1974
               </a>
             </div>
           </div>

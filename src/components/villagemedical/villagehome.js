@@ -73,7 +73,7 @@ export default function VillageHome() {
                 </p>
               ))}
 
-              <a
+              {/* <a
                 href={heroData.buttonHref}
                 className="btn-get-started"
                 style={{
@@ -87,7 +87,7 @@ export default function VillageHome() {
                 }}
               >
                 {heroData.buttonText}
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

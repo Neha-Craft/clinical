@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
@@ -12,6 +12,12 @@ const Kilmoneyheader = () => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
+  const sectionRef = useRef(null);
+  console.log(sectionRef)
+  //  const scrollToSection = () => {
+  //   sectionRef.current.scrollIntoView({ behavior: "smooth" }); 
+  // };
+
 
  
 
@@ -59,7 +65,7 @@ const Kilmoneyheader = () => {
             <div className="d-flex align-items-center head-phone gap-2">
               <i className="bi bi-telephone-fill me-1"></i>
               <a href="tel:+0214885706" style={{ color: "#fff" }}>
-                021-488 5706
+               021-437 1974
               </a>
             </div>
           </div>
@@ -89,7 +95,7 @@ const Kilmoneyheader = () => {
             >
               <ul>
                 <li>
-                  <Link href="/kilmoney-clinic" className={pathname === "/" ? "active" : ""}>
+                  <Link href="/kilmoney-clinic" className={pathname === "/kilmoney-clinic" ? "active" : ""}>
                     Home
                   </Link>
                 </li>
@@ -113,7 +119,9 @@ const Kilmoneyheader = () => {
                 </li>
                    <li>
                <Link
-                    href="/kilmoney-clinic/online-services"
+               ref={sectionRef}
+                    // href="/kilmoney-clinic/online-services"
+                    href='#'
                     className={pathname === "/services" ? "active" : ""}
                   >
                     OnlineServices

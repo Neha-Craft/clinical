@@ -74,7 +74,7 @@ export default function Home() {
               >
                 {heroData.text}
               </p>
-              <a
+              {/* <a
                 href={heroData.buttonHref}
                 className="btn-get-started"
                 style={{
@@ -88,7 +88,7 @@ export default function Home() {
                 }}
               >
                 {heroData.buttonText}
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

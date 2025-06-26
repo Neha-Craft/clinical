@@ -67,21 +67,7 @@ export default function GreenwoodSurgery() {
                 </p>
               ))}
 
-              <a
-                href={heroData.buttonHref}
-                className="btn-get-started"
-                style={{
-                  display: "inline-block",
-                  marginTop: "10px",
-                  padding: "10px 20px",
-                  backgroundColor: "#007bff",
-                  color: "#fff",
-                  borderRadius: "5px",
-                  textDecoration: "none",
-                }}
-              >
-                {heroData.buttonText}
-              </a>
+          
             </div>
           </div>
         </div>

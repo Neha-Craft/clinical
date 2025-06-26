@@ -1,5 +1,4 @@
 import React from 'react'
-
 export default function TestResultsForm() {
   return (
     <div>
@@ -204,13 +203,12 @@ export default function TestResultsForm() {
                     </label>
                   </div>
                 </div>
-
                 <div className="col-12 text-center">
                   <button
                     type="submit"
                     style={{
                       color: "#fff",
-                      background: "#3fbbc0",
+                      background: "#1fb572",
                       borderWidth: "0px",
                       padding: "10px 30px",
                       transition: "0.4s",
@@ -220,7 +218,6 @@ export default function TestResultsForm() {
                     Submit Request
                   </button>
                 </div>
-
                 <div className="col-12">
                   <p style={{ fontSize: '0.9rem', color: '#666', marginTop: '20px' }}>
                     By using this form, you send personal/sensitive information over the Internet. Read our privacy policy to learn how we manage your data. We strive to keep your information secure but cannot guarantee absolute privacy. If this concerns you, use another method to contact the practice.

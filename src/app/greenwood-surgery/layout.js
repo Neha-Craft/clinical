@@ -1,4 +1,4 @@
-"use client"
+
 import GreenHeader from "@/components/greenwoosurgery/greenheader";
 import VillageHeader from "@/components/villageHeader";
 

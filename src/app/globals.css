@@ -387,7 +387,7 @@ ul {
 }
 
 .faq .faq-container .faq-item:hover {
-  border-color: #3fbbc0;
+  border-color: #1fb572;
   box-shadow: 0 2px 10px rgba(63, 187, 192, 0.1);
 }
 
@@ -405,7 +405,7 @@ ul {
 }
 
 .faq .faq-container .faq-item h3:hover {
-  color: #3fbbc0;
+  color: #1fb572;
 }
 
 .callus-contact{

@@ -108,7 +108,7 @@ export default function ServicesSection() {
                 <div className="col-md-6 col-lg-3" key={index}>
                   <div
                     className="card h-100 border-0 shadow-sm text-center p-3"
-                    style={{ cursor: "pointer" }}
+                    style={{ cursor: "pointer" ,display:"flex", justifyContent:"space-between"}}
                     onClick={() => handleServiceClick(service)}
                   >
                     <div

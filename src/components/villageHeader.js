@@ -106,7 +106,12 @@ const VillageHeader = () => {
           
                 <li>
                <Link
-                    href="/services"
+                          href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollTo("featured-services");
+        }}
+                  
                     className={pathname === "/services" ? "active" : ""}
                   >
                     Services
@@ -115,11 +120,8 @@ const VillageHeader = () => {
                 </li>
                    <li>
                <Link
-                  href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollTo("featured-services");
-        }}
+       
+          href="/village-medical-center/online-services"
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/online-services" ? "active" : ""}
                   >

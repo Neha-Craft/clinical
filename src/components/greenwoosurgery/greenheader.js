@@ -108,7 +108,12 @@ const Kilmoneyheader = () => {
           
                 <li>
                <Link
-                    href="/services"
+                         href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollTo("featured-services");
+        }}
+                
                     className={pathname === "/services" ? "active" : ""}
                   >
                     Services
@@ -117,12 +122,9 @@ const Kilmoneyheader = () => {
                 </li>
                    <li>
                <Link
-                    href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollTo("featured-services");
-        }}
-                    className={pathname === "/services" ? "active" : ""}
+                  href="/greenwood-surgery/online-services"
+            
+                    className={pathname === "/greenwood-surgery/online-services" ? "active" : ""}
                   >
                     OnlineServices
                   

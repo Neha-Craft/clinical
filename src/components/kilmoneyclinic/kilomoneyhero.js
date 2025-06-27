@@ -18,7 +18,7 @@ export default function KilomoneyHome() {
 
   return (
     <div>
-      <section>
+      <section style={{marginBottom:"4rem"}}>
         <div style={{ position: "relative", maxWidth: "100%" }}>
           <div
             className="mainHometext"
@@ -71,7 +71,7 @@ export default function KilomoneyHome() {
                 </p>
               ))}
 
-              <a
+              {/* <a
                 href={heroData.buttonHref}
                 className="btn-get-started"
                 style={{
@@ -85,7 +85,7 @@ export default function KilomoneyHome() {
                 }}
               >
                 {heroData.buttonText}
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

@@ -567,7 +567,7 @@ const Kilmoneyheader = () => {
             z-index: 10000;
             font-size: 24px;
             cursor: pointer;
-            color: #333;
+            color: #000;
             transition: top 0.3s ease;
           }
 

@@ -456,7 +456,7 @@ ul {
 }
 
 .faq .faq-container .faq-active h3 {
-  color: #3fbbc0;
+  color: #1fb572;
 }
 
 .faq .faq-container .faq-active .faq-content {
@@ -1813,7 +1813,7 @@ ul {
     .mobile-nav-toggle.jsx-d569bae970c7b164 {
         z-index: 10000;
         cursor: pointer;
-        color: #333;
+        color: #000 !important;
         font-size: 24px;
         position: fixed;
        top: 0px !important; 

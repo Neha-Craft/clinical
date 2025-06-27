@@ -12,7 +12,7 @@ import Fees from "@/app/fees/page"
 export default function Home() {
   return (
     <div>
-      <Header />
+       <Header /> 
 
       <HomePage />
       <Servicesection />

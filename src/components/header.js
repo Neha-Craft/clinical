@@ -633,7 +633,7 @@ const Header = () => {
             z-index: 10000;
             font-size: 24px;
             cursor: pointer;
-            color: #333;
+            color: #FFF;
             transition: top 0.3s ease;
           }
 

@@ -4,6 +4,7 @@ import { useState, useEffect, useRef } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { useScroll } from "@/components/scrollContext";
 
 const Kilmoneyheader = () => {
   const pathname = usePathname();
@@ -14,6 +15,7 @@ const Kilmoneyheader = () => {
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
   const sectionRef = useRef(null);
   console.log(sectionRef)
+  const { scrollTo } = useScroll();
   //  const scrollToSection = () => {
   //   sectionRef.current.scrollIntoView({ behavior: "smooth" }); 
   // };
@@ -65,7 +67,7 @@ const Kilmoneyheader = () => {
             <div className="d-flex align-items-center head-phone gap-2">
               <i className="bi bi-telephone-fill me-1"></i>
               <a href="tel:+0214885706" style={{ color: "#fff" }}>
-               021-437 1974
+              021-437 1974s
               </a>
             </div>
           </div>
@@ -119,9 +121,14 @@ const Kilmoneyheader = () => {
                 </li>
                    <li>
                <Link
-               ref={sectionRef}
+                  href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollTo("featured-services");
+        }}
+              //  ref={sectionRef}
                     // href="/kilmoney-clinic/online-services"
-                    href='#'
+                    // href='#'
                     className={pathname === "/services" ? "active" : ""}
                   >
                     OnlineServices

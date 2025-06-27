@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { useScroll } from "@/components/scrollContext";
 
 const VillageHeader = () => {
   const pathname = usePathname();
@@ -12,6 +13,7 @@ const VillageHeader = () => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
+  const { scrollTo } = useScroll();
 
 
 
@@ -113,7 +115,12 @@ const VillageHeader = () => {
                 </li>
                    <li>
                <Link
-                    href="/village-medical-center/online-services"
+                  href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollTo("featured-services");
+        }}
+                    // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/online-services" ? "active" : ""}
                   >
                     OnlineServices

@@ -1,12 +1,15 @@
-"use client"
+
 import VillageHeader from "@/components/villageHeader";
+import { ScrollProvider } from "@/components/scrollContext";
 
 export default function SomeFolderLayout({ children }) {
   return (
     <section>
+       <ScrollProvider>
            <VillageHeader />
 
       {children}
+      </ScrollProvider>
     </section>
   )
 }
@@ -14,13 +17,3 @@ export default function SomeFolderLayout({ children }) {
 
 
 
-// export default function SomeFolderLayout({ children }) {
-//   return (
-//     <html lang="en">
-//       <body className="bg-white min-h-screen flex flex-col">
-//         <VillageHeader />
-//         <main className="flex-1 p-6">{children}</main>
-//       </body>
-//     </html>
-//   );
-// }

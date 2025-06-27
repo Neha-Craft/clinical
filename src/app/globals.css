@@ -1489,6 +1489,12 @@ ul {
 }
 
 @media (min-width: 1024px) and (max-width: 1439px) {
+  
+.header {
+
+    padding: 0px 0 !important;
+ 
+}
   .footer-menu{
     padding-right: 2rem;
     padding-left: 2rem;

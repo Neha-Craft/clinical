@@ -6,6 +6,7 @@ import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 import Image from "next/image";
+import { useScroll } from "@/components/scrollContext";
 
 const Kilmoneyheader = () => {
   const pathname = usePathname();
@@ -14,6 +15,7 @@ const Kilmoneyheader = () => {
   const [hasMounted, setHasMounted] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
+  const { scrollTo } = useScroll();
 
  
 
@@ -115,7 +117,11 @@ const Kilmoneyheader = () => {
                 </li>
                    <li>
                <Link
-                    href="/greenwood-surgery/online-services"
+                    href="#"
+        onClick={(e) => {
+          e.preventDefault();
+          scrollTo("featured-services");
+        }}
                     className={pathname === "/services" ? "active" : ""}
                   >
                     OnlineServices

@@ -1,14 +1,20 @@
+
+
+
 import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
+import ClientHeaderSwitcher from "@/components/ClientHeaderSwitcher";
 
 export const metadata = {
   title: "Tus Go Deireadh",
 };
 
 export default function RootLayout({ children }) {
+
+ 
   return (
     <html lang="en">
       <head>
@@ -47,6 +53,8 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/logo.png" />
       </head>
       <body style={{ fontFamily: "'Nunito', sans-serif" }}>
+        {/* < Header/> */}
+         <ClientHeaderSwitcher />
 
 
         {children}

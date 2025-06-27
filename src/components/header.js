@@ -17,19 +17,19 @@ const Header = () => {
     {
       id: 1,
       name: "The Village Medical Centre",
-      image: "/village.jpg?height=80&width=120",
+      image: "/village.jpg?height=80&width=80",
       link: "/village-medical-center/villagehome",
     },
     {
       id: 2,
       name: "Greenwood Surgery",
-      image: "/Greenwood.png?height=80&width=120",
+      image: "/Greenwood.png?height=80&width=80",
       link: "/greenwood-surgery",
     },
     {
       id: 3,
       name: "Kilmoney Clinic",
-      image: "/kelo.jpeg?height=80&width=120",
+      image: "/kelo.jpeg?height=80&width=80",
       link: "/kilmoney-clinic/kilomoneyhome",
     },
   ];
@@ -633,7 +633,7 @@ const Header = () => {
             z-index: 10000;
             font-size: 24px;
             cursor: pointer;
-            color: #FFF;
+            color: #000;
             transition: top 0.3s ease;
           }
 

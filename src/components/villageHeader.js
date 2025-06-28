@@ -72,7 +72,7 @@ const VillageHeader = () => {
           style={{ paddingTop: "10px" }}
         >
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
-            <Link href="/" className="logo d-flex align-items-center me-auto">
+            <Link href="/village-medical-center" className="logo d-flex align-items-center me-auto">
               <Image
                 src="/logo.png"
                 alt="HealthCare+"

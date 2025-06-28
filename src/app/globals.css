@@ -135,6 +135,9 @@ ul {
     opacity: .5;
     transition: opacity .15s ease;
 }
+.dropdown-header-image{
+  width: 83% !important;
+}
 .custom-thead {
   background-color: #3fbbc0 !important;
   color: white;

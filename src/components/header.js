@@ -163,6 +163,7 @@ const Header = () => {
                               <div style={{ display: "flex" }}>
                                 <div className="clinic-image">
                                   <img
+                                 className="dropdown-header-image"
                                     src={location.image || "/placeholder.svg"}
                                     alt={location.name}
                                     onError={(e) => {
@@ -174,7 +175,13 @@ const Header = () => {
                                   />
                                 </div>
                                 <div className="clinic-info">
-                                  <h4>{location.name}</h4>
+                                  <p style={{
+                                    color:"#000",
+                                    fontWeight:700,
+                                    margin:"auto",
+                                    textAlign:"center",
+                                    fontSize:"13px"
+                                  }}>{location.name}</p>
                                 </div>
                               </div>
                             </div>
@@ -310,7 +317,7 @@ const Header = () => {
           justify-content: space-between;
           align-items: center;
           margin-bottom: 30px;
-          padding-bottom: 20px;
+          padding-bottom: 12px;
           border-bottom: 1px solid rgba(0, 0, 0, 0.08);
         }
 
@@ -378,8 +385,8 @@ const Header = () => {
         .clinic-image {
           width: 120px;
           height: 100px;
-          min-width: 120px;
-          max-width: 120px;
+          min-width: 105px;
+          max-width: 107px;
           overflow: hidden;
           position: relative;
           background: #f8f9fa;

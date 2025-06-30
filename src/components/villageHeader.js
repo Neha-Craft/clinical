@@ -125,7 +125,7 @@ const VillageHeader = () => {
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/online-services" ? "active" : ""}
                   >
-                    OnlineServices
+                    Online Services
                   
                   </Link>
                 </li>

@@ -131,7 +131,7 @@ const Kilmoneyheader = () => {
                     // href='#'
                     className={pathname === "/kilmoney-clinic/online-services" ? "active" : ""}
                   >
-                    OnlineServices
+                    Online Services
                   
                   </Link>
                 </li>

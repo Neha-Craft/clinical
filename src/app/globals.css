@@ -1587,6 +1587,15 @@ ul {
     padding-right: 2rem;
   
   }
+      .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+
+
+
+
+
+  
   .header-bar {
     top: 0px !important;
   }
@@ -1660,6 +1669,17 @@ ul {
     .branding{
           top: 0px !important;
     }
+     .clinic-dropdown-menu.show.jsx-df75b6c1cdf6f4f {
+        max-height: 600px;
+        padding: 48px !important;
+    }
+  .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+        .navmenu.jsx-df75b6c1cdf6f4f ul.jsx-df75b6c1cdf6f4f li.jsx-df75b6c1cdf6f4f a.jsx-df75b6c1cdf6f4f {
+          text-align: center !important;
+    }
+
 }
 
 @media (min-width: 425px) and (max-width: 765px) {
@@ -1673,9 +1693,21 @@ ul {
     border-radius: 4px;
     transition: all .3s;
 }
+
 .p-contact-paragrapgh{
   text-align: center;
 }
+    .clinic-dropdown-menu.show.jsx-df75b6c1cdf6f4f {
+        max-height: 600px;
+        padding: 48px !important;
+    }
+  .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+        .navmenu.jsx-df75b6c1cdf6f4f ul.jsx-df75b6c1cdf6f4f li.jsx-df75b6c1cdf6f4f a.jsx-df75b6c1cdf6f4f {
+          text-align: center !important;
+    }
+
   .header-bar {
     top: 0px !important;
   }
@@ -1805,6 +1837,20 @@ ul {
     content: "\f479";
     margin: auto;
 }
+   .clinic-dropdown-menu.show.jsx-df75b6c1cdf6f4f {
+        max-height: 600px;
+        padding: 48px !important;
+    }
+  .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+        .navmenu.jsx-df75b6c1cdf6f4f ul.jsx-df75b6c1cdf6f4f li.jsx-df75b6c1cdf6f4f a.jsx-df75b6c1cdf6f4f {
+          text-align: center !important;
+    }
+  .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+
   .header-bar {
     top: 0px !important;
   }
@@ -1964,6 +2010,10 @@ ul {
     content: "\f479";
     margin: auto;
 }
+  .navmenu.jsx-7081b022ee6444f7 ul.jsx-7081b022ee6444f7 li.jsx-7081b022ee6444f7 a.jsx-7081b022ee6444f7 {
+     text-align: center !important;
+    }
+
   .header-bar {
     top: 0px !important;
   }

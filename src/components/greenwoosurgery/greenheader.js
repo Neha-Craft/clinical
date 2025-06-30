@@ -126,7 +126,7 @@ const Kilmoneyheader = () => {
             
                     className={pathname === "/greenwood-surgery/online-services" ? "active" : ""}
                   >
-                    OnlineServices
+                    Online Services
                   
                   </Link>
                 </li>

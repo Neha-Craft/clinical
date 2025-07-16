@@ -4,12 +4,11 @@ import React from "react";
 
 export default function KilomoneyHome() {
   const heroData = {
-    src: "/hero-carousel-1.jpg",
+    src: "/practice.avif",
     alt: "Kilmoney Clinic",
-    heading: "Kilmoney Clinic",
+    heading: "Welcome to Kilmoney Clinic",
     text: [
-      "Kilmoney Clinic is a modern, friendly practice in Carrigaline.",
-      "We offer a full range of GP services to public and private patients in the area.",
+     "Kilmoney Clinic is a modern, friendly practice in located in the heart of Carrigaline, Cork"
     
     ],
     buttonHref: "#about",

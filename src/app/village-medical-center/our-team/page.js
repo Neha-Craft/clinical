@@ -23,23 +23,23 @@ const doctors = [
   },
   {
     name: "Mary Bowen",
-    role: "Healthcare Professional",
+   
     color: "warning",
-    specialty: "Healthcare Support",
+    specialty: "Nurse",
     description: "Dedicated healthcare professional providing comprehensive patient care.",
   },
   {
     name: "Niamh Cowhig",
-    role: "Healthcare Professional",
+    // role: "Nurse",
     color: "secondary",
-    specialty: "Healthcare Support",
+    specialty: "Nurse",
     description: "Committed to delivering quality healthcare services to our community.",
   },
   {
     name: "Milena Stegnjaja",
-    role: "Healthcare Professional",
+    // role: "Healthcare Professional",
     color: "dark",
-    specialty: "Healthcare Support",
+    specialty: "Physician assistant",
     description: "Experienced healthcare professional focused on patient wellbeing.",
   },
 ]
@@ -58,7 +58,7 @@ export default function Ourteam() {
       <div className="container section-title" data-aos="fade-up">
         <h2 style={{ paddingBottom: "1rem" }}>Our Medical Team - Ballinhassig</h2>
         <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }} className="doctor-p">
-          Compassionate healthcare professionals dedicated to your wellbeing from beginning to end
+          Our team of dedicated healthcare professionals are here to look after your health, at every stage of life
         </p>
       </div>
 

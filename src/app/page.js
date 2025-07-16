@@ -7,7 +7,7 @@ import HomePage from "@/components/home";
 import Faqsection from "@/components/faqsection";
 import DoctorList from "@/components/doctorList";
 import Servicesection from "@/components/servicesection";
-import Fees from "@/app/fees/page"
+
 
 export default function Home() {
   return (
@@ -16,7 +16,7 @@ export default function Home() {
 
       <HomePage />
       <Servicesection />
-      <Fees/>
+  
 
       <Services />
 

@@ -18,9 +18,7 @@ export default function Page() {
                     <i className="bi bi-geo-alt"></i>
                     <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Address</p>
                     <p>
-                      Kilmoney Clinic,
-                      Lower Kilmoney,
-                      Carrigaline, Cork, P43 VY30
+                    The Village Medical Centre, Ballinhassig, Cork, T12 D521
                     </p>
                   </div>
                 </div>
@@ -31,7 +29,7 @@ export default function Page() {
                       <i className="bi bi-telephone"></i>
                     </a>
                     <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Call Us</p>
-                    <p>021-437 1974</p>
+                    <p>021-4885706</p>
                   </div>
                 </div>
 
@@ -41,7 +39,7 @@ export default function Page() {
                       <i className="bi bi-envelope"></i>
                     </a>
                     <p style={{ paddingTop: "10px", fontSize: "20px", fontWeight: 700 }}>Email Us</p>
-                    <p>kilmoney.clinic@tvmc.ie</p>
+                    <p>ballinhassig.clinic@tvmc.ie</p>
                   </div>
                 </div>
 

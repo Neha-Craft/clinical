@@ -11,14 +11,14 @@ const doctors = [
     name: "Jessica Moran",
     role: "Healthcare Professional",
     color: "success",
-    specialty: "Healthcare",
+    specialty: "Nurse",
     description: "Dedicated healthcare professional committed to providing quality patient care.",
   },
   {
     name: "Milena Stegnjaja",
     role: "Healthcare Professional",
     color: "warning",
-    specialty: "Healthcare",
+    specialty: "Physician Assistant",
     description: "Experienced healthcare professional focused on patient wellbeing and care.",
   },
 ]
@@ -34,9 +34,9 @@ export default function Ourteam() {
   return (
     <section className="py-5 bg-light" id="doctors">
       <div className="container section-title" data-aos="fade-up">
-        <h2 style={{ paddingBottom: "1rem" }}>Our Medical Team</h2>
+        <h2 style={{ paddingBottom: "1rem" }}>Our Medical Team-Greenwood Surgery</h2>
         <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }} className="doctor-p">
-          Compassionate healthcare professionals dedicated to your wellbeing from beginning to end
+        our team of dedicated healthcare professionals are here to look after your health, at every stage of life
         </p>
       </div>
 

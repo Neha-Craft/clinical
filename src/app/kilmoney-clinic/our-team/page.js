@@ -13,7 +13,7 @@ const doctors = [
   },
   {
     name: "Jessica Moran",
-    role: "Healthcare Professional",
+    role: "Nurse",
     color: "warning",
     specialty: "Kilmoney",
   },
@@ -32,7 +32,7 @@ export default function Ourteam() {
       <div className="container section-title" data-aos="fade-up">
         <h2 style={{ paddingBottom: "1rem" }}>Our Medical Team</h2>
         <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }} className="doctor-p">
-          Compassionate healthcare professionals dedicated to your wellbeing from beginning to end
+         our team of dedicated healthcare professionals are here to look after your health, at every stage of life
         </p>
       </div>
 

@@ -105,7 +105,7 @@ const VillageHeader = () => {
                 </li>
           
                 <li>
-               <Link
+               {/* <Link
                           href="#"
         onClick={(e) => {
           e.preventDefault();
@@ -113,6 +113,18 @@ const VillageHeader = () => {
         }}
                   
                     className={pathname === "/services" ? "active" : ""}
+                  >
+                    Services
+                  
+                  </Link> */}
+                </li>
+
+                   <li>
+               <Link
+       
+          href="/village-medical-center/services"
+                    // href="/village-medical-center/online-services"
+                    className={pathname === "/village-medical-center/services" ? "active" : ""}
                   >
                     Services
                   

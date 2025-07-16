@@ -4,12 +4,11 @@ import React from "react";
 
 export default function GreenwoodSurgery() {
   const heroData = {
-    src: "/hero-carousel-2.jpg",
+    src: "/doctor.webp",
     alt: "Greenwood Surgery",
-    heading: "Greenwood Surgery",
+    heading: "Welcome to Greenwood Surgery",
     text: [
-      "Greenwood Surgery is a modern practice located in Togher.",
-      "We provide general practice services to public and private patients across the local area.",
+    " Greenwood surgery is a modern, friendly practice in located in the heart of Togher, Cork"
 
     ],
     buttonHref: "#about",

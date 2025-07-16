@@ -4,7 +4,7 @@ import React from "react";
 
 export default function KilomoneyHome() {
   const heroData = {
-    src: "/practice.avif",
+    src: "/kilo-2.jpg",
     alt: "Kilmoney Clinic",
     heading: "Welcome to Kilmoney Clinic",
     text: [
@@ -30,7 +30,7 @@ export default function KilomoneyHome() {
               height: "500px",
             }}
           >
-            {/* Dark overlay */}
+         
             <div
               style={{
                 position: "absolute",
@@ -70,21 +70,7 @@ export default function KilomoneyHome() {
                 </p>
               ))}
 
-              {/* <a
-                href={heroData.buttonHref}
-                className="btn-get-started"
-                style={{
-                  display: "inline-block",
-                  marginTop: "10px",
-                  padding: "10px 20px",
-                  backgroundColor: "#007bff",
-                  color: "#fff",
-                  borderRadius: "5px",
-                  textDecoration: "none",
-                }}
-              >
-                {heroData.buttonText}
-              </a> */}
+           
             </div>
           </div>
         </div>

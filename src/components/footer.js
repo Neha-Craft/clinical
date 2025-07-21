@@ -89,8 +89,8 @@ export default function Footer() {
 
         <div className="copyright text-center mt-4">
           <p>
-            &copy; {new Date().getFullYear()} The Village Medical Centre. All rights reserved. <br />
-            Privacy policy | Terms of Use
+            &copy; {new Date().getFullYear()} The Village Medical Centre. All rights reserved.
+         
           </p>
         </div>
       </div>

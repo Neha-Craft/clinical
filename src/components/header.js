@@ -243,7 +243,7 @@ const Header = () => {
           left: -423px;
           background: #f8f9fa;
        
-           width: 50vw !important;
+           width: 49vw !important;
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
           border-radius: 20px;
           opacity: 0;

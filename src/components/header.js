@@ -434,6 +434,9 @@ const Header = () => {
           overflow: hidden;
           text-overflow: ellipsis;
         }
+          .navmenu.jsx-5f47cc1303df93fa ul.jsx-5f47cc1303df93fa {
+    width: 448px !important;
+}
 
         /* Desktop hover effect - only for screens larger than 1024px */
         @media (min-width: 1025px) {

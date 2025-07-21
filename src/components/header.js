@@ -310,7 +310,7 @@ const Header = () => {
         /* Enhanced Clinic Dropdown Styles - Matching Centric Health Design */
         .clinic-dropdown-menu {
           position: absolute;
-          top: 93px;
+          top: 86px;
           left: -260px;
           background: #f8f9fa;
        

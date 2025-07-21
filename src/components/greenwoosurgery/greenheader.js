@@ -76,7 +76,7 @@ const Kilmoneyheader = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/greenwood-surgery" className="logo d-flex align-items-center me-auto">
               <Image
-                src="/logo.png"
+                src="/logo.jpg"
                 alt="HealthCare+"
                 width={60}
                 height={60}

@@ -81,7 +81,7 @@ const Header = () => {
         <div className="branding d-flex align-items-center" style={{ paddingTop: "10px" }}>
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
-              <Image src="/logo.png" alt="HealthCare+" width={60} height={60} style={{ objectFit: "contain" }} />
+              <Image src="/logo.jpg" alt="HealthCare+" width={40} height={40} style={{ objectFit: "contain" }} />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>
 
@@ -242,7 +242,7 @@ const Header = () => {
           top: 71px;
           left: -423px;
           background: #f8f9fa;
-          max-width: 90vw;
+          max-width: 90vw !important;
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
           border-radius: 20px;
           opacity: 0;

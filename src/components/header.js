@@ -772,6 +772,11 @@ const Header = () => {
             cursor: pointer;
             color: #000;
             transition: top 0.3s ease;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
           }
           .header-bar.top-closed {
             top: 0px !important;
@@ -793,8 +798,6 @@ const Header = () => {
 }
 
 export default Header
-
-
 
 // "use client"
 

@@ -311,7 +311,7 @@ const Header = () => {
         .clinic-dropdown-menu {
           position: absolute;
           top: 93px;
-          left: -423px;
+          left: -304px;
           background: #f8f9fa;
        
            width: 49vw !important;

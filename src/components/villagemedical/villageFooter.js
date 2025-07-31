@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export default function Footer() {
+export default function VillageFooter() {
   return (
     <footer id="footer" className="footer">
       <div className="container overflow-hidden">

@@ -20,8 +20,8 @@ export default function Home() {
 
       <Services />
 
-      <DoctorList />
-      <Faqsection />
+      {/* <DoctorList />
+      <Faqsection /> */}
 
       <Contactus />
           <Footer/>

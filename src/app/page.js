@@ -12,10 +12,10 @@ import Servicesection from "@/components/servicesection";
 export default function Home() {
   return (
     <div>
-       <Header /> 
+        <Header /> 
 
-      <HomePage />
-      <Servicesection />
+      <HomePage /> 
+       <Servicesection /> 
   
 
       <Services />
@@ -24,6 +24,7 @@ export default function Home() {
       <Faqsection />
 
       <Contactus />
+          <Footer/>
     </div>
   );
 }

@@ -15,7 +15,7 @@ function Services() {
         { icon: "fas fa-child", head: "Children's Health", text: "Comprehensive pediatric care, covering routine check-ups, immunizations, and developmental assessments." },
         { icon: "fas fa-female", head: "Women's Health", text: "Wide-ranging services for women, including reproductive health, contraception advice, and breast health checks." },
         { icon: "fas fa-hotjar", head: "Menopause", text: "Support and management for women navigating menopause, addressing symptoms and long-term health planning." },
-        { icon: "fas fa-heartbeat", head: "Extended Health Check", text: "Comprehensive health assessments, including physical exams, ECGs, lung function, and blood tests, at an affordable cost." },
+      
         { icon: "fas fa-baby", head: "Pregnancy Care", text: "Prenatal and postnatal care to ensure the well-being of both mother and baby throughout pregnancy and delivery." },
         { icon: "fas fa-notes-medical", head: "Chronic Disease Management", text: "Coordinated care plans for long-term conditions like diabetes, hypertension, and asthma, ensuring ongoing health support." },
         { icon: "fas fa-procedures", head: "Palliative Care", text: "Compassionate care for patients with serious illness, focusing on comfort, quality of life, and family support." },

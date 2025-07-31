@@ -4,10 +4,10 @@ import React from "react";
 
 export default function Home() {
   const heroData = {
-    src: "/hero-carousel-1.jpg",
+    src: "/Tusgo.jpg",
     alt: "Tus Go Deireadh Medical Centre",
-    heading: "Welcome to Tus Go Deireadh",
-    text: "Compassionate healthcare for every stage of life, from infancy to senior years. Serving Ballinhassig, Carrigaline, and Togher with expert GP services.",
+    heading: "Tus go Deireadh",
+    text: "Looking after your health, at every stage of life",
     buttonHref: "#about",
     buttonText: "About Our Clinics",
   };

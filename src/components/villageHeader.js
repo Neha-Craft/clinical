@@ -54,15 +54,15 @@ const VillageHeader = () => {
       >
         <div className="topbar d-flex align-items-center">
           <div className="container d-flex ps-3 justify-content-md-between header-item">
-            <div className="d-none d-md-flex align-items-center time-head">
+            {/* <div className="d-none d-md-flex align-items-center time-head">
               <i className="bi bi-clock me-1"></i> Monday - Saturday, 8AM to
               10PM
-            </div>
+            </div> */}
             <div className="d-flex align-items-center head-phone gap-2">
-              <i className="bi bi-telephone-fill me-1"></i>
-              <a href="tel:+0214885706" style={{ color: "#fff" }}>
+              {/* <i className="bi bi-telephone-fill me-1"></i> */}
+              {/* <a href="tel:+0214885706" style={{ color: "#fff" }}>
                021-437 1974
-              </a>
+              </a> */}
             </div>
           </div>
         </div>

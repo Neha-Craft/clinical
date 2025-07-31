@@ -5,7 +5,7 @@ import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "@/components/header";
-import Footer from "@/components/footer";
+
 import ClientHeaderSwitcher from "@/components/ClientHeaderSwitcher";
 
 export const metadata = {
@@ -59,7 +59,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-        <Footer />
+    
 
         {/* Scroll Top */}
         <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center">

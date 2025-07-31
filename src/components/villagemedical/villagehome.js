@@ -4,7 +4,7 @@ import React from "react";
 
 export default function VillageHome() {
   const heroData = {
-    src: "/hero-carousel-1.jpg",
+    src: "/practices.jpg",
     alt: "Village Medical Centre",
     heading: "Welcome to The Village Medical Centre",
     text: [

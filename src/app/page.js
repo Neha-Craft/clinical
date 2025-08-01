@@ -18,7 +18,7 @@ export default function Home() {
        <Servicesection /> 
   
 
-      <Services />
+      {/* <Services /> */}
 
       {/* <DoctorList />
       <Faqsection /> */}

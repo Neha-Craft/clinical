@@ -31,9 +31,9 @@ function Services() {
             style={{ paddingTop: "2rem", paddingBottom: "1rem" }}
         >
             <div className="container section-title" data-aos="fade-up">
-                <h2 style={{ paddingBottom: "1rem" }}>Expert Care Areas</h2>
+                <h2 style={{ paddingBottom: "1rem",}}>our services</h2>
                 <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }}>
-                    We deliver expert, comprehensive care to meet our patients' diverse needs
+
                 </p>
             </div>
 

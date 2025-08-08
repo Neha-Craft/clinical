@@ -138,7 +138,7 @@ const Header = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="HealthCare+"
                 width={40}
                 height={40}

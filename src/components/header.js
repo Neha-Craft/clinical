@@ -88,9 +88,9 @@ const Header = () => {
             <Link href="/" className="logo d-flex align-items-center me-auto">
               <img
                 src="/logo.png"
-                alt="HealthCare+"
+                // alt="HealthCare+"
          
-                style={{ objectFit: "contain" ,width:"60px", height:"60px" }}
+                style={{ objectFit: "contain" ,width:"60px !important", height:"60px !important" }}
               />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>

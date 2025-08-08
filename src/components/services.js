@@ -22,7 +22,7 @@ function Services() {
         { icon: "fas fa-file-medical", head: "Medical Reports & Certificates", text: "Preparation of official medical documentation, including fitness certificates, sick notes, and insurance reports." },
     ];
 
-    const displayedServices = showAll ? servicesList : servicesList.slice(0, 6); // show 6 or all
+    const displayedServices = showAll ? servicesList : servicesList.slice(0, 6); 
 
     return (
         <section
@@ -31,7 +31,7 @@ function Services() {
             style={{ paddingTop: "2rem", paddingBottom: "1rem" }}
         >
             <div className="container section-title" data-aos="fade-up">
-                <h2 style={{ paddingBottom: "1rem",}}>our services</h2>
+                <h2 style={{ paddingBottom: "1rem",}}>Our Services</h2>
                 <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }}>
 
                 </p>

@@ -21,7 +21,7 @@ export default function KilmoneyFooter() {
                   <strong>Email:</strong>{" "}
                   <span className="d-inline-block">
                     {/* <a href="mailto:ballinhassig.clinic@tvmc.ie">Ballinhassig</a>{" "} */}
-                    <a href="mailto:kilmoney.clinic@tvmc.ie">Kilmoney</a>{" "}
+                    <a href="mailto:kilmoney.clinic@tvmc.ie">kilmoney.clinic@tvmc.ie</a>{" "}
                     {/* <a href="mailto:greenwood.surgery@tvmc.ie">Greenwood</a> */}
                   </span>
                 </p>
@@ -32,7 +32,7 @@ export default function KilmoneyFooter() {
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li>FAQ's</li>
+                {/* <li>FAQ's</li> */}
                 <li>Test Results</li>
                 <li>Appointment Scheduling</li>
                 <li>Patient Resources</li>

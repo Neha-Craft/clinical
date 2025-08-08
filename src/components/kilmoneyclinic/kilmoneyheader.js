@@ -58,20 +58,14 @@ const Kilmoneyheader = () => {
           hasMounted && isScrolled ? "scrolled" : ""
         }`}
       >
-        <div className="topbar d-flex align-items-center">
+        {/* <div className="topbar d-flex align-items-center">
           <div className="container d-flex ps-3 justify-content-md-between header-item">
-            {/* <div className="d-none d-md-flex align-items-center time-head">
-              <i className="bi bi-clock me-1"></i> Monday - Saturday, 8AM to
-              10PM
-            </div> */}
+         
             <div className="d-flex align-items-center head-phone gap-2">
-              {/* <i className="bi bi-telephone-fill me-1"></i>
-              <a href="tel:+0214885706" style={{ color: "#fff" }}>
-              021-437 1974
-              </a> */}
+          
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div
           className="branding d-flex align-items-center"
@@ -110,19 +104,7 @@ const Kilmoneyheader = () => {
                   </Link>
                 </li>
           
-                {/* <li>
-               <Link
-                       href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollTo("featured-services");
-        }}
-                    className={pathname === "/services" ? "active" : ""}
-                  >
-                    Services
-                  
-                  </Link>
-                </li> */}
+              
                    <li>
                <Link
             

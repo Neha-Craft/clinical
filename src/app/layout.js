@@ -50,7 +50,7 @@ export default function RootLayout({ children }) {
           rel="stylesheet"
         />
         
-        <link rel="icon" href="/logo.png" />
+        <link rel="icon" href="/logo.jpg" />
       </head>
       <body style={{ fontFamily: "'Nunito', sans-serif" }}>
         {/* < Header/> */}

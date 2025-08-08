@@ -21,7 +21,7 @@ export default function GreenFooter() {
                   <strong>Email:</strong>{" "}
                   <span className="d-inline-block">
              
-                     <a href="mailto:greenwood.surgery@tvmc.ie">Greenwood</a> 
+                     <a href="mailto:greenwood.surgery@tvmc.ie">greenwood.surgery@tvmc.ie</a> 
                   </span>
                 </p>
               </div>
@@ -31,7 +31,7 @@ export default function GreenFooter() {
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                <li>FAQ's</li>
+                {/* <li>FAQ's</li> */}
                 <li>Test Results</li>
                 <li>Appointment Scheduling</li>
                 <li>Patient Resources</li>

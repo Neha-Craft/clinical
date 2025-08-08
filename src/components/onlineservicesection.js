@@ -108,7 +108,7 @@ export default function ServicesSection() {
       <section className="py-5 bg-light">
         <div className="container">
           <div className="text-center mb-5">
-            <h2 className="display-4 fw-bold text-dark mb-4">Our Online Services</h2>
+            <p style={{fontSize:"32px",fontWeight:"bold"}}>Our Online Services</p>
             <p className="lead text-muted mx-auto" style={{ maxWidth: "800px" }}>
               Access all your healthcare needs conveniently online.
             </p>

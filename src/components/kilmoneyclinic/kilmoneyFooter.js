@@ -20,19 +20,19 @@ export default function KilmoneyFooter() {
                 <p>
                   <strong>Email:</strong>{" "}
                   <span className="d-inline-block">
-                    {/* <a href="mailto:ballinhassig.clinic@tvmc.ie">Ballinhassig</a>{" "} */}
+     
                     <a href="mailto:kilmoney.clinic@tvmc.ie">kilmoney.clinic@tvmc.ie</a>{" "}
-                    {/* <a href="mailto:greenwood.surgery@tvmc.ie">Greenwood</a> */}
+               
                   </span>
                 </p>
               </div>
             </div>
 
-            {/* Useful Links */}
+        
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
-                {/* <li>FAQ's</li> */}
+           
                 <li>Test Results</li>
                 <li>Appointment Scheduling</li>
                 <li>Patient Resources</li>
@@ -40,7 +40,7 @@ export default function KilmoneyFooter() {
               </ul>
             </div>
 
-            {/* Opening Hours */}
+      
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Opening Hours</h4>
               <ul>
@@ -53,7 +53,7 @@ export default function KilmoneyFooter() {
           </div>
         </div>
 
-        {/* Copyright */}
+ 
         <div className="copyright text-center mt-4">
           <p>
             &copy; {new Date().getFullYear()} The Village Medical Centre. All rights reserved.

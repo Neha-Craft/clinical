@@ -58,14 +58,7 @@ const Kilmoneyheader = () => {
           hasMounted && isScrolled ? "scrolled" : ""
         }`}
       >
-        {/* <div className="topbar d-flex align-items-center">
-          <div className="container d-flex ps-3 justify-content-md-between header-item">
-         
-            <div className="d-flex align-items-center head-phone gap-2">
-          
-            </div>
-          </div>
-        </div> */}
+      
 
         <div
           className="branding d-flex align-items-center"
@@ -74,7 +67,7 @@ const Kilmoneyheader = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/kilmoney-clinic" className="logo d-flex align-items-center me-auto">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="HealthCare+"
                 width={60}
                 height={60}

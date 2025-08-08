@@ -54,15 +54,7 @@ const Kilmoneyheader = () => {
           hasMounted && isScrolled ? "scrolled" : ""
         }`}
       >
-        {/* <div className="topbar d-flex align-items-center">
-          <div className="container d-flex ps-3 justify-content-md-between header-item">
-            <div className="d-none d-md-flex align-items-center time-head">
-         
-            </div>
-         
-          </div>
-        </div> */}
-
+   
         <div
           className="branding d-flex align-items-center"
           style={{ paddingTop: "10px" }}
@@ -70,7 +62,7 @@ const Kilmoneyheader = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/greenwood-surgery" className="logo d-flex align-items-center me-auto">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="HealthCare+"
                 width={60}
                 height={60}
@@ -100,20 +92,7 @@ const Kilmoneyheader = () => {
                   </Link>
                 </li>
           
-                {/* <li>
-               <Link
-                         href="#"
-        onClick={(e) => {
-          e.preventDefault();
-          scrollTo("featured-services");
-        }}
-                
-                    className={pathname === "/services" ? "active" : ""}
-                  >
-                    Services
-                  
-                  </Link>
-                </li> */}
+               
                     <li>
                <Link
                   href="/greenwood-surgery/services"

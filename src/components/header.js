@@ -594,85 +594,185 @@ const Header = () => {
             display: block;
           }
 
-          /* Mobile clinic dropdown styles */
+          /* IMPROVED MOBILE CLINIC DROPDOWN - 768px and below */
           .clinic-dropdown-menu {
             position: static;
             box-shadow: none;
-            background: #f8f9fa;
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
             backdrop-filter: none;
             -webkit-backdrop-filter: none;
             margin-left: 0px;
-            margin-top: 10px;
-            border-radius: 12px;
+            margin-top: 15px;
+            border-radius: 16px;
             opacity: 1;
             visibility: visible;
             transform: none;
-            transition: max-height 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
             max-height: 0;
             width: calc(100% - 40px);
             padding: 0;
-            border: none;
+            border: 2px solid rgba(74, 144, 226, 0.1);
             overflow: hidden;
           }
           .clinic-dropdown-menu.show {
-            max-height: 600px;
+            max-height: 800px;
+            padding: 20px;
+          }
+          
+          /* Enhanced dropdown header for mobile */
+          .dropdown-header {
+            margin-bottom: 20px;
+            padding-bottom: 15px;
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 8px;
+            border-bottom: 2px solid rgba(74, 144, 226, 0.1);
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.05), rgba(255, 255, 255, 0.8));
+            border-radius: 12px;
             padding: 15px;
+            margin: -20px -20px 20px -20px;
           }
-          .clinic-grid {
-            grid-template-columns: 1fr;
-            gap: 12px;
-          }
-          .clinic-card {
-            height: 80px;
-            min-height: 80px;
-            max-height: 80px;
-            background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            display: flex;
-            flex-direction: row;
-            border-radius: 8px;
-            padding: 0;
+          .dropdown-header .p-drop {
+            font-size: 14px;
+            color: #4a5568;
+            margin: 0;
+            font-weight: 500;
+            text-align: center;
             width: 100%;
           }
-          .clinic-image {
-            width: 80px;
-            height: 80px;
-            min-width: 80px;
-            max-width: 80px;
-            flex-shrink: 0;
-            border-radius: 8px 0 0 8px;
+          
+          /* Beautiful mobile clinic grid */
+          .clinic-grid {
+            grid-template-columns: 1fr;
+            gap: 16px;
           }
+          
+          /* Enhanced mobile clinic cards */
+          .clinic-card {
+            height: 100px;
+            min-height: 100px;
+            max-height: 100px;
+            background: linear-gradient(145deg, #ffffff, #f8f9fa);
+            box-shadow: 0 8px 32px rgba(74, 144, 226, 0.12), 0 2px 8px rgba(0, 0, 0, 0.08);
+            display: flex;
+            flex-direction: row;
+            border-radius: 16px;
+            padding: 0;
+            width: 100%;
+            border: 2px solid rgba(74, 144, 226, 0.08);
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .clinic-card:hover {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 40px rgba(74, 144, 226, 0.2), 0 4px 12px rgba(0, 0, 0, 0.12);
+            border-color: rgba(74, 144, 226, 0.2);
+          }
+          
+          .clinic-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            background: linear-gradient(90deg, #4a90e2, #74b9ff);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+          
+          .clinic-card:hover::before {
+            opacity: 1;
+          }
+          
+          /* Enhanced mobile clinic images */
+          .clinic-image {
+            width: 100px;
+            height: 100px;
+            min-width: 100px;
+            max-width: 100px;
+            flex-shrink: 0;
+            border-radius: 16px 0 0 16px;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .clinic-image::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(135deg, rgba(74, 144, 226, 0.1), transparent);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+          
+          .clinic-card:hover .clinic-image::after {
+            opacity: 1;
+          }
+          
+          .clinic-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          }
+          
+          .clinic-card:hover .clinic-image img {
+            transform: scale(1.1);
+            filter: brightness(1.1);
+          }
+          
+          /* Enhanced mobile clinic info */
           .clinic-info {
-            padding: 15px;
+            padding: 20px;
             height: auto;
             flex: 1;
             justify-content: center;
-            min-height: 80px;
-            max-height: 80px;
+            min-height: 100px;
+            max-height: 100px;
             display: flex;
             align-items: center;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.9));
+            position: relative;
           }
+          
+          .clinic-info::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 20%;
+            bottom: 20%;
+            width: 3px;
+            background: linear-gradient(180deg, #4a90e2, #74b9ff);
+            border-radius: 2px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+          }
+          
+          .clinic-card:hover .clinic-info::before {
+            opacity: 1;
+          }
+          
           .clinic-info p {
-            font-size: 12px !important;
+            font-size: 14px !important;
             font-weight: 600 !important;
-            color: #333 !important;
+            color: #2d3748 !important;
             margin: 0 !important;
             text-align: left !important;
-            line-height: 1.3;
+            line-height: 1.4;
+            letter-spacing: 0.3px;
+            transition: color 0.3s ease;
           }
-          .dropdown-header {
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 5px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-          .dropdown-header .p-drop {
-            font-size: 13px;
-            color: #666;
-            margin: 0;
-            font-weight: 500;
+          
+          .clinic-card:hover .clinic-info p {
+            color: #4a90e2 !important;
           }
         }
 
@@ -728,44 +828,44 @@ const Header = () => {
           }
           
           .clinic-dropdown-menu.show {
-            padding: 12px;
+            padding: 15px;
           }
           
           .clinic-grid {
-            gap: 10px;
+            gap: 12px;
           }
           
           .clinic-card {
-            height: 70px;
-            min-height: 70px;
-            max-height: 70px;
+            height: 90px;
+            min-height: 90px;
+            max-height: 90px;
           }
           
           .clinic-image {
-            width: 70px;
-            height: 70px;
-            min-width: 70px;
-            max-width: 70px;
+            width: 90px;
+            height: 90px;
+            min-width: 90px;
+            max-width: 90px;
           }
           
           .clinic-info {
-            padding: 10px;
-            min-height: 70px;
-            max-height: 70px;
+            padding: 15px;
+            min-height: 90px;
+            max-height: 90px;
           }
           
           .clinic-info p {
-            font-size: 11px !important;
-            line-height: 1.2;
+            font-size: 12px !important;
+            line-height: 1.3;
           }
           
           .dropdown-header {
-            margin-bottom: 12px;
-            padding-bottom: 8px;
+            margin-bottom: 15px;
+            padding: 12px;
           }
           
           .dropdown-header .p-drop {
-            font-size: 12px;
+            font-size: 13px;
           }
         }
 

@@ -127,6 +127,17 @@ const Header = () => {
   return (
     <>
       <header id="header" className={`header sticky-top ${isScrolled ? "scrolled" : ""}`}>
+        {/* <div className="topbar d-flex align-items-center">
+          <div className="container d-flex ps-3 justify-content-md-between header-item">
+            <div className="d-none d-md-flex align-items-center time-head">
+
+            </div>
+            <div className="d-flex align-items-center head-phone gap-2">
+         
+            </div>
+          </div>
+        </div> */}
+
         <div className="branding d-flex align-items-center" style={{ paddingTop: "10px",paddingBottom:"10px" }}>
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
@@ -223,29 +234,12 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-              
-              {/* Fixed hamburger menu button with explicit icons */}
-              <div
+              <i
                 className={`mobile-nav-toggle header-bar d-lg-none ${
-                  isMobileNavActive ? "mobile-nav-close" : "mobile-nav-open"
+                  isMobileNavActive ? "bi-x top-open" : "bi-list top-closed"
                 }`}
                 onClick={toggleMobileNav}
-              >
-                {isMobileNavActive ? (
-                  // Close icon (X)
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M18 6L6 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M6 6L18 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                ) : (
-                  // Hamburger icon (three lines)
-                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M3 12H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M3 6H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                    <path d="M3 18H21" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
-                  </svg>
-                )}
-              </div>
+              ></i>
             </nav>
           </div>
         </div>
@@ -647,6 +641,7 @@ const Header = () => {
             margin: 0;
             font-weight: 500;
           }
+        }
 
           /* Mobile dropdown styles */
           .dropdown-menu {
@@ -669,43 +664,20 @@ const Header = () => {
             padding: 8px 15px;
             font-size: 14px;
           }
-
-          /* Fixed mobile nav toggle styles */
           .mobile-nav-toggle {
             position: fixed;
             right: 20px;
-            top: 15px;
             z-index: 10000;
+            font-size: 24px;
             cursor: pointer;
-            color: #333;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-         
-            border-radius: 4px;
-        
-            transition: all 0.3s ease;
+            color: #000;
+            transition: top 0.3s ease;
           }
-          
-          .mobile-nav-toggle:hover {
-            background: rgba(255, 255, 255, 1);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+          .header-bar.top-closed {
+            top: 0px !important;
           }
-          
-          .mobile-nav-toggle svg {
-            width: 20px;
-            height: 20px;
-            transition: all 0.3s ease;
-          }
-          
-          .mobile-nav-open.header-bar {
-            top: 15px !important;
-          }
-          
-          .mobile-nav-close.header-bar {
-            top: 15px !important;
+          .header-bar.top-open {
+            top: 20px !important;
           }
         }
 
@@ -762,24 +734,55 @@ const Header = () => {
           .dropdown-header .p-drop {
             font-size: 12px;
           }
-          
-          .mobile-nav-toggle {
-            right: 15px;
-            top: 12px;
-            width: 28px;
-            height: 28px;
+        }
+
+          /* Mobile dropdown styles */
+          .dropdown-menu {
+            position: static;
+            box-shadow: none;
+            background: #f8f9fa;
+            margin-left: 20px;
+            margin-top: 10px;
+            border-radius: 0;
+            opacity: 1;
+            visibility: visible;
+            transform: none;
+            transition: max-height 0.3s ease;
+            max-height: 0;
           }
-          
-          .mobile-nav-toggle svg {
-            width: 18px;
-            height: 18px;
+          .dropdown-menu.show {
+            max-height: 300px;
+          }
+          .dropdown-menu li a {
+            padding: 8px 15px;
+            font-size: 14px;
+          }
+          .mobile-nav-toggle {
+            position: fixed;
+            right: 20px;
+            z-index: 10000;
+            font-size: 24px;
+            cursor: pointer;
+            color: #000;
+            transition: top 0.3s ease;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
+          .header-bar.top-closed {
+            top: 0px !important;
+          }
+          .header-bar.top-open {
+            top: 20px !important;
           }
         }
 
         /* Desktop */
         @media (min-width: 992px) {
           .mobile-nav-toggle {
-            display: none !important;
+            display: none;
           }
         }
       `}</style>
@@ -788,3 +791,4 @@ const Header = () => {
 }
 
 export default Header
+

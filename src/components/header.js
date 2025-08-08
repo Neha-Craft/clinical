@@ -302,14 +302,13 @@ const Header = () => {
           color: #007bff;
         }
 
-        /* Enhanced Clinic Dropdown Styles - Matching Centric Health Design */
+        /* Enhanced Clinic Dropdown Styles - For Desktop (769px and above) */
         .clinic-dropdown-menu {
           position: absolute;
           top: 86px;
           left: -260px;
           background: #f8f9fa;
-       
-           width: 49vw !important;
+          width: 49vw !important;
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
           border-radius: 20px;
           opacity: 0;
@@ -430,12 +429,12 @@ const Header = () => {
           text-overflow: ellipsis;
         }
   
-       .navmenu ul {
-              width: 448px !important;
-          }
+        .navmenu ul {
+          width: 448px !important;
+        }
 
-        /* Desktop hover effect - only for screens larger than 1024px */
-        @media (min-width: 1025px) {
+        /* Desktop hover effect - only for screens larger than 768px */
+        @media (min-width: 769px) {
           .dropdown:hover .dropdown-menu {
             opacity: 1;
             visibility: visible;
@@ -448,26 +447,20 @@ const Header = () => {
           }
         }
 
-        /* Responsive adjustments for tablets (1024px and below) */
-        @media (max-width: 1200px) {
+        /* Responsive adjustments for larger screens */
+        @media (max-width: 1200px) and (min-width: 769px) {
           .clinic-dropdown-menu {
             width: 550px;
             left: -200px;
           }
         }
 
-        /* Tablet-specific fixes for 1024px and below */
-        @media (max-width: 1024px) {
+        /* Tablet-specific fixes for screens 769px to 1024px */
+        @media (max-width: 1024px) and (min-width: 769px) {
           .clinic-dropdown-menu {
             width: 500px;
             left: -180px;
             padding: 25px;
-            position: absolute;
-            background: #f8f9fa;
-            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
-            border-radius: 20px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-            z-index: 1000;
           }
           
           .clinic-grid {
@@ -512,24 +505,8 @@ const Header = () => {
           }
         }
 
-        /* Medium tablets */
+        /* Mobile Navigation Styles - 768px and below */
         @media (max-width: 768px) {
-          .clinic-dropdown-menu {
-            width: 400px;
-            left: -150px;
-          }
-        }
-
-        /* Small tablets */
-        @media (max-width: 640px) {
-          .clinic-dropdown-menu {
-            width: 350px;
-            left: -120px;
-          }
-        }
-
-        /* Mobile Navigation Styles */
-        @media (max-width: 991.98px) {
           .navmenu ul {
             position: fixed;
             top: 0;
@@ -567,110 +544,118 @@ const Header = () => {
             display: block;
           }
 
-          /* Mobile clinic dropdown styles */
+          /* Mobile clinic dropdown styles - Completely redesigned for 768px and below */
           .clinic-dropdown-menu {
             position: static;
-            box-shadow: none;
+            width: 100%;
             background: #f8f9fa;
-            backdrop-filter: none;
-            -webkit-backdrop-filter: none;
-            margin-left: 0px;
-            margin-top: 10px;
+            box-shadow: none;
             border-radius: 12px;
+            border: 1px solid #e0e0e0;
             opacity: 1;
             visibility: visible;
             transform: none;
-            transition: max-height 0.3s ease;
+            transition: max-height 0.4s ease, padding 0.4s ease;
             max-height: 0;
-            width: calc(100% - 40px);
-            padding: 0;
-            border: none;
+            padding: 0 15px;
+            margin: 10px 0 0 0;
             overflow: hidden;
+            z-index: 1;
           }
+          
           .clinic-dropdown-menu.show {
-            max-height: 600px;
-            padding: 15px;
+            max-height: 500px;
+            padding: 20px 15px;
           }
+          
+          .dropdown-header {
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            text-align: center;
+          }
+          
+          .dropdown-header .p-drop {
+            font-size: 14px;
+            color: #666;
+            margin: 0;
+            font-weight: 500;
+            text-align: center;
+          }
+          
           .clinic-grid {
-            grid-template-columns: 1fr;
+            display: flex;
+            flex-direction: column;
             gap: 12px;
+            width: 100%;
           }
+          
           .clinic-card {
+            width: 100%;
             height: 80px;
             min-height: 80px;
             max-height: 80px;
             background: white;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+            border: 1px solid #f0f0f0;
             display: flex;
             flex-direction: row;
-            border-radius: 8px;
+            align-items: center;
             padding: 0;
-            width: 100%;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
           }
+          
+          .clinic-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+            text-decoration: none;
+            color: inherit;
+          }
+          
           .clinic-image {
-            width: 80px;
-            height: 80px;
-            min-width: 80px;
-            max-width: 80px;
+            width: 70px;
+            height: 70px;
+            min-width: 70px;
+            max-width: 70px;
+            margin: 5px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #f8f9fa;
             flex-shrink: 0;
-            border-radius: 8px 0 0 8px;
           }
+          
+          .clinic-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center;
+          }
+          
           .clinic-info {
-            padding: 15px;
-            height: auto;
             flex: 1;
-            justify-content: center;
-            min-height: 80px;
-            max-height: 80px;
+            padding: 15px 15px 15px 10px;
             display: flex;
             align-items: center;
+            justify-content: flex-start;
+            min-height: 80px;
+            max-height: 80px;
           }
+          
           .clinic-info p {
-            font-size: 12px !important;
+            font-size: 14px !important;
             font-weight: 600 !important;
             color: #333 !important;
             margin: 0 !important;
             text-align: left !important;
             line-height: 1.3;
-          }
-          .dropdown-header {
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 5px;
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          }
-          .dropdown-header .p-drop {
-            font-size: 13px;
-            color: #666;
-            margin: 0;
-            font-weight: 500;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
           }
 
-          /* Mobile dropdown styles */
-          .dropdown-menu {
-            position: static;
-            box-shadow: none;
-            background: #f8f9fa;
-            margin-left: 20px;
-            margin-top: 10px;
-            border-radius: 0;
-            opacity: 1;
-            visibility: visible;
-            transform: none;
-            transition: max-height 0.3s ease;
-            max-height: 0;
-          }
-          .dropdown-menu.show {
-            max-height: 300px;
-          }
-          .dropdown-menu li a {
-            padding: 8px 15px;
-            font-size: 14px;
-          }
-
-          /* Fixed mobile nav toggle styles */
+          /* Mobile nav toggle styles */
           .mobile-nav-toggle {
             position: fixed;
             right: 20px;
@@ -683,9 +668,7 @@ const Header = () => {
             display: flex;
             align-items: center;
             justify-content: center;
-         
             border-radius: 4px;
-        
             transition: all 0.3s ease;
           }
           
@@ -699,31 +682,21 @@ const Header = () => {
             height: 20px;
             transition: all 0.3s ease;
           }
-          
-          .mobile-nav-open.header-bar {
-            top: 15px !important;
-          }
-          
-          .mobile-nav-close.header-bar {
-            top: 15px !important;
-          }
         }
 
-        /* Extra small mobile devices - 425px and below */
-        @media (max-width: 425px) {
+        /* Extra small mobile devices - 480px and below */
+        @media (max-width: 480px) {
           .navmenu ul {
             width: 260px;
           }
           
           .clinic-dropdown-menu {
-            width: calc(100% - 30px);
-            margin-left: 0px;
-            margin-right: 0px;
-            padding: 0;
+            margin: 8px 0 0 0;
+            border-radius: 10px;
           }
           
           .clinic-dropdown-menu.show {
-            padding: 12px;
+            padding: 15px 12px;
           }
           
           .clinic-grid {
@@ -731,26 +704,27 @@ const Header = () => {
           }
           
           .clinic-card {
-            height: 70px;
-            min-height: 70px;
-            max-height: 70px;
+            height: 75px;
+            min-height: 75px;
+            max-height: 75px;
           }
           
           .clinic-image {
-            width: 70px;
-            height: 70px;
-            min-width: 70px;
-            max-width: 70px;
+            width: 65px;
+            height: 65px;
+            min-width: 65px;
+            max-width: 65px;
+            margin: 5px;
           }
           
           .clinic-info {
-            padding: 10px;
-            min-height: 70px;
-            max-height: 70px;
+            padding: 12px 12px 12px 8px;
+            min-height: 75px;
+            max-height: 75px;
           }
           
           .clinic-info p {
-            font-size: 11px !important;
+            font-size: 13px !important;
             line-height: 1.2;
           }
           
@@ -760,7 +734,7 @@ const Header = () => {
           }
           
           .dropdown-header .p-drop {
-            font-size: 12px;
+            font-size: 13px;
           }
           
           .mobile-nav-toggle {
@@ -776,8 +750,8 @@ const Header = () => {
           }
         }
 
-        /* Desktop */
-        @media (min-width: 992px) {
+        /* Desktop - hide mobile nav toggle */
+        @media (min-width: 769px) {
           .mobile-nav-toggle {
             display: none !important;
           }

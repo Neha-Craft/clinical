@@ -3,14 +3,13 @@
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
-import Image from "next/image";
 
 const Header = () => {
   const pathname = usePathname();
   const [isMobileNavActive, setIsMobileNavActive] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
   const [hasMounted, setHasMounted] = useState(false);
-  const [isOpen, setIsOpen] = useState(false);
+
   const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
 
   const clinicLocations = [
@@ -85,15 +84,15 @@ const Header = () => {
           style={{ paddingTop: "10px" }}
         >
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
-            <Link href="/" className="logo d-flex align-items-center me-auto">
-              <img
-                src="/logo.png"
-                // alt="HealthCare+"
-         
-                style={{ objectFit: "contain" ,width:"60px !important", height:"60px !important" }}
-              />
-              <h1 className="sitename ms-2">Tus Go Deireadh</h1>
-            </Link>
+          <Link href="/" className="logo d-flex align-items-center me-auto">
+  <img
+    src="/logo.png" // Make sure file name matches exactly
+    alt="HealthCare+"
+    style={{ objectFit: "contain", width: "60px", height: "60px" }}
+  />
+  <h1 className="sitename ms-2">Tus Go Deireadh</h1>
+</Link>
+
 
             <nav id="navmenu" className="navmenu">
               <ul>

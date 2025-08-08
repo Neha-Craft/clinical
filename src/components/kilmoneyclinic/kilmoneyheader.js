@@ -559,7 +559,7 @@ const Kilmoneyheader = () => {
           }
 
           .header-bar.top-closed {
-            top: 0px !important;
+            top: 20px !important;
           }
 
           .header-bar.top-open {

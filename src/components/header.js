@@ -1,17 +1,17 @@
-"use client"
+"use client";
 
-import { useState, useEffect } from "react"
-import { usePathname } from "next/navigation"
-import Link from "next/link"
-import Image from "next/image"
+import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
+import Link from "next/link";
+import Image from "next/image";
 
 const Header = () => {
-  const pathname = usePathname()
-  const [isMobileNavActive, setIsMobileNavActive] = useState(false)
-  const [isScrolled, setIsScrolled] = useState(false)
-  const [hasMounted, setHasMounted] = useState(false)
-  const [isOpen, setIsOpen] = useState(false)
-  const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false)
+  const pathname = usePathname();
+  const [isMobileNavActive, setIsMobileNavActive] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+  const [hasMounted, setHasMounted] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
+  const [isClinicDropdownOpen, setIsClinicDropdownOpen] = useState(false);
 
   const clinicLocations = [
     {
@@ -32,68 +32,66 @@ const Header = () => {
       image: "/kelo.jpeg?height=80&width=80",
       link: "/kilmoney-clinic/kilomoneyhome",
     },
-  ]
+  ];
 
   useEffect(() => {
-    setHasMounted(true)
+    setHasMounted(true);
 
     const handleScroll = () => {
       if (window.scrollY > 100) {
-        setIsScrolled(true)
+        setIsScrolled(true);
       } else {
-        setIsScrolled(false)
+        setIsScrolled(false);
       }
-    }
+    };
 
-    window.addEventListener("scroll", handleScroll)
-    handleScroll()
+    window.addEventListener("scroll", handleScroll);
+    handleScroll();
 
     return () => {
-      window.removeEventListener("scroll", handleScroll)
-    }
-  }, [])
-
-  // Close dropdown when clicking outside
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   useEffect(() => {
-    if (!hasMounted) return
+    if (!hasMounted) return;
 
     const handleClickOutside = (event) => {
-      if (!event.target.closest('.dropdown')) {
-        setIsClinicDropdownOpen(false)
+      if (!event.target.closest(".dropdown")) {
+        setIsClinicDropdownOpen(false);
       }
-    }
+    };
 
     if (isClinicDropdownOpen) {
-      document.addEventListener('click', handleClickOutside)
+      document.addEventListener("click", handleClickOutside);
     }
 
     return () => {
-      document.removeEventListener('click', handleClickOutside)
-    }
-  }, [isClinicDropdownOpen, hasMounted])
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [isClinicDropdownOpen, hasMounted]);
 
   const toggleMobileNav = () => {
-    setIsMobileNavActive(!isMobileNavActive)
-  }
+    setIsMobileNavActive(!isMobileNavActive);
+  };
 
   const toggleClinicDropdown = () => {
-    setIsClinicDropdownOpen(!isClinicDropdownOpen)
-  }
-
-  // Don't render anything until mounted to prevent hydration mismatch
+    setIsClinicDropdownOpen(!isClinicDropdownOpen);
+  };
   if (!hasMounted) {
     return (
       <header id="header" className="header sticky-top">
-        <div className="branding d-flex align-items-center" style={{ paddingTop: "10px" }}>
+        <div
+          className="branding d-flex align-items-center"
+          style={{ paddingTop: "10px" }}
+        >
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
-               <Image
-                             src="/logo.png"
-                             alt="HealthCare+"
-                             width={60}
-                             height={60}
-                             style={{ objectFit: "contain" }}
-                           />
+              <img
+                src="/logo.png"
+                alt="HealthCare+"
+         
+                style={{ objectFit: "contain" ,width:"60px", height:"60px" }}
+              />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>
 
@@ -121,31 +119,39 @@ const Header = () => {
           </div>
         </div>
       </header>
-    )
+    );
   }
 
   return (
     <>
-      <header id="header" className={`header sticky-top ${isScrolled ? "scrolled" : ""}`}>
-        {/* <div className="topbar d-flex align-items-center">
-          <div className="container d-flex ps-3 justify-content-md-between header-item">
-            <div className="d-none d-md-flex align-items-center time-head">
+      <header
+        id="header"
+        className={`header sticky-top ${isScrolled ? "scrolled" : ""}`}
+      >
+    
 
-            </div>
-            <div className="d-flex align-items-center head-phone gap-2">
-         
-            </div>
-          </div>
-        </div> */}
-
-        <div className="branding d-flex align-items-center" style={{ paddingTop: "10px",paddingBottom:"10px" }}>
+        <div
+          className="branding d-flex align-items-center"
+          style={{ paddingTop: "10px", paddingBottom: "10px" }}
+        >
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
             <Link href="/" className="logo d-flex align-items-center me-auto">
-              <Image src="/logo.jpg" alt="HealthCare+" width={40} height={40} style={{ objectFit: "contain" }} />
+              <Image
+                src="/logo.jpg"
+                alt="HealthCare+"
+                width={40}
+                height={40}
+                style={{ objectFit: "contain" }}
+              />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>
 
-            <nav id="navmenu" className={`navmenu ${isMobileNavActive ? "mobile-nav-active" : ""}`}>
+            <nav
+              id="navmenu"
+              className={`navmenu ${
+                isMobileNavActive ? "mobile-nav-active" : ""
+              }`}
+            >
               <ul>
                 <li>
                   <Link href="/" className={pathname === "/" ? "active" : ""}>
@@ -163,20 +169,35 @@ const Header = () => {
                         : ""
                     }`}
                     onClick={(e) => {
-                      e.preventDefault()
-                      toggleClinicDropdown()
+                      e.preventDefault();
+                      toggleClinicDropdown();
                     }}
                   >
                     Find a Clinic
                   </a>
-                  <div className={`clinic-dropdown-menu ${isClinicDropdownOpen ? "show" : ""}`}>
+                  <div
+                    className={`clinic-dropdown-menu ${
+                      isClinicDropdownOpen ? "show" : ""
+                    }`}
+                  >
                     <div className="dropdown-header">
-                      <p className="p-drop">Find the best practices for your treatment</p>
+                      <p className="p-drop">
+                        Find the best practices for your treatment
+                      </p>
                     </div>
                     <div className="clinic-grid">
                       {clinicLocations.map((location) => (
-                        <Link href={location.link} key={location.id} passHref legacyBehavior>
-                          <a target="_blank" rel="noopener noreferrer" className="header-one">
+                        <Link
+                          href={location.link}
+                          key={location.id}
+                          passHref
+                          legacyBehavior
+                        >
+                          <a
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="header-one"
+                          >
                             <div
                               className="card clinic-card"
                               style={{
@@ -192,8 +213,10 @@ const Header = () => {
                                     src={location.image || "/placeholder.svg"}
                                     alt={location.name}
                                     onError={(e) => {
-                                      console.log(`Failed to load image: ${location.image}`)
-                                      e.currentTarget.src = "/placeholder.svg"
+                                      console.log(
+                                        `Failed to load image: ${location.image}`
+                                      );
+                                      e.currentTarget.src = "/placeholder.svg";
                                     }}
                                   />
                                 </div>
@@ -219,17 +242,26 @@ const Header = () => {
                   </div>
                 </li>
                 <li>
-                  <Link href="/Find-a-service" className={pathname === "/Find-a-service" ? "active" : ""}>
+                  <Link
+                    href="/Find-a-service"
+                    className={pathname === "/Find-a-service" ? "active" : ""}
+                  >
                     Find a service
                   </Link>
                 </li>
                 <li>
-                  <Link href="/residential" className={pathname === "/residential" ? "active" : ""}>
+                  <Link
+                    href="/residential"
+                    className={pathname === "/residential" ? "active" : ""}
+                  >
                     Residential
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contactus" className={pathname === "/contactus" ? "active" : ""}>
+                  <Link
+                    href="/contactus"
+                    className={pathname === "/contactus" ? "active" : ""}
+                  >
                     Contact Us
                   </Link>
                 </li>
@@ -787,8 +819,7 @@ const Header = () => {
         }
       `}</style>
     </>
-  )
-}
+  );
+};
 
-export default Header
-
+export default Header;

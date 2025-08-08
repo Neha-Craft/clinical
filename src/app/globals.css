@@ -1507,8 +1507,8 @@ ul {
     margin-right: 10px;
   }
   .service-section{
-        padding-left: 2rem;
-    padding-right: 2rem;
+        padding-left: 0rem;
+    padding-right: 0rem;
     max-width: 1394px !important;
   }
   .footer-maintext{

@@ -77,6 +77,11 @@ const Header = () => {
   const toggleClinicDropdown = () => {
     setIsClinicDropdownOpen(!isClinicDropdownOpen);
   };
+
+  const handleMenuItemClick = () => {
+    setIsMobileNavActive(false);
+    setIsClinicDropdownOpen(false);
+  };
   if (!hasMounted) {
     return (
       <header id="header" className="header sticky-top">
@@ -163,7 +168,7 @@ const Header = () => {
             >
               <ul>
                 <li>
-                  <Link href="/" className={pathname === "/" ? "active" : ""}>
+                  <Link href="/" className={pathname === "/" ? "active" : ""} onClick={handleMenuItemClick}>
                     Home
                   </Link>
                 </li>
@@ -201,6 +206,7 @@ const Header = () => {
                           key={location.id}
                           passHref
                           legacyBehavior
+                          onClick={handleMenuItemClick}
                         >
                           <a
                             target="_blank"
@@ -254,6 +260,7 @@ const Header = () => {
                   <Link
                     href="/Find-a-service"
                     className={pathname === "/Find-a-service" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Find a service
                   </Link>
@@ -262,6 +269,7 @@ const Header = () => {
                   <Link
                     href="/residential"
                     className={pathname === "/residential" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Residential
                   </Link>
@@ -270,6 +278,7 @@ const Header = () => {
                   <Link
                     href="/contactus"
                     className={pathname === "/contactus" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Contact Us
                   </Link>

@@ -564,6 +564,9 @@ const Header = () => {
             width: 400px;
             left: -150px;
           }
+          .clinic-dropdown-menu.show {
+            width: 100% !important;
+          }
         }
 
         /* Small tablets */

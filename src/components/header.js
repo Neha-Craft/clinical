@@ -267,12 +267,27 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-              <i
+              <button
                 className={`mobile-nav-toggle header-bar d-lg-none ${
-                  isMobileNavActive ? "bi-x top-open" : "bi-list top-closed"
+                  isMobileNavActive ? "top-open" : "top-closed"
                 }`}
                 onClick={toggleMobileNav}
-              ></i>
+                style={{
+                  background: 'none',
+                  border: 'none',
+                  fontSize: '24px',
+                  cursor: 'pointer',
+                  color: '#000',
+                  padding: '5px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  width: '30px',
+                  height: '30px'
+                }}
+              >
+                {isMobileNavActive ? '✕' : '☰'}
+              </button>
             </nav>
           </div>
         </div>

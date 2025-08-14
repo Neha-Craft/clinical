@@ -834,7 +834,7 @@ const Header = () => {
             justify-content: center;
           }
           .header-bar.top-closed {
-            top: 0px !important;
+            top: 15px !important;
           }
           .header-bar.top-open {
             top: 20px !important;

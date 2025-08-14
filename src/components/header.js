@@ -267,12 +267,14 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-              <i
+              <div
                 className={`mobile-nav-toggle header-bar d-lg-none ${
-                  isMobileNavActive ? "bi-x top-open" : "bi-list top-closed"
+                  isMobileNavActive ? "top-open" : "top-closed"
                 }`}
                 onClick={toggleMobileNav}
-              ></i>
+              >
+                {isMobileNavActive ? '✕' : '☰'}
+              </div>
             </nav>
           </div>
         </div>

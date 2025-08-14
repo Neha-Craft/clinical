@@ -561,7 +561,7 @@ const Header = () => {
         /* Medium tablets */
         @media (max-width: 768px) {
           .clinic-dropdown-menu {
-            width: 400px;
+            width: 100% !important;
             left: -150px;
           }
           .clinic-dropdown-menu.show {

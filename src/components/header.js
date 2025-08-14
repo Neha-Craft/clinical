@@ -744,10 +744,13 @@ const Header = () => {
             margin-left: 0px;
             margin-right: 0px;
             padding: 0;
+            border: none !important;
+            box-shadow: none !important;
           }
           
           .clinic-dropdown-menu.show {
             padding: 12px;
+            border: none !important;
           }
           
           .clinic-grid {
@@ -758,6 +761,8 @@ const Header = () => {
             height: 70px;
             min-height: 70px;
             max-height: 70px;
+            border: none !important;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1) !important;
           }
           
           .clinic-image {
@@ -765,6 +770,7 @@ const Header = () => {
             height: 70px;
             min-width: 70px;
             max-width: 70px;
+            border-radius: 8px 0 0 8px;
           }
           
           .clinic-info {
@@ -781,6 +787,7 @@ const Header = () => {
           .dropdown-header {
             margin-bottom: 12px;
             padding-bottom: 8px;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1) !important;
           }
           
           .dropdown-header .p-drop {

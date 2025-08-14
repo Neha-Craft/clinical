@@ -283,7 +283,11 @@ const Header = () => {
                   alignItems: 'center',
                   justifyContent: 'center',
                   width: '30px',
-                  height: '30px'
+                  height: '30px',
+                  position: 'fixed',
+                  right: '20px',
+                  top: isMobileNavActive ? '20px' : '15px',
+                  zIndex: 10000
                 }}
               >
                 {isMobileNavActive ? '✕' : '☰'}

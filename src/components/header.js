@@ -722,7 +722,7 @@ const Header = () => {
             transition: top 0.3s ease;
           }
           .header-bar.top-closed {
-            top: 0px !important;
+            top: 15px !important;
           }
           .header-bar.top-open {
             top: 20px !important;

@@ -91,7 +91,11 @@ const Header = () => {
                 alt="HealthCare+"
                 width={60}
                 height={60}
-                style={{ objectFit: "contain" }}
+                style={{ 
+                  objectFit: "contain",
+                  width: "60px",
+                  height: "60px"
+                }}
               />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>
@@ -140,9 +144,13 @@ const Header = () => {
               <Image
                 src="/logo.png"
                 alt="HealthCare+"
-                width={40}
-                height={40}
-                style={{ objectFit: "contain" }}
+                width={60}
+                height={60}
+                style={{ 
+                  objectFit: "contain",
+                  width: "60px",
+                  height: "60px"
+                }}
               />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>
             </Link>

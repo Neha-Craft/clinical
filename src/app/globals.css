@@ -1293,6 +1293,10 @@ ul {
   .navmenu ul {
     display: none;
   }
+  
+  .navmenu.mobile-nav-active ul {
+    display: block;
+  }
 }
 
 .navmenu ul {

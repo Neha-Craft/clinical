@@ -579,7 +579,7 @@ const Header = () => {
           .navmenu ul {
             position: fixed;
             top: 0;
-            right: -100%;
+            right: -117%;
             width: 280px;
             height: 100vh;
             background: white;

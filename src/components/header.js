@@ -52,6 +52,7 @@ const Header = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  
   useEffect(() => {
     if (!hasMounted) return;
 
@@ -77,6 +78,7 @@ const Header = () => {
   const toggleClinicDropdown = () => {
     setIsClinicDropdownOpen(!isClinicDropdownOpen);
   };
+  
   if (!hasMounted) {
     return (
       <header id="header" className="header sticky-top">
@@ -129,8 +131,6 @@ const Header = () => {
         id="header"
         className={`header sticky-top ${isScrolled ? "scrolled" : ""}`}
       >
-    
-
         <div
           className="branding d-flex align-items-center"
           style={{ paddingTop: "10px", paddingBottom: "10px" }}
@@ -267,12 +267,31 @@ const Header = () => {
                   </Link>
                 </li>
               </ul>
-              <i
+              
+              {/* Modified hamburger menu with HTML entities instead of Bootstrap icons */}
+              <div
                 className={`mobile-nav-toggle header-bar d-lg-none ${
-                  isMobileNavActive ? "bi-x top-open" : "bi-list top-closed"
+                  isMobileNavActive ? "top-open" : "top-closed"
                 }`}
                 onClick={toggleMobileNav}
-              ></i>
+                style={{
+                  fontSize: '24px',
+                  cursor: 'pointer',
+                  color: '#000',
+                  position: 'fixed',
+                  right: '20px',
+                  zIndex: 10000,
+                  width: '30px',
+                  height: '30px',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'center',
+                  transition: 'top 0.3s ease',
+                  fontWeight: 'bold'
+                }}
+              >
+                {isMobileNavActive ? '✕' : '☰'}
+              </div>
             </nav>
           </div>
         </div>
@@ -335,8 +354,7 @@ const Header = () => {
           top: 86px;
           left: -260px;
           background: #f8f9fa;
-       
-           width: 49vw !important;
+          width: 49vw !important;
           box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
           border-radius: 20px;
           opacity: 0;
@@ -457,9 +475,9 @@ const Header = () => {
           text-overflow: ellipsis;
         }
   
-       .navmenu ul {
-              width: 448px !important;
-          }
+        .navmenu ul {
+          width: 448px !important;
+        }
 
         /* Desktop hover effect - only for screens larger than 1024px */
         @media (min-width: 1025px) {
@@ -674,7 +692,6 @@ const Header = () => {
             margin: 0;
             font-weight: 500;
           }
-        }
 
           /* Mobile dropdown styles */
           .dropdown-menu {
@@ -697,14 +714,22 @@ const Header = () => {
             padding: 8px 15px;
             font-size: 14px;
           }
+          
+          /* Updated mobile nav toggle styles */
           .mobile-nav-toggle {
-            position: fixed;
-            right: 20px;
-            z-index: 10000;
-            font-size: 24px;
-            cursor: pointer;
-            color: #000;
-            transition: top 0.3s ease;
+            position: fixed !important;
+            right: 20px !important;
+            z-index: 10000 !important;
+            font-size: 24px !important;
+            cursor: pointer !important;
+            color: #000 !important;
+            transition: top 0.3s ease !important;
+            width: 30px !important;
+            height: 30px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-weight: bold !important;
           }
           .header-bar.top-closed {
             top: 0px !important;
@@ -769,53 +794,10 @@ const Header = () => {
           }
         }
 
-          /* Mobile dropdown styles */
-          .dropdown-menu {
-            position: static;
-            box-shadow: none;
-            background: #f8f9fa;
-            margin-left: 20px;
-            margin-top: 10px;
-            border-radius: 0;
-            opacity: 1;
-            visibility: visible;
-            transform: none;
-            transition: max-height 0.3s ease;
-            max-height: 0;
-          }
-          .dropdown-menu.show {
-            max-height: 300px;
-          }
-          .dropdown-menu li a {
-            padding: 8px 15px;
-            font-size: 14px;
-          }
-          .mobile-nav-toggle {
-            position: fixed;
-            right: 20px;
-            z-index: 10000;
-            font-size: 24px;
-            cursor: pointer;
-            color: #000;
-            transition: top 0.3s ease;
-            width: 30px;
-            height: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-          }
-          .header-bar.top-closed {
-            top: 0px !important;
-          }
-          .header-bar.top-open {
-            top: 20px !important;
-          }
-        }
-
         /* Desktop */
         @media (min-width: 992px) {
           .mobile-nav-toggle {
-            display: none;
+            display: none !important;
           }
         }
       `}</style>

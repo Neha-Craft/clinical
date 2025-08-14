@@ -59,7 +59,9 @@ const Kilmoneyheader = () => {
           className="branding d-flex align-items-center"
           style={{ paddingTop: "10px" }}
         >
-          <div className="container position-relative d-flex align-items-center justify-content-end header-doc">
+          <div className="container position-relative d-flex align-items-center justify-content-end header-doc" style={{
+            marginBottom:"10px"
+          }}>
             <Link href="/greenwood-surgery" className="logo d-flex align-items-center me-auto">
               <Image
                 src="/logo.png"

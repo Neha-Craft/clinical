@@ -4,7 +4,7 @@ import React from "react";
 
 export default function KilomoneyHome() {
   const heroData = {
-    src: "/kilo-2.jpg",
+    src: "/Kilmoney.jpg",
     alt: "Kilmoney Clinic",
     heading: "Welcome to Kilmoney Clinic",
     text: [

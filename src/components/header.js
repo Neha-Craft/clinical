@@ -94,12 +94,12 @@ const Header = () => {
               <Image
                 src="/logo.png"
                 alt="HealthCare+"
-                width={60}
-                height={60}
+                width={70}
+                height={70}
                 style={{ 
                   objectFit: "contain",
-                  width: "60px",
-                  height: "60px"
+                  width: "70px",
+                  height: "70px"
                 }}
               />
               <h1 className="sitename ms-2">Tus Go Deireadh</h1>

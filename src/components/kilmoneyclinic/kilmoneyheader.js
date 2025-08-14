@@ -50,6 +50,11 @@ const Kilmoneyheader = () => {
     setIsClinicDropdownOpen(!isClinicDropdownOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setIsMobileNavActive(false);
+    setIsClinicDropdownOpen(false);
+  };
+
   return (
     <>
       <header
@@ -86,7 +91,7 @@ const Kilmoneyheader = () => {
             >
               <ul>
                 <li>
-                  <Link href="/kilmoney-clinic" className={pathname === "/kilmoney-clinic" ? "active" : ""}>
+                  <Link href="/kilmoney-clinic" className={pathname === "/kilmoney-clinic" ? "active" : ""} onClick={handleMenuItemClick}>
                     Home
                   </Link>
                 </li>
@@ -94,6 +99,7 @@ const Kilmoneyheader = () => {
                <Link
                     href="/kilmoney-clinic/our-team"
                     className={pathname === "/kilmoney-clinic/our-team" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                    Our Team
                   </Link>
@@ -107,6 +113,7 @@ const Kilmoneyheader = () => {
                     href="/kilmoney-clinic/services"
                     // href='#'
                     className={pathname === "/kilmoney-clinic/services" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                      Services
                   
@@ -119,6 +126,7 @@ const Kilmoneyheader = () => {
                     href="/kilmoney-clinic/online-services"
                     // href='#'
                     className={pathname === "/kilmoney-clinic/online-services" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Online Services
                   
@@ -130,6 +138,7 @@ const Kilmoneyheader = () => {
                   <Link
                     href="/kilmoney-clinic/contact-us"
                     className={pathname === "/kilmoney-clinic/contact-us" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Contact Us
                   </Link>

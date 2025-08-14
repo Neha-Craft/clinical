@@ -44,6 +44,11 @@ const VillageHeader = () => {
     setIsClinicDropdownOpen(!isClinicDropdownOpen);
   };
 
+  const handleMenuItemClick = () => {
+    setIsMobileNavActive(false);
+    setIsClinicDropdownOpen(false);
+  };
+
   return (
     <>
       <header
@@ -80,7 +85,7 @@ const VillageHeader = () => {
             >
               <ul>
                 <li>
-                  <Link href="/village-medical-center" className={pathname === "/" ? "active" : ""}>
+                  <Link href="/village-medical-center" className={pathname === "/" ? "active" : ""} onClick={handleMenuItemClick}>
                     Home
                   </Link>
                 </li>
@@ -88,6 +93,7 @@ const VillageHeader = () => {
                <Link
                     href="/village-medical-center/our-team"
                     className={pathname === "village-medical-center/our-team" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                    Our Team
                   </Link>
@@ -114,6 +120,7 @@ const VillageHeader = () => {
           href="/village-medical-center/services"
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/services" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Services
                   
@@ -125,6 +132,7 @@ const VillageHeader = () => {
           href="/village-medical-center/online-services"
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/online-services" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Online Services
                   
@@ -136,6 +144,7 @@ const VillageHeader = () => {
                   <Link
                     href="/village-medical-center/contact-us"
                     className={pathname === "/village-medical-center/contact-us" ? "active" : ""}
+                    onClick={handleMenuItemClick}
                   >
                     Contact Us
                   </Link>

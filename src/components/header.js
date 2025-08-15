@@ -760,6 +760,14 @@ const Header = () => {
           .navmenu ul {
             width: 260px;
           }
+        }
+
+        /* Specific fix for 375px screens */
+        @media (max-width: 375px) {
+          .navmenu ul {
+            right: -123%;
+          }
+        }
           
           .clinic-dropdown-menu {
             width: calc(100% - 30px);

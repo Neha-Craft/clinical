@@ -608,13 +608,11 @@ const Header = () => {
             padding-top: 60px;
             padding-left: 0px;
             padding-right: 0px;
-            padding-bottom: 20px;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
             flex-direction: column;
             margin: 0;
             list-style: none;
             overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
           }
           .navmenu.mobile-nav-active ul {
             right: 0;

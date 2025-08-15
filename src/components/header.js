@@ -795,7 +795,6 @@ const Header = () => {
           .navmenu ul {
             right: -123%;
           }
-        }
           
           .clinic-dropdown-menu {
             width: calc(100% - 30px);

@@ -746,7 +746,7 @@ const Header = () => {
             transition: top 0.3s ease;
           }
           .header-bar.top-closed {
-            top: 15px !important;
+            top: 24px !important;
           }
           .header-bar.top-open {
             top: 20px !important;
@@ -855,7 +855,7 @@ const Header = () => {
             justify-content: center;
           }
           .header-bar.top-closed {
-            top: 15px !important;
+            top: 24px !important;
           }
           .header-bar.top-open {
             top: 20px !important;

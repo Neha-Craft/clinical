@@ -605,14 +605,17 @@ const Header = () => {
             background: white;
             transition: right 0.3s ease;
             z-index: 9999;
-            padding-top: 60px;
+            padding-top: 80px;
             padding-left: 0px;
             padding-right: 0px;
+            padding-bottom: 20px;
             box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
             flex-direction: column;
             margin: 0;
             list-style: none;
             overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
+            max-height: 100vh;
           }
           .navmenu.mobile-nav-active ul {
             right: 0;
@@ -621,6 +624,11 @@ const Header = () => {
             margin-bottom: 0px;
             border-bottom: 1px solid #eee;
             padding: 15px 20px;
+            min-height: 50px;
+            display: flex;
+            align-items: center;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
           }
           .navmenu ul li:last-child {
             border-bottom: none;
@@ -631,6 +639,8 @@ const Header = () => {
             color: #333;
             text-decoration: none;
             display: block;
+            width: 100%;
+            line-height: 1.4;
           }
 
           /* Mobile clinic dropdown styles */
@@ -642,6 +652,7 @@ const Header = () => {
             -webkit-backdrop-filter: none;
             margin-left: 0px;
             margin-top: 10px;
+            margin-bottom: 10px;
             border-radius: 12px;
             opacity: 1;
             visibility: visible;
@@ -656,6 +667,8 @@ const Header = () => {
           .clinic-dropdown-menu.show {
             max-height: 600px;
             padding: 15px;
+            overflow-y: auto;
+            -webkit-overflow-scrolling: touch;
           }
           .clinic-grid {
             grid-template-columns: 1fr;
@@ -757,6 +770,7 @@ const Header = () => {
         @media (max-width: 425px) {
           .navmenu ul {
             width: 260px;
+            padding-top: 70px;
           }
           
           .clinic-dropdown-menu {

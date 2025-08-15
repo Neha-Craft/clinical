@@ -71,8 +71,8 @@ const Kilmoneyheader = () => {
               <Image
                 src="/logo.png"
                 alt="HealthCare+"
-                width={60}
-                height={60}
+                width={100}
+                height={100}
                 style={{ objectFit: "contain" }}
               />
               <h1 className="sitename ms-2">Greenwood Surgery</h1>

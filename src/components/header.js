@@ -605,7 +605,7 @@ const Header = () => {
             background: white;
             transition: right 0.3s ease;
             z-index: 9999;
-            padding-top: 80px;
+            padding-top: 60px;
             padding-left: 0px;
             padding-right: 0px;
             padding-bottom: 20px;
@@ -615,7 +615,6 @@ const Header = () => {
             list-style: none;
             overflow-y: auto;
             -webkit-overflow-scrolling: touch;
-            max-height: 100vh;
           }
           .navmenu.mobile-nav-active ul {
             right: 0;
@@ -624,11 +623,6 @@ const Header = () => {
             margin-bottom: 0px;
             border-bottom: 1px solid #eee;
             padding: 15px 20px;
-            min-height: 50px;
-            display: flex;
-            align-items: center;
-            word-wrap: break-word;
-            overflow-wrap: break-word;
           }
           .navmenu ul li:last-child {
             border-bottom: none;
@@ -639,8 +633,6 @@ const Header = () => {
             color: #333;
             text-decoration: none;
             display: block;
-            width: 100%;
-            line-height: 1.4;
           }
 
           /* Mobile clinic dropdown styles */
@@ -767,7 +759,6 @@ const Header = () => {
         @media (max-width: 425px) {
           .navmenu ul {
             width: 260px;
-            padding-top: 70px;
           }
           
           .clinic-dropdown-menu {

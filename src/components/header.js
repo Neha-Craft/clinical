@@ -652,7 +652,6 @@ const Header = () => {
             -webkit-backdrop-filter: none;
             margin-left: 0px;
             margin-top: 10px;
-            margin-bottom: 10px;
             border-radius: 12px;
             opacity: 1;
             visibility: visible;
@@ -667,8 +666,6 @@ const Header = () => {
           .clinic-dropdown-menu.show {
             max-height: 600px;
             padding: 15px;
-            overflow-y: auto;
-            -webkit-overflow-scrolling: touch;
           }
           .clinic-grid {
             grid-template-columns: 1fr;

@@ -757,6 +757,7 @@ const Header = () => {
         @media (max-width: 425px) {
           .navmenu ul {
             width: 260px;
+            right: -124%;
           }
           .navmenu.mobile-nav-active ul {
             right: -48px;

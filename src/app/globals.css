@@ -157,7 +157,6 @@ ul {
 
 
 
-
  .carousel-control-next-icon:hover,
  .carousel-control-prev-icon:hover {
     background: #3fbbc0;
@@ -194,6 +193,14 @@ ul {
     justify-content: center;
   
 }
+.container1{
+  width: 100% !important;
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
 
 
  /* .hero .carousel-item {

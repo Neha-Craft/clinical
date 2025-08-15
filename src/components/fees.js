@@ -1,7 +1,7 @@
 export default function Fees() {
   return (
     <>
-      <div className="container my-5">
+      <div className="container1 my-5">
         <div className="row justify-content-center">
           <div className="col-lg-10">
             <div className="container section-title" data-aos="fade-up">

@@ -165,15 +165,6 @@ export default function Fees() {
                         <td>BP 24 Hour Monitor</td>
                         <td>€80.00</td>
                       </tr>
-                      {/* Empty rows to match the height of the first table */}
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
                     </tbody>
                   </table>
                 </div>
@@ -210,39 +201,6 @@ export default function Fees() {
                       <tr>
                         <td>Injection | Nurse</td>
                         <td>€40.00</td>
-                      </tr>
-                      {/* Adding empty rows to match Women's Health Services table height */}
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
                       </tr>
                     </tbody>
                   </table>
@@ -396,27 +354,6 @@ export default function Fees() {
                       <tr>
                         <td>Admin - Prescription | Repeat</td>
                         <td>€20.00</td>
-                      </tr>
-                      {/* Empty rows to match the height of nursing services table */}
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
-                      </tr>
-                      <tr style={{ visibility: "hidden" }}>
-                        <td>&nbsp;</td>
-                        <td>&nbsp;</td>
                       </tr>
                     </tbody>
                   </table>

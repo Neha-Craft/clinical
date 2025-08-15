@@ -760,6 +760,34 @@ const Header = () => {
           .navmenu ul {
             width: 260px;
           }
+          .navmenu.mobile-nav-active ul {
+            right: -53px;
+          }
+          .navmenu ul li {
+            padding: 10px 15px;
+          }
+          .navmenu ul li a {
+            font-size: 14px;
+          }
+          .clinic-card {
+            height: 60px;
+            min-height: 60px;
+            max-height: 60px;
+          }
+          .clinic-image {
+            width: 60px;
+            height: 60px;
+            min-width: 60px;
+            max-width: 60px;
+          }
+          .clinic-info {
+            padding: 8px;
+            min-height: 60px;
+            max-height: 60px;
+          }
+          .clinic-info p {
+            font-size: 10px !important;
+          }
         }
 
         /* Specific fix for 375px screens */

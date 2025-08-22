@@ -2,6 +2,7 @@
 "use client";
 
 import React, { useState } from "react";
+import Link from "next/link";
 
 function Services() {
     const [showAll, setShowAll] = useState(false); // state to control See More
@@ -50,7 +51,12 @@ function Services() {
                                 <div className="icon">
                                     <i className={service.icon}></i>
                                 </div>
-                                <p className="services-head">{service.head}</p>
+                               <Link href="/Find-a-clinic">
+                  <p className="services-head" style={{ cursor: "pointer"}}>
+                    {service.head}
+                  </p>
+                </Link>
+
                                 <hr style={{ width: "40px", border: "1px solid #3fbbc0", margin: "0 auto 15px auto" }} />
                                 <p
                                     style={{

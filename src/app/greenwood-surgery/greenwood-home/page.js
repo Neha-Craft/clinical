@@ -1,4 +1,4 @@
-import Fees from '@/components/fees';
+
 import GreenwoodSurgery from '@/components/greenwoosurgery/greenwoodheader';
 import Servicesection from '@/components/servicesection';
 import React from 'react';
@@ -57,7 +57,7 @@ export default function Page() {
         </section>
       </div>
       <div>
-              <Fees/>
+              
       </div>
       <div>
            <Servicesection/>

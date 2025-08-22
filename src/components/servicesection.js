@@ -143,9 +143,7 @@ export default function Servicesection() {
                   <li className="mb-2">
                     <i className="fas fa-check-circle text-success me-2"></i>Health check-ups
                   </li>
-                  <li className="mb-2">
-                    <i className="fas fa-check-circle text-success me-2"></i>Travel vaccines
-                  </li>
+               
                   <li className="mb-2">
                     <i className="fas fa-check-circle text-success me-2"></i>Joint muscle injections
                   </li>
@@ -178,7 +176,7 @@ export default function Servicesection() {
             </div>
 
             {/* Patient Resources */}
-            <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            {/* <div className="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
               <div
                 className="service-item position-relative h-100 w-100"
                 style={{
@@ -248,7 +246,7 @@ export default function Servicesection() {
                   </li>
                 </ul>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

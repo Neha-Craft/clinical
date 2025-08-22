@@ -110,10 +110,13 @@ const Header = () => {
                 <li>
                   <Link href="/">Home</Link>
                 </li>
-                <li className="dropdown">
+                {/* <li className="dropdown">
                   <a href="#" className="dropdown-toggle">
-                    Find a Clinic
+                  
                   </a>
+                </li> */}
+                    <li>
+                  <Link href="/Find-a-clinic">Find a Clinic</Link>
                 </li>
                 <li>
                   <Link href="/Find-a-service">Find a service</Link>
@@ -172,7 +175,14 @@ const Header = () => {
                     Home
                   </Link>
                 </li>
-                <li className="dropdown">
+                 <li>
+                  <Link href="/Find-a-clinic" className={pathname === "/Find-a-clinic" ? "active" : ""} onClick={handleMenuItemClick}>
+                   Find-a-clinic
+                  </Link>
+                </li>
+                
+
+                {/* <li className="dropdown">
                   <a
                     href="#"
                     className={`dropdown-toggle ${
@@ -255,7 +265,7 @@ const Header = () => {
                       ))}
                     </div>
                   </div>
-                </li>
+                </li> */}
                 <li>
                   <Link
                     href="/Find-a-service"

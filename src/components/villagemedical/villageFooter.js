@@ -5,7 +5,9 @@ export default function VillageFooter() {
     <footer id="footer" className="footer">
       <div className="container overflow-hidden">
         <div className="footer-top">
-          <div className="row gy-4 footer-maintext">
+          <div style={{
+            justifyContent:"center"
+          }} className="row gy-4 footer-maintext">
             {/* About */}
             <div className="col-lg-4 col-md-6 footer-about">
               <Link href="/" className="logo d-flex align-items-center">
@@ -28,7 +30,7 @@ export default function VillageFooter() {
             </div>
 
             {/* Useful Links */}
-            <div className="col-lg-4 col-md-6 footer-links">
+            {/* <div className="col-lg-4 col-md-6 footer-links">
               <h4>Useful Links</h4>
               <ul>
              
@@ -37,14 +39,14 @@ export default function VillageFooter() {
                 <li>Patient Resources</li>
                 <li>Contact Us</li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Opening Hours */}
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Opening Hours</h4>
               <ul>
-                <li>Mon–Fri: 8:00 AM – 6:00 PM</li>
-                <li>Saturday: 9:00 AM – 1:00 PM</li>
+                <li>Mon–Fri: 9:00 AM – 5:30 PM</li>
+                <li>Saturday: Closed</li>
                 <li>Sunday: Closed</li>
                 <li>Public Holidays: Closed</li>
               </ul>

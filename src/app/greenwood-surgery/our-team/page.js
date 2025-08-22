@@ -36,7 +36,7 @@ export default function Ourteam() {
       <div className="container section-title" data-aos="fade-up">
         <h2 style={{ paddingBottom: "1rem" }}>Our Medical Team-Greenwood Surgery</h2>
         <p style={{ paddingTop: "1rem", paddingBottom: "2rem" }} className="doctor-p">
-        our team of dedicated healthcare professionals are here to look after your health, at every stage of life
+        Our team of dedicated healthcare professionals are here to look after your health, at every stage of life
         </p>
       </div>
 

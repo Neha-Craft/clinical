@@ -6,8 +6,8 @@ const doctors = [
     specialty: "General Practice",
   },
   {
-    name: "Dr. Diana Lynch",
-    role: "General Practitioner - NUI Galway Graduate 2015, Joined 2024",
+    name: "Dr. Robert Townsend",
+    role: "General Practitioner with over 30 years experience caring for patients at the Kilmoney Clinic",
     color: "success",
     specialty: "General Practice",
   },

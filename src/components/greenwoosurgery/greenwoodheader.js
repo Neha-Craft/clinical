@@ -4,7 +4,7 @@ import React from "react";
 
 export default function GreenwoodSurgery() {
   const heroData = {
-    src: "/doctor.webp",
+    src: "/pract.jpg",
     alt: "Greenwood Surgery",
     heading: "Welcome to Greenwood Surgery",
     text: [

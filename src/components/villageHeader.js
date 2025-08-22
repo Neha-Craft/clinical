@@ -74,7 +74,7 @@ const VillageHeader = () => {
                 height={100}
                 style={{ objectFit: "contain" }}
               />
-              <h1 className="sitename ms-2">VillageMedicalCenter</h1>
+              <h1 className="sitename ms-2">The VillageMedicalCenter</h1>
             </Link>
 
             <nav

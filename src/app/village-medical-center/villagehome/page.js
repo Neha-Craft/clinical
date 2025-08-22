@@ -1,4 +1,4 @@
-import Fees from '@/components/fees';
+
 import Servicesection from '@/components/servicesection';
 import VillageHome from '@/components/villagemedical/villagehome';
 import React from 'react';
@@ -55,7 +55,7 @@ Our philosophy is to deliver the highest standard of healthcare to all our patie
       
     </div>
     <div>
-   <Fees/>
+
       </div>
     <div>
           <Servicesection/>  

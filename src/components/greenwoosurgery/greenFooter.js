@@ -34,7 +34,7 @@ export default function GreenFooter() {
             <div className="col-lg-4 col-md-6 footer-links">
               <h4>Opening Hours</h4>
               <ul>
-                <li>Mon–Fri: 9:00 AM – 5:30 PM</li>
+                <li>Mon – Fri: 9:00 AM – 5:30 PM</li>
                 <li>Saturday: Closed</li>
                 <li>Sunday: Closed</li>
                 <li>Public Holidays: Closed</li>

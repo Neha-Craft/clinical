@@ -20,9 +20,9 @@ export default function VillageFooter() {
                   <span className="d-inline-block">0214885706</span>
                 </p>
                 <p>
-                  <strong>Email:</strong>
+                  <strong>Email: </strong>
                   <span className="d-inline-block">
-                    <a href="mailto:ballinhassig.clinic@tvmc.ie">ballinhassig.clinic@tvmc.ie</a>
+                    <a href="mailto:ballinhassig.clinic@tvmc.ie"> ballinhassig.clinic@tvmc.ie</a>
                
                   </span>
                 </p>

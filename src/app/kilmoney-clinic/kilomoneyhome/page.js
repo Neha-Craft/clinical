@@ -1,4 +1,4 @@
-import Fees from '@/components/fees'
+
 import KilomoneyHome from '@/components/kilmoneyclinic/kilomoneyhero'
 import Servicesection from '@/components/servicesection'
 import React from 'react'
@@ -53,7 +53,7 @@ export default function kilomoneyhome() {
       </div>
      
       <div>
-              <Fees/>
+          
       </div>
         <Servicesection/>
     </div>

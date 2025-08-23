@@ -56,6 +56,8 @@ export default function ClinicsPage() {
                   </p>
                  <a
   href={clinic.link}
+    target="_blank"
+                    rel="noopener noreferrer"
   style={{
     color: "rgb(255, 255, 255)",
     background: "rgb(31, 181, 114)",

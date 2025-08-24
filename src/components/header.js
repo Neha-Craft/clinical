@@ -67,7 +67,7 @@ const Header  = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc" style={{
             marginBottom:"10px"
           }}>
-            <Link href="/kilmoney-clinic" className="logo d-flex align-items-center me-auto">
+            <Link href="/" className="logo d-flex align-items-center me-auto">
               <Image
                 src="/logo.png"
                 alt="HealthCare+"

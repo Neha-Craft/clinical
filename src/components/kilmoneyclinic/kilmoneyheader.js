@@ -80,7 +80,7 @@ const Kilmoneyheader = () => {
                 height={100}
                 style={{ objectFit: "contain" }}
               />
-              <h1 className="sitename ms-2">kilmoney Clinic</h1>
+              <h1 className="sitename ms-2">Kilmoney Clinic</h1>
             </Link>
 
             <nav

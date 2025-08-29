@@ -4,7 +4,7 @@ import React from "react";
 
 export default function GreenwoodSurgery() {
   const heroData = {
-    src: "/pract.jpg",
+    src: "/Greenwood.jpg",
     alt: "Greenwood Surgery",
     heading: "Welcome to Greenwood Surgery",
     text: [

@@ -9,13 +9,13 @@ export default function ClinicsPage() {
     {
       id: 2,
       name: "Greenwood Surgery",
-      image: "/pract.jpg",
+      image: "/Greenwood.jpg",
       link: "/greenwood-surgery",
     },
     {
       id: 3,
       name: "Kilmoney Clinic",
-      image: "/pract.jpg",
+      image: "/village2.jpg",
       link: "/kilmoney-clinic/kilomoneyhome",
     },
   ]

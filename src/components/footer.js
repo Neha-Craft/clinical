@@ -10,9 +10,9 @@ export default function Footer() {
           }} className="row gy-4 footer-maintext">
             {/* About */}
             <div className="col-lg-4 col-md-6 footer-about">
-              <Link href="/" className="logo d-flex align-items-center">
+              <h4 className="logo d-flex align-items-center">
                 <span className="sitename">Tus go Deireadh</span>
-              </Link>
+              </h4>
               <div className="footer-contact pt-3">
                 <p>The Village Medical Centre, Ballinhassig</p>
                 <p className="mt-3">

@@ -3,19 +3,19 @@ export default function ClinicsPage() {
     {
       id: 1,
       name: "The Village Medical Centre",
-      image: "/village.jpg?height=80&width=80",
+      image: "/pract.jpg",
       link: "/village-medical-center/villagehome",
     },
     {
       id: 2,
       name: "Greenwood Surgery",
-      image: "/Greenwood.png?height=80&width=80",
+      image: "/pract.jpg",
       link: "/greenwood-surgery",
     },
     {
       id: 3,
       name: "Kilmoney Clinic",
-      image: "/kelo.jpeg?height=80&width=80",
+      image: "/pract.jpg",
       link: "/kilmoney-clinic/kilomoneyhome",
     },
   ]

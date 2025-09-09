@@ -1,5 +1,5 @@
 import Servicesection from '@/components/servicesection';
-import VillageHome from '@/app/village-medical-center/villagehome/page';
+import VillageHome from '@/app/village-medical-centre/villagehome/page';
 import React from 'react';
 
 export default function Page() {

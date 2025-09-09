@@ -66,7 +66,7 @@ const VillageHeader = () => {
           <div className="container position-relative d-flex align-items-center justify-content-end header-doc " style={{
             marginBottom:"10px"
           }}>
-            <Link href="/village-medical-center" className="logo d-flex align-items-center me-auto">
+            <Link href="/village-medical-centre" className="logo d-flex align-items-center me-auto">
               <Image
                 src="/logo.png"
                 alt="HealthCare+"
@@ -85,13 +85,13 @@ const VillageHeader = () => {
             >
               <ul>
                 <li>
-                  <Link href="/village-medical-center" className={pathname === "/" ? "active" : ""} onClick={handleMenuItemClick}>
+                  <Link href="/village-medical-centre" className={pathname === "/" ? "active" : ""} onClick={handleMenuItemClick}>
                     Home
                   </Link>
                 </li>
                    <li>
                <Link
-                    href="/village-medical-center/our-team"
+                    href="/village-medical-centre/our-team"
                     className={pathname === "village-medical-center/our-team" ? "active" : ""}
                     onClick={handleMenuItemClick}
                   >
@@ -117,7 +117,7 @@ const VillageHeader = () => {
                    <li>
                <Link
        
-          href="/village-medical-center/services"
+          href="/village-medical-centre/services"
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/services" ? "active" : ""}
                     onClick={handleMenuItemClick}
@@ -129,7 +129,7 @@ const VillageHeader = () => {
                    <li>
                <Link
        
-          href="/village-medical-center/online-services"
+          href="/village-medical-centre/online-services"
                     // href="/village-medical-center/online-services"
                     className={pathname === "/village-medical-center/online-services" ? "active" : ""}
                     onClick={handleMenuItemClick}
@@ -142,7 +142,7 @@ const VillageHeader = () => {
            
                 <li>
                   <Link
-                    href="/village-medical-center/contact-us"
+                    href="/village-medical-centre/contact-us"
                     className={pathname === "/village-medical-center/contact-us" ? "active" : ""}
                     onClick={handleMenuItemClick}
                   >

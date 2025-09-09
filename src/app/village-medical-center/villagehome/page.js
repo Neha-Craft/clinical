@@ -12,11 +12,11 @@ export default function Page() {
        <div style={{ paddingTop: "6rem", paddingBottom: "1rem" }}>
          <section id="about" className="about section">
           <div className="container section-title" data-aos="fade-up">
-            <h2   style={{paddingBottom:"1rem"}}>The Village Medical Center</h2>
+            <h2   style={{paddingBottom:"1rem"}}>The Village Medical Centre</h2>
             <p style={{fontSize:"18px", paddingTop:"1rem",paddingBottom:"2rem"
 
             }}>
-The Village Medical Center is a modern, friendly, and dynamic practice situated in the picturesque village of Ballinhassig.
+The Village Medical Centre is a modern, friendly, and dynamic practice situated in the picturesque village of Ballinhassig.
             </p>
           </div>
 

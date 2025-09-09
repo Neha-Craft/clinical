@@ -2,7 +2,7 @@ export default function ClinicsPage() {
   const clinicLocations = [
     {
       id: 1,
-      name: "The Village Medical Center",
+      name: "The Village Medical Centre",
       image: "/pract.jpg",
       link: "/village-medical-center/villagehome",
     },

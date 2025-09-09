@@ -6,9 +6,9 @@ export default function VillageHome() {
   const heroData = {
     src: "/pract.jpg",
     alt: "Village Medical Centre",
-    heading: "Welcome to The Village Medical Center",
+    heading: "Welcome to The Village Medical Centre",
     text: [
-      "The Village Medical Center is a friendly, modern practice in the heart of Ballinhassig.",
+      "The Village Medical Centre is a friendly, modern practice in the heart of Ballinhassig.",
 
     ],
     buttonHref: "#about",

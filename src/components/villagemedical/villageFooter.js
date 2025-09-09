@@ -11,7 +11,7 @@ export default function VillageFooter() {
             {/* About */}
             <div className="col-lg-4 col-md-6 footer-about">
               <h4 className="logo d-flex align-items-center">
-                <span className="sitename">Village Medical Center</span>
+                <span className="sitename">Village Medical Centre</span>
               </h4>
               <div className="footer-contact pt-3">
                 <p>The Village Medical Centre, Ballinhassig</p>

@@ -86,7 +86,7 @@ export async function POST(req) {
         }
         
         const info = await transporter.sendMail({
-            from: '"TusGoDeireadh" <Tus Go Deireadh>',
+            from: '"TusGoDeireadh" <info@newcastlemedicalcentre.ie>',
             to: recipientEmail,
             subject: `New ${formType || 'Contact'} Form Submission from ${fullName}`,
             text: textBody,

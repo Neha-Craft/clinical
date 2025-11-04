@@ -85,7 +85,7 @@ export async function POST(req) {
         
         if (clinicLocation) {
             if (clinicLocation.includes('Village Medical Centre') || clinicLocation.includes('Ballinhassig')) {
-                recipientEmail = "craftandcode01@gmail.com";
+                recipientEmail = "ballinhassig.clinic@tvmc.ie";
             } else if (clinicLocation.includes('Kilmoney Clinic') || clinicLocation.includes('Carrigaline')) {
                 recipientEmail = "kilmoney.clinic@tvmc.ie";
             } else if (clinicLocation.includes('Greenwood Surgery') || clinicLocation.includes('Togher')) {

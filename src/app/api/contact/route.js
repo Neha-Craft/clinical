@@ -24,8 +24,7 @@ export async function POST(req) {
         // :white_tick: Use your real SMTP credentials here
         const transporter = nodemailer.createTransport({
             host: "smtpout.secureserver.net",   // your SMTP host
-            port: 465,                 // port (25, 2525, 8025, or 465 for SSL)
-            secure: true,
+            port: 587,                 // port (25, 2525, 8025, or 465 for SSL)
             auth: {
                 user: "abhilash@craftandcode.in",  // your SMTP username
                 pass: "Owne@123##",           // your SMTP password

@@ -77,7 +77,7 @@ export async function POST(req) {
         
         if (clinicLocation) {
             if (clinicLocation.includes('Village Medical Centre') || clinicLocation.includes('Ballinhassig')) {
-                recipientEmail = "ballinhassig.clinic@tvmc.ie";
+                recipientEmail = "craftandcode01@gmail.com";
             } else if (clinicLocation.includes('Kilmoney Clinic') || clinicLocation.includes('Carrigaline')) {
                 recipientEmail = "kilmoney.clinic@tvmc.ie";
             } else if (clinicLocation.includes('Greenwood Surgery') || clinicLocation.includes('Togher')) {
@@ -86,7 +86,7 @@ export async function POST(req) {
         }
         
         const info = await transporter.sendMail({
-            from: '"Tus Go Deireadh" <Tus Go Deireadh>',
+            from: '"TusGoDeireadh" <Tus Go Deireadh>',
             to: recipientEmail,
             subject: `New ${formType || 'Contact'} Form Submission from ${fullName}`,
             text: textBody,

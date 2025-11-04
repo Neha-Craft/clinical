@@ -23,11 +23,11 @@ export async function POST(req) {
         
         // :white_tick: Use your real SMTP credentials here
         const transporter = nodemailer.createTransport({
-            host: "mail.smtp2go.com",   // your SMTP host
-            port: 2525,                 // port (25, 2525, 8025, or 465 for SSL)
+            host: "smtpout.secureserver.net",   // your SMTP host
+            port: 465,                 // port (25, 2525, 8025, or 465 for SSL)
             auth: {
-                user: "newcastlemedicalcentre.ie",  // your SMTP username
-                pass: "qPuSMmO9Djrvgmpg",           // your SMTP password
+                user: "abhilash@craftandcode.in",  // your SMTP username
+                pass: "Owne@123##",           // your SMTP password
             },
         });
         
@@ -86,7 +86,7 @@ export async function POST(req) {
         }
         
         const info = await transporter.sendMail({
-            from: '"TusGoDeireadh" <info@tusgodeireadh.ie>',
+            from: '"TusGoDeireadh" <abhilash@craftandcode.in>',
             to: recipientEmail,
             subject: `New ${formType || 'Contact'} Form Submission from ${fullName}`,
             text: textBody,

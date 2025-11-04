@@ -22,14 +22,22 @@ export async function POST(req) {
         const { phone, formType, clinicLocation, ...otherFields } = formData;
         
         // :white_tick: Use your real SMTP credentials here
+        // const transporter = nodemailer.createTransport({
+        //     host: "smtpout.secureserver.net",   // your SMTP host
+        //     port: 587,                 // port (25, 2525, 8025, or 465 for SSL)
+        //     auth: {
+        //         user: "abhilash@craftandcode.in",  // your SMTP username
+        //         pass: "Owne@123##",           // your SMTP password
+        //     },
+        // });
+
         const transporter = nodemailer.createTransport({
-            host: "smtpout.secureserver.net",   // your SMTP host
-            port: 587,                 // port (25, 2525, 8025, or 465 for SSL)
-            auth: {
-                user: "abhilash@craftandcode.in",  // your SMTP username
-                pass: "Owne@123##",           // your SMTP password
-            },
-        });
+          service: "gmail",
+          auth: {
+            user: "craftandcode01@gmail.com",
+            pass: "yftriotaejsvcavr", // NOT your normal Gmail password
+          },
+        })
         
         // Build dynamic HTML body with all form fields
         let htmlBody = `
@@ -86,7 +94,7 @@ export async function POST(req) {
         }
         
         const info = await transporter.sendMail({
-            from: '"TusGoDeireadh" <abhilash@craftandcode.in>',
+            from: '"TusGoDeireadh" <craftandcode01@gmail.com>',
             to: recipientEmail,
             subject: `New ${formType || 'Contact'} Form Submission from ${fullName}`,
             text: textBody,

@@ -7,9 +7,9 @@ import React from 'react'
 export default function Page() {
   return (
     <div>
-      <IllnessForm/>
-        <DoctorLetterForm/> 
-             <TestResultsForm/>
+      <IllnessForm clinicLocation="Village Medical Centre"/>
+        <DoctorLetterForm clinicLocation="Village Medical Centre"/> 
+             <TestResultsForm clinicLocation="Village Medical Centre"/>
     </div>
   )
 }

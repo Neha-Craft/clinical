@@ -1,6 +1,61 @@
-import React from "react";
+"use client"
+import React,{useState} from "react";
+import { toast } from 'react-toastify';
 
-export default function Contactus() {
+export default function Contactus({ clinicLocation = 'Village Medical Centre' }) {
+  const [formValues,setFormValues]=useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleFormSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    // Prepare form data to match what the API expects
+    const formDataToSend = {
+      ...formValues,
+      firstName: formValues.name || '',
+      lastName: '',
+      formType: 'Contact Form',
+      clinicLocation: clinicLocation // Add clinic location
+    };
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataToSend),
+      });
+
+      console.log("response",response)
+       
+      if (response.ok === true) {
+        const result = await response.json();
+        toast.success(result.message || 'Thank you for your message. We will contact you soon.');
+        setFormValues({
+          name: '',
+          email: '',
+          phone: '',
+          contactMethod: '',
+          appointmentType: '',
+          preferredDate: '',
+          preferredTime: '',
+          message: ''
+        }); 
+      } else {
+        const errorResult = await response.json();
+        toast.error(errorResult.message || 'There was an error sending your message. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error('There was an error sending your message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  }
+
+  console.log("form",formValues)
   return (
     <div>
       <section id="contact" className="contact section">
@@ -142,7 +197,7 @@ export default function Contactus() {
             </div>
 
             <div className="col-lg-6">
-              <form className="php-email-form">
+              <form className="php-email-form" onSubmit={handleFormSubmit}>
                 <div className="row gy-4">
                   <div className="col-12">
                     <input
@@ -150,6 +205,8 @@ export default function Contactus() {
                       name="name"
                       className="form-control"
                       placeholder="Your Name"
+                      value={formValues.name || ''}
+                     onChange= {(e)=>setFormValues({...formValues, name:e.target.value})}
                       required
                     />
                   </div>
@@ -160,6 +217,8 @@ export default function Contactus() {
                       className="form-control"
                       name="email"
                       placeholder="Your Email"
+                        value={formValues.email || ''}
+                     onChange= {(e)=>setFormValues({...formValues, email:e.target.value})}
                       required
                     />
                   </div>
@@ -171,6 +230,8 @@ export default function Contactus() {
                       name="phone"
                       placeholder="Your Phone Number"
                       required
+                              value={formValues.phone || ''}
+                     onChange= {(e)=>setFormValues({...formValues, phone:e.target.value})}
                     />
                   </div>
 
@@ -179,6 +240,8 @@ export default function Contactus() {
                       className="form-control"
                       name="contactMethod"
                       required
+                         value={formValues.contactMethod || ''}
+                     onChange= {(e)=>setFormValues({...formValues, contactMethod:e.target.value})}
                     >
                       <option value="">Preferred Contact Method</option>
                       <option value="email">Email</option>
@@ -191,6 +254,8 @@ export default function Contactus() {
                       className="form-control"
                       name="appointmentType"
                       required
+                          value={formValues.appointmentType || ''}
+                     onChange= {(e)=>setFormValues({...formValues, appointmentType:e.target.value})}
                     >
                       <option value="">Appointment Type</option>
                       <option value="general">General Consultation</option>
@@ -206,6 +271,8 @@ export default function Contactus() {
                       className="form-control"
                       name="preferredDate"
                       required
+                         value={formValues.preferredDate || ''}
+                     onChange= {(e)=>setFormValues({...formValues, preferredDate:e.target.value})}
                     />
                   </div>
 
@@ -215,6 +282,8 @@ export default function Contactus() {
                       className="form-control"
                       name="preferredTime"
                       required
+                        value={formValues.preferredTime || ''}
+                     onChange= {(e)=>setFormValues({...formValues, preferredTime:e.target.value})}
                     />
                   </div>
 
@@ -225,22 +294,31 @@ export default function Contactus() {
                       rows="6"
                       placeholder="Additional Message"
                       required
+                          value={formValues.message || ''}
+                     onChange= {(e)=>setFormValues({...formValues, message:e.target.value})}
                     ></textarea>
                   </div>
 
                   <div className="col-12 text-center">
                     <button
                       type="submit"
+                      disabled={isSubmitting}
                       style={{
                         color: "#fff",
-                        background: "#1fb572",
+                        background: isSubmitting ? "#ccc" : "#1fb572",
                         borderWidth: "0px",
                         padding: "10px 30px",
                         transition: "0.4s",
                         borderRadius: "4px",
+                        cursor: isSubmitting ? "not-allowed" : "pointer"
                       }}
                     >
-                      Send Message
+                      {isSubmitting ? (
+                        <>
+                          <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                          &nbsp;Sending...
+                        </>
+                      ) : "Send Message"}
                     </button>
                   </div>
                 </div>

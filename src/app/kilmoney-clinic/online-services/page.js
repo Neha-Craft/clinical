@@ -1,12 +1,10 @@
-import DoctorLetterForm from '@/components/doctorLetterForm'
-import ServicesSection from '@/components/onlineservicesection'
+import KilmoneyOnlineServices from '@/components/kilmoneyOnlineServices'
 import React from 'react'
 
 export default function Page() {
   return (
     <div>
-        <ServicesSection/>
-        {/* <DoctorLetterForm/> */}
+        <KilmoneyOnlineServices/>
 
     </div>
   )

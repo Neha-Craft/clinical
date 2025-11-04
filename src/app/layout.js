@@ -5,8 +5,9 @@ import Script from "next/script";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./globals.css";
 import Header from "@/components/header";
-
 import ClientHeaderSwitcher from "@/components/ClientHeaderSwitcher";
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 export const metadata = {
   title: "Tus Go Deireadh",
@@ -59,7 +60,7 @@ export default function RootLayout({ children }) {
 
         {children}
 
-    
+        <ToastContainer />
 
         {/* Scroll Top */}
         <a href="#" id="scroll-top" className="scroll-top d-flex align-items-center justify-content-center">

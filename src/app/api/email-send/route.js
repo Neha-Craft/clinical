@@ -4,7 +4,7 @@ export async function POST(req) {
         const formData = await req.json();
         
         // Extract fields (different forms may use different field names)
-        const { name, email, message, firstName, lastName } = formData;
+        const { name, email, message, firstName, lastName, recipientEmail } = formData;
         
         // Use firstName/lastName if name is not provided
         const fullName = name || (firstName ? `${firstName} ${lastName || ''}`.trim() : '');
@@ -13,7 +13,7 @@ export async function POST(req) {
         
         if (!fullName || !emailAddress || !msg) {
             return new Response(
-                JSON.stringify({ success: false, error: "Missing required fields: name, email, and message", message: "Please fill in all required fields." }),
+                JSON.stringify({ success: false, error: "Missing required fields: name, email, and message" }),
                 { status: 400, headers: { "Content-Type": "application/json" } }
             );
         }
@@ -21,13 +21,12 @@ export async function POST(req) {
         // Extract additional fields
         const { phone, formType, clinicLocation, ...otherFields } = formData;
         
-        // :white_tick: Use your real SMTP credentials here
         const transporter = nodemailer.createTransport({
-            host: "mail.smtp2go.com",   // your SMTP host
-            port: 2525,                 // port (25, 2525, 8025, or 465 for SSL)
+            host: "mail.smtp2go.com",   
+            port: 2525,                
             auth: {
-                user: "newcastlemedicalcentre.ie",  // your SMTP username
-                pass: "qPuSMmO9Djrvgmpg",           // your SMTP password
+                user: "newcastlemedicalcentre.ie",  
+                pass: "qPuSMmO9Djrvgmpg",           
             },
         });
         
@@ -58,8 +57,8 @@ export async function POST(req) {
         // Create text version as well
         let textBody = `Form Type: ${formType || 'Contact Form'}\n`;
         textBody += `Clinic Location: ${clinicLocation || 'Not specified'}\n`;
-        textBody += `Name: ${fullName}\n`;
-        textBody += `Email: ${emailAddress}\n`;
+        textBody += `Name: ${name}\n`;
+        textBody += `Email: ${email}\n`;
         textBody += `Phone: ${phone || "N/A"}\n`;
         
         // Add other fields to text version
@@ -70,37 +69,27 @@ export async function POST(req) {
             }
         });
         
-        textBody += `\nMessage:\n${msg}`;
+        textBody += `\nMessage:\n${message}`;
         
-        // Determine recipient email based on clinic location
-        let recipientEmail = "abhilashs049@gmail.com"; // default
-        
-        if (clinicLocation) {
-            if (clinicLocation.includes('Village Medical Centre') || clinicLocation.includes('Ballinhassig')) {
-                recipientEmail = "ballinhassig.clinic@tvmc.ie";
-            } else if (clinicLocation.includes('Kilmoney Clinic') || clinicLocation.includes('Carrigaline')) {
-                recipientEmail = "kilmoney.clinic@tvmc.ie";
-            } else if (clinicLocation.includes('Greenwood Surgery') || clinicLocation.includes('Togher')) {
-                recipientEmail = "greenwood.surgery@tvmc.ie";
-            }
-        }
+        // Use the specific recipient email if provided, otherwise default to the original
+        const toEmail = recipientEmail ;
         
         const info = await transporter.sendMail({
-            from: '"Tus Go Deireadh" <Tus Go Deireadh>',
-            to: recipientEmail,
-            subject: `New ${formType || 'Contact'} Form Submission from ${fullName}`,
+            from: '"Tus Go Deireadh" <abhilashs049@gmail.com>',
+            to: toEmail,
+            subject: `New ${formType || 'Contact'} Form Submission`,
             text: textBody,
             html: htmlBody,
         });
         
         return new Response(
-            JSON.stringify({ success: true, messageId: info.messageId, message: 'Thank you for your request. We will contact you soon.' }),
+            JSON.stringify({ success: true, messageId: info.messageId }),
             { status: 200, headers: { "Content-Type": "application/json" } }
         );
     } catch (error) {
         console.error("Email send error:", error);
         return new Response(
-            JSON.stringify({ success: false, error: error.message, message: "There was an error processing your request. Please try again." }),
+            JSON.stringify({ success: false, error: error.message }),
             { status: 500, headers: { "Content-Type": "application/json" } }
         );
     }

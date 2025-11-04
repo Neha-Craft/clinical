@@ -1,4 +1,5 @@
 import React from 'react'
+import Contactus from '@/components/contactus'
 
 export default function Page() {
   return (
@@ -60,6 +61,11 @@ export default function Page() {
             </div>
 
           </div>
+        </div>
+        
+        {/* Add the contact form with clinic location */}
+        <div className="container" style={{ paddingTop: "2rem" }}>
+          <Contactus clinicLocation="Village Medical Centre" />
         </div>
       </section>
     </div>

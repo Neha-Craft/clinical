@@ -1,11 +1,10 @@
-import DoctorLetterForm from '@/components/doctorLetterForm'
-import ServicesSection from '@/components/onlineservicesection'
+import GreenwoodOnlineServices from '@/components/greenwoodOnlineServices'
 import React from 'react'
 
 export default function Page() {
   return (
     <div>
-        <ServicesSection/>
+        <GreenwoodOnlineServices/>
  
 
     </div>

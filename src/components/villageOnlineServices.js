@@ -76,7 +76,7 @@ const services = [
   },
 ]
 
-export default function ServicesSection() {
+export default function VillageOnlineServices() {
   const [activeForm, setActiveForm] = useState(null)
   const router = useRouter()
 
@@ -204,6 +204,3 @@ function Modal({ onClose, children }) {
     </div>
   )
 }
-
-
-

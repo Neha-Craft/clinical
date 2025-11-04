@@ -76,7 +76,7 @@ const services = [
   },
 ]
 
-export default function ServicesSection() {
+export default function GreenwoodOnlineServices() {
   const [activeForm, setActiveForm] = useState(null)
   const router = useRouter()
 
@@ -164,17 +164,17 @@ export default function ServicesSection() {
       {/* Modal-style forms */}
       {activeForm === "letter" && (
         <Modal onClose={closeForm}>
-          <LetterRequestForm onClose={closeForm} clinicLocation="Village Medical Centre" />
+          <LetterRequestForm onClose={closeForm} clinicLocation="Greenwood Surgery" />
         </Modal>
       )}
       {activeForm === "results" && (
         <Modal onClose={closeForm}>
-          <TestResultsForm onClose={closeForm} clinicLocation="Village Medical Centre" />
+          <TestResultsForm onClose={closeForm} clinicLocation="Greenwood Surgery" />
         </Modal>
       )}
       {activeForm === "illness" && (
         <Modal onClose={closeForm}>
-          <IllnessForm onClose={closeForm} clinicLocation="Village Medical Centre" />
+          <IllnessForm onClose={closeForm} clinicLocation="Greenwood Surgery" />
         </Modal>
       )}
     </>
@@ -204,6 +204,3 @@ function Modal({ onClose, children }) {
     </div>
   )
 }
-
-
-

@@ -1,5 +1,59 @@
-import React from 'react'
-export default function TestResultsForm() {
+"use client"
+import React, { useState } from 'react'
+import { toast } from 'react-toastify'
+
+export default function TestResultsForm({ clinicLocation = 'Village Medical Centre' }) {
+  const [formValues, setFormValues] = useState({});
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleInputChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormValues(prev => ({
+      ...prev,
+      [name]: type === 'checkbox' ? checked : value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    
+    try {
+      // Prepare form data to match what the API expects
+      const formDataToSend = {
+        ...formValues,
+        firstName: formValues.firstName || '',
+        lastName: formValues.lastName || '',
+        formType: 'Test Results Follow-up',
+        reason: formValues.testDetails || '',
+        clinicLocation: clinicLocation // Add clinic location
+      };
+
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formDataToSend),
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        toast.success(result.message || 'Thank you for your request. We will contact you soon.');
+        // Reset form
+        setFormValues({});
+      } else {
+        const errorResult = await response.json();
+        toast.error(errorResult.message || 'There was an error submitting your request. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      toast.error('There was an error submitting your request. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
+
   return (
     <div>
       <div className="container section-title" data-aos="fade-up">
@@ -23,7 +77,7 @@ export default function TestResultsForm() {
             padding: '30px',
             marginBottom: '30px'
           }}>
-            <form className="php-email-form">
+            <form className="php-email-form" onSubmit={handleSubmit}>
               <div className="row gy-4">
                 <div className="col-12">
                   <p style={{ marginBottom: '20px' }}>
@@ -47,6 +101,8 @@ export default function TestResultsForm() {
                     name="firstName"
                     className="form-control"
                     placeholder="Your First Name"
+                    value={formValues.firstName || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -61,6 +117,8 @@ export default function TestResultsForm() {
                     name="lastName"
                     className="form-control"
                     placeholder="Your Last Name"
+                    value={formValues.lastName || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -71,10 +129,11 @@ export default function TestResultsForm() {
                     paddingBottom:"10px"
                   }}>Date of Birth (dd/mm/yyyy)</label>
                   <input
-                    type="text"
+                    type="date"
                     className="form-control"
                     name="dob"
-                    placeholder="DD/MM/YYYY"
+                    value={formValues.dob || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -88,6 +147,8 @@ export default function TestResultsForm() {
                     type="date"
                     className="form-control"
                     name="testDate"
+                    value={formValues.testDate || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -102,6 +163,8 @@ export default function TestResultsForm() {
                     className="form-control"
                     name="phone"
                     placeholder="Your Phone Number"
+                    value={formValues.phone || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -116,6 +179,8 @@ export default function TestResultsForm() {
                     className="form-control"
                     name="email"
                     placeholder="Your Email"
+                    value={formValues.email || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -130,6 +195,8 @@ export default function TestResultsForm() {
                     className="form-control"
                     name="street"
                     placeholder="Street address"
+                    value={formValues.street || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -144,6 +211,8 @@ export default function TestResultsForm() {
                     className="form-control"
                     name="city"
                     placeholder="City"
+                    value={formValues.city || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -158,6 +227,8 @@ export default function TestResultsForm() {
                     className="form-control"
                     name="postcode"
                     placeholder="Postal Code"
+                    value={formValues.postcode || ''}
+                    onChange={handleInputChange}
                     required
                   />
                 </div>
@@ -172,6 +243,8 @@ export default function TestResultsForm() {
                     name="testDetails"
                     rows="4"
                     placeholder="Please describe which test results you're following up on"
+                    value={formValues.testDetails || ''}
+                    onChange={handleInputChange}
                     required
                   ></textarea>
                 </div>
@@ -182,6 +255,9 @@ export default function TestResultsForm() {
                       type="checkbox"
                       className="form-check-input"
                       id="confirmationCheckbox"
+                      name="confirmation"
+                      checked={!!formValues.confirmation}
+                      onChange={handleInputChange}
                       required
                     />
                     <label className="form-check-label" htmlFor="confirmationCheckbox">
@@ -196,6 +272,9 @@ export default function TestResultsForm() {
                       type="checkbox"
                       className="form-check-input"
                       id="consentCheckbox"
+                      name="consent"
+                      checked={!!formValues.consent}
+                      onChange={handleInputChange}
                       required
                     />
                     <label className="form-check-label" htmlFor="consentCheckbox">
@@ -206,16 +285,23 @@ export default function TestResultsForm() {
                 <div className="col-12 text-center">
                   <button
                     type="submit"
+                    disabled={isSubmitting}
                     style={{
                       color: "#fff",
-                      background: "#1fb572",
+                      background: isSubmitting ? "#ccc" : "#1fb572",
                       borderWidth: "0px",
                       padding: "10px 30px",
                       transition: "0.4s",
                       borderRadius: "4px",
+                      cursor: isSubmitting ? "not-allowed" : "pointer"
                     }}
                   >
-                    Submit Request
+                    {isSubmitting ? (
+                      <>
+                        <span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
+                        &nbsp;Submitting...
+                      </>
+                    ) : "Submit Request"}
                   </button>
                 </div>
                 <div className="col-12">
